@@ -1,14 +1,6 @@
 import React, {useEffect, Fragment} from 'react';
-import { useParams } from 'react-router-dom';
-import Prism from 'prismjs';
-import '../../../node_modules/prismjs/themes/prism-tomorrow.css';
 
 export default function TypographyTab () {
-    let params = useParams();
-    useEffect(() => {
-        Prism.highlightAll();
-    }, [params])
-    
     return (
         <Fragment>
             <div className="jumbotron">

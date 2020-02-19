@@ -1,11 +1,18 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Route, useParams } from 'react-router-dom';
 import Tabs from './Tabs';
 import TypographyTab from './TypographyTab';
 import ColorsTab from './ColorsTab';
+import ButtonsTab from './ButtonsTab';
+import Prism from 'prismjs';
+import '../../../node_modules/prismjs/themes/prism-tomorrow.css';
 import './styleGuide.scss';
 
 function StyleGuide () {
+    let params = useParams();
+    useEffect(() => {
+        Prism.highlightAll();
+    }, [params]);
     return (
         <section id="styleGuide">
             <div className="container">
@@ -17,7 +24,7 @@ function StyleGuide () {
                         <div className="tabs-content">
                             <Route path="/styleguide/typography" component={TypographyTab} />
                             <Route path="/styleguide/colors" component={ColorsTab}/>
-                            <Route path="/styleguide/buttons">buttons</Route>
+                            <Route path="/styleguide/buttons" component={ButtonsTab} />
                             <Route path="/styleguide/forms">forms</Route>
                         </div>
                     </div>

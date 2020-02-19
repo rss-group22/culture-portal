@@ -1,16 +1,9 @@
-import React, { Fragment, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import Prism from 'prismjs';
-import '../../../node_modules/prismjs/themes/prism-tomorrow.css';
+import React, { Fragment } from 'react';
 
 const colors1 = ["#ffffff", "#f8f9fa", "#eeeeee", "#dee2e6", "#ced4da", "#aaaaaa", "#777777", "#495057", "#333333", "#222222", "#000000"];
 const colors2 = ["#EB6864", "#6610f2", "#6f42c1", "#e83e8c", "#F57A00", "#fd7e14", "#F5E625", "#22B24C", "#20c997", "#369369"];
 
 export default function ColorsTab () {
-    let params = useParams();
-    useEffect(() => {
-        Prism.highlightAll();
-    }, [params])
     return (
         <Fragment>
             <h2 className="subtitle text-center">We are used the next colors</h2>
@@ -39,7 +32,7 @@ export default function ColorsTab () {
                 }
             </div>
             <div className="jumbotron">
-                <h2 className="subtitle text-center">Also you can use this color like scss variables</h2>
+                <h2 className="subtitle text-center">Also you can use this colors like scss variables</h2>
                 <pre><code className="language-css">
 {
 `
