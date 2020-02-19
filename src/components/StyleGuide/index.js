@@ -4,11 +4,12 @@ import Tabs from './Tabs';
 import TypographyTab from './TypographyTab';
 import ColorsTab from './ColorsTab';
 import ButtonsTab from './ButtonsTab';
+import FormsTab from './FormsTab';
 import Prism from 'prismjs';
 import '../../../node_modules/prismjs/themes/prism-tomorrow.css';
 import './styleGuide.scss';
 
-function StyleGuide () {
+export default function StyleGuide () {
     let params = useParams();
     useEffect(() => {
         Prism.highlightAll();
@@ -25,7 +26,7 @@ function StyleGuide () {
                             <Route path="/styleguide/typography" component={TypographyTab} />
                             <Route path="/styleguide/colors" component={ColorsTab}/>
                             <Route path="/styleguide/buttons" component={ButtonsTab} />
-                            <Route path="/styleguide/forms">forms</Route>
+                            <Route path="/styleguide/forms" component={FormsTab} />
                         </div>
                     </div>
                 </div>
@@ -33,5 +34,3 @@ function StyleGuide () {
         </section>
     );
 }
-
-export default StyleGuide;
