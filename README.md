@@ -22,6 +22,8 @@ Files structure:
 ├── services                  # for all XHR and Promises
 │   ├── getPhotographers.js
 │   ├── getDeveloperInfo.js
+├── styles                  # for variables and global styles
+│   ├── _variables.scss
 ├── App.js                   # main entry point.
 ├── App.scss 
 ```
