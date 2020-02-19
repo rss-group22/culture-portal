@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Tabs from './Tabs';
 import TypographyTab from './TypographyTab';
+import ColorsTab from './ColorsTab';
 import './styleGuide.scss';
 
 function StyleGuide () {
@@ -14,10 +15,8 @@ function StyleGuide () {
                         <h3 className="subtitle text-center">This is the styleguide for Culture Portal application</h3>
                         <Tabs />
                         <div className="tabs-content">
-                            <Route path="/styleguide/typography">
-                                <TypographyTab />
-                            </Route>
-                            <Route path="/styleguide/colors">colors</Route>
+                            <Route path="/styleguide/typography" component={TypographyTab} />
+                            <Route path="/styleguide/colors" component={ColorsTab}/>
                             <Route path="/styleguide/buttons">buttons</Route>
                             <Route path="/styleguide/forms">forms</Route>
                         </div>
