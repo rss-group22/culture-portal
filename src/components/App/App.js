@@ -11,7 +11,7 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <Route path="/styleguide" component={StyleGuide} />
+        <Route path="/styleguide/:tabName?" component={StyleGuide} />
       </Router>
     );
   }
