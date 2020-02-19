@@ -10,7 +10,7 @@ To build project:
 `npm run build`
 
 Files structure:
-src
+```src
 ├── components
 │   ├── Component             # for component and it's styles
 |       ├── Component.js
@@ -22,6 +22,6 @@ src
 ├── services                  # for all XHR and Promises
 │   ├── getPhotographers.js
 │   ├── getDeveloperInfo.js
-
 ├── App.js                   # main entry point.
 ├── App.scss 
+```
