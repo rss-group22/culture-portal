@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Route, useParams } from 'react-router-dom';
+import { Route, Redirect, useParams } from 'react-router-dom';
 import Prism from 'prismjs';
 import Tabs from './Tabs';
 import TypographyTab from './TypographyTab';
@@ -27,6 +27,7 @@ export default function StyleGuide() {
               <Route path="/styleguide/colors" component={ColorsTab} />
               <Route path="/styleguide/buttons" component={ButtonsTab} />
               <Route path="/styleguide/forms" component={FormsTab} />
+              <Redirect from="/styleguide" to="/styleguide/typography" />
             </div>
           </div>
         </div>
