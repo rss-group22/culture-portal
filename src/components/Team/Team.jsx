@@ -31,13 +31,17 @@ export default class Team extends Component {
     return (
       <div>
         <h2 className="title">{dataText[lang].Team.title}</h2>
-        <ul>
-          {dataTeamFromGit.map(info => (
-            <li key={info.id}>
-              <span>{info.name}</span>
-              <img src={info.avatar_url} alt="avatar" />
-            </li>
-          ))}
+        <ul className="team-list">
+          {dataTeamFromGit.map(info => {
+            const name = dataTeam.find(acc => acc.userGitHub === info.login);
+            console.log(`${name.name} ${name.surname}`);
+            return (
+              <li className="team-item" key={info.id}>
+                <span>{`${name.name} ${name.surname}`}</span>
+                <img src={info.avatar_url} alt="avatar" />
+              </li>
+            );
+          })}
         </ul>
       </div>
     );
