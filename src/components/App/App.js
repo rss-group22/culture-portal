@@ -6,11 +6,13 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import StyleGuide from '../StyleGuide';
 import GetPhotographersData from '../../data/author-information';
 import Aside from '../Aside/Aside.jsx';
 import Main from '../Partial/Main.jsx';
+
+import StyleGuide from '../StyleGuide';
 import './App.scss';
+import '../../scss/_body.scss';
 
 export default class App extends Component {
   constructor(props) {

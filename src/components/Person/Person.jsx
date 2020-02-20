@@ -5,7 +5,7 @@
 /* eslint-disable import/extensions */
 import React, { Component } from 'react';
 import './Person.scss';
-import { dataText } from '../../data/dataText.js';
+import dataText from '../../data/dataText.js';
 
 export default class Person extends Component {
   constructor(props) {

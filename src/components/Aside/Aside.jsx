@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 import './Aside.scss';
 import { Link } from 'react-router-dom';
 import Language from './Language.jsx';
-import { dataText } from '../../data/dataText.js';
+import dataText from '../../data/dataText.js';
 
 export default class Aside extends Component {
   constructor(props) {

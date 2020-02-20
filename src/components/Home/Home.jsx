@@ -3,8 +3,9 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
 import React, { Component } from 'react';
+import dataText from '../../data/dataText.js';
+
 import './Home.scss';
-import { dataText } from '../../data/dataText.js';
 
 export default class Home extends Component {
   constructor(props) {
