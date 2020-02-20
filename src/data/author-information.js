@@ -1,4 +1,4 @@
-export default class getPhotographersData {
+export default class GetPhotographersData {
     data = [
         {
             id: 1,
