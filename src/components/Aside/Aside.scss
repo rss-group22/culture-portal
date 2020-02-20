@@ -1,0 +1,13 @@
+.home__aside {
+    background-color: crimson;
+    width: 15%;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+
+    span {
+        color: blue;
+    }
+    span:hover {
+        color: green;
+    }
+}
