@@ -1,0 +1,28 @@
+.title {
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    margin-bottom: 40px;
+}
+
+.tabs-content {
+    padding: 20px 0;
+    .jumbotron {
+        padding: 2em;
+        pre {
+            margin: 40px 0;
+        }
+    }
+}
+
+.color-block {
+    padding: 0 10px;
+    max-width: 80px;
+    .color {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}

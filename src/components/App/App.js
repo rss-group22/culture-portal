@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import StyleGuide from '../StyleGuide';
 import GetPhotographersData from '../../data/author-information';
 
 export default class App extends Component {
@@ -21,9 +23,9 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-        Culture portal
-      </div>
+      <Router>
+        <Route path="/styleguide/:tabName?" component={StyleGuide} />
+      </Router>
     );
   }
 }

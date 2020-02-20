@@ -65,6 +65,8 @@ module.exports = {
     })
   ],
   devServer: {
-    open: true
+    open: true,
+    contentBase: './dist',
+    historyApiFallback: true
   }
 };
