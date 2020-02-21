@@ -1,0 +1,17 @@
+@import "../../scss/variables";
+.timeline--wrapper{
+  padding: 0;
+  margin: 0;
+}
+.timeline{
+  &-item-dateinner{
+    background: $blue;
+  }
+  &-label{
+    color: $gray-900;
+    font-weight: 400;
+  }
+  .entry .body{
+    margin: -15px 0px 3em;
+  }
+}
