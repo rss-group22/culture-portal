@@ -6,6 +6,7 @@
 import React, { Component } from 'react';
 import dataText from '../../data/dataText.js';
 import PhotographerCard from '../PhotographerCard';
+import TimelineComponent from '../TimelineComponent';
 
 import './Person.scss';
 
@@ -20,6 +21,7 @@ export default class Person extends Component {
       <div>
         <h2>{dataText[lang].Person.title}</h2>
         <PhotographerCard />
+        <TimelineComponent />
       </div>
     );
   }

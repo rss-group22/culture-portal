@@ -4,61 +4,95 @@
   position: relative;
 
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $primary;
+  font-size: 3rem;
 
   &::after {
     position: absolute;
     content: "";
-    top: 50px;
+    top: 60px;
     left: 0;
 
     width: 70px;
-    height: 10px;
+    height: 7px;
 
     border-radius: 4px;
     background-color: $primary;
   }
 }
 
-.text-team {
-   margin-left: 30px;
+.text-team,
+.subtext-team  {
+   font-size: 3rem;
 }
 
 .team-list {
   display: flex;
-  flex-direction: column;
+  // justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .team-item {
   display: flex;
+  justify-content: space-between;
 
-  margin: 20px;
-  padding: 1rem;
+  width: 380px;
+  margin: 10px;
+  padding: 1.5rem;
 
-  background-color: $gray-400;
+  background-color: rgba(76, 82, 85, 0.1);
+  border-radius: 20px;
+
+  &--avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 2rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & a:nth-child(1) img {
+      width: 40px;
+      height: 40px;
+      margin-top: 20px;
+    }
+
+    & a:nth-child(2) img {
+      width: 30px;
+      height: 30px;
+      margin-top: 20px;
+    }
+  }
 
   &__skills {
     display: flex;
     flex-direction: column;
-  }
 
-  & img {
-    width: 150px;
-    height: 200px;
-  }
-
-  &__avatar {
-    display: flex;
-    flex-direction: column;
-
-    margin-right: 20px;
-
-    &--link img {
-      width: 50px;
-      height: 60px;
+    & h4 {
+      @media (max-width: 500px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
     }
   }
 
+  @media (max-width: 500px) {
+    width: 320px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
