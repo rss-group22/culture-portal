@@ -4,8 +4,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
 import React, { Component } from 'react';
-import './Person.scss';
 import dataText from '../../data/dataText.js';
+import PhotographerCard from '../PhotographerCard';
+
+import './Person.scss';
 
 export default class Person extends Component {
   constructor(props) {
@@ -17,6 +19,7 @@ export default class Person extends Component {
     return (
       <div>
         <h2>{dataText[lang].Person.title}</h2>
+        <PhotographerCard />
       </div>
     );
   }

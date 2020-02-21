@@ -14,6 +14,7 @@ const dataText = {
     },
     Team: {
       title: 'Team members',
+      text: "As students of RS-School, our team actively worked on this project and applied the knowledge gained."
     },
   },
   RU: {
@@ -31,6 +32,7 @@ const dataText = {
     },
     Team: {
       title: 'Команда',
+      "text": "Будучи студентами RS-School наша команда активно работала над этим проектом и применяла полученные знания."
     },
   },
   BY: {
@@ -48,6 +50,7 @@ const dataText = {
     },
     Team: {
       title: 'Каманда',
+      "text": "Будучы студэнтамі RS-School наша каманда актыўна працавала над гэтым праектам і ўжывала атрыманыя веды."
     },
   },
 };

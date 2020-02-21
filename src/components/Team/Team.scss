@@ -1,29 +1,64 @@
 @import '../../scss/variables';
 
-.title {
+.title-team {
   position: relative;
 
-  margin-left: 30px;
   margin-top: 30px;
+  margin-bottom: 50px;
 
   color: $primary;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: 0;
+
+    width: 70px;
+    height: 10px;
+
+    border-radius: 4px;
+    background-color: $primary;
+  }
+}
+
+.text-team {
+   margin-left: 30px;
 }
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
 }
 
 .team-item {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 
   margin: 20px;
+  padding: 1rem;
+
+  background-color: $gray-400;
+
+  &__skills {
+    display: flex;
+    flex-direction: column;
+  }
 
   & img {
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
   }
+
+  &__avatar {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 20px;
+
+    &--link img {
+      width: 50px;
+      height: 60px;
+    }
+  }
+
 }
