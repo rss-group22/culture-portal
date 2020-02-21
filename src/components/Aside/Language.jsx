@@ -15,7 +15,7 @@ export default class Language extends Component {
 
   render() {
     return (
-      <div className="home__aside_lang">
+      <div className="aside__lang">
         <select onChange={this.onChange}>
           <option>EN</option>
           <option>RU</option>

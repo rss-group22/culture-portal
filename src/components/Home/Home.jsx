@@ -15,7 +15,13 @@ export default class Home extends Component {
     const { lang } = this.props;
     return (
       <div className="home">
-        <h2>{dataText[lang].Home.title}</h2>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h2 className="title title_bordered">{dataText[lang].Home.title}</h2>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
