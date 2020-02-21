@@ -1,7 +1,7 @@
 export const dataText = {
     EN: {
         Aside: {
-            title: 'Photographer of Belarus',
+            title: 'Photographers of Belarus',
             nav1: 'Home',
             nav2: 'Person',
             nav3: 'Team'

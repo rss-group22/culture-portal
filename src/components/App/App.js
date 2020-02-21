@@ -7,7 +7,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import StyleGuide from '../StyleGuide';
-import GetPhotographersData from '../../data/author-information';
 import Aside from '../Aside/Aside.jsx';
 import Home from '../Home';
 import Team from '../Team';
@@ -28,16 +27,6 @@ export default class App extends Component {
     this.setState({ lang: value });
   }
 
-  componentDidMount() {
-    const service = new GetPhotographersData();
-    service.getData()
-      .then((res) => {
-        this.setState({
-          photographersData: res,
-        });
-      });
-  }
-
   render() {
     return (
       <Router>
@@ -49,7 +38,7 @@ export default class App extends Component {
         <div id="content">
           <Route path="/" exact component={() => <Home lang={this.state.lang} />} />
           <Route path="/team" component={() => <Team lang={this.state.lang} />} />
-          <Route path="/person" component={() => <Person lang={this.state.lang} />} />
+          <Route path="/person/:id" component={(props) => <Person lang={this.state.lang} {...props} />} />
         </div>
       </Router>
     );

@@ -7,21 +7,42 @@ import React, { Component } from 'react';
 import './Person.scss';
 import { dataText } from '../../data/dataText.js';
 import PhotographerCard from '../PhotographerCard';
+import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
 
 export default class Person extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      author: {}
+    }
   }
-
+  componentDidMount() {
+    let id = this.props.match.params.id;
+    getData().then(data => {
+      let author = data.filter(item => item.id === +id)[0];
+      this.setState({ author });
+    });
+  }
   render() {
     const { lang } = this.props;
+    const { avatar, photographerName, yearsOfLife, biography, biographyTimeline } = this.state.author;
     return (
-      <div>
-        <h2>{dataText[lang].Person.title}</h2>
-        <PhotographerCard />
-        <TimelineComponent />
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h2>{ dataText[lang].Person.title }</h2>
+              <PhotographerCard
+                avatar={avatar}
+                photographerName={ photographerName }
+                yearsOfLife={ yearsOfLife }
+                biography={ biography }
+              />
+              <TimelineComponent biographyTimeline={biographyTimeline} />
+          </div>
+        </div>
       </div>
     );
   }
+
 }
