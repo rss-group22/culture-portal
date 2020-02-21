@@ -28,7 +28,7 @@ const dataTeamLang = {
       name: 'Siarhei',
       surname: 'Iukou',
       skill1: 'create router',
-      skill2: 'make a file structure of project'
+      skill2: 'ile structure of project'
     },
     'Pavel-Sake': {
       name: 'Pavel',

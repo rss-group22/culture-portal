@@ -43,7 +43,7 @@ export default class Team extends Component {
                   </div>
                 </div>
                 <div className="team-item__skills">
-                  <h4>{`${item.name} ${item.surname}`}</h4>
+                  <h5>{`${item.name} ${item.surname}`}</h5>
                   <ul className="team-item__skills--list">
                     <li>{`- ${item.skill1}`}</li>
                     <li>{`- ${item.skill2}`}</li>
