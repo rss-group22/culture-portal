@@ -6,7 +6,7 @@ import React, { Component } from "react";
 import dataText from "../../data/dataText";
 import dataTeam from "../../data/dataTeam";
 import octocatImg from "../../data/image/team/octocat.png";
-import linkedinImg from "../../data/image/team/linkedin.png"
+import linkedinImg from "../../data/image/team/linkedin.png";
 
 import "./Team.scss";
 
@@ -14,7 +14,6 @@ export default class Team extends Component {
 
   render() {
     const { lang } = this.props;
-
     return (
       <div className="container">
         <h2 className="title-team">{dataText[lang].Team.title}</h2>
