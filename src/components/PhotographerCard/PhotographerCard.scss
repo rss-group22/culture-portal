@@ -1,0 +1,23 @@
+@import "../../scss/variables";
+
+.author{
+  display: flex;
+  &-photo{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+  &-wrapper{
+    padding: 0 5%;
+    width: 75%;
+    &_name{
+      text-align: center;
+    }
+    &_years{
+      text-align: center;
+      color: $gray-500;
+      margin-bottom: 1rem;
+    }
+  }
+}
