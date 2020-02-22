@@ -1,6 +1,7 @@
 import React from 'react';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
+import './Slider.scss';
 
 const Slider = ({photoGallery = []}) => {
   const params = {
@@ -22,7 +23,13 @@ const Slider = ({photoGallery = []}) => {
   }
   return (
     <Swiper {...params}>
-      {photoGallery.map((el) => <img src={el} key={el} alt='works' />)}
+      {photoGallery.map((el) => {
+        return (
+          <div className="image-wrapper" key={el}>
+            <img className="work-image" src={el} alt='works' height="100" />
+          </div>
+        )
+      })}
     </Swiper>
   );
 }
