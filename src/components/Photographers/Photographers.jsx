@@ -6,39 +6,73 @@
 import React, { Component } from 'react';
 import PhotographerCard from '../PhotographerCard';
 import dataText from '../../data/dataText';
-import GetPhotographersData from '../../data/author-information'
+import getData from '../../data/author-information'
+
+import './Photographers.scss';
 
 export default class Photographers extends Component {
 
-  service = new GetPhotographersData();
-
-  state = {
-    photographersData: []
-  }
-
   constructor(props) {
     super(props);
+    this.state = {
+      photographersData: [],
+      term: ''
+    }
     this.getNewData();
   }
 
   getNewData() {
-    this.service
-      .getData()
-      .then((res) => {
+    getData()
+      .then((res) =>
         this.setState({
           photographersData: res
-        });
-      });
+        })
+      );
+  };
+
+  searchPhotographer = (event) => {
+    const term = event.target.value;
+    this.setState({ term });
+  }
+
+  search(items, term) {
+    if (term.length === 0) {
+      return items;
+    }
+
+    return items.filter((item) => {
+      return item.photographerName
+        .toLowerCase().indexOf(term.toLowerCase()) > -1;
+    });
   };
 
   render() {
     const { lang } = this.props;
-    const { photographersData } = this.state;
+    const { photographersData, term } = this.state;
+
+    const photographersFound = this.search(photographersData, term);
+
+    const elements = photographersFound.length ? photographersFound.map((item) => {
+      const { id, ...itemProps } = item;
+
+      return (
+        <div key={id} className="photographer__item">
+          <PhotographerCard {...itemProps} />
+        </div>
+      );
+    }) : null
+
     return (
-      <div className="photographers_list">
-        <h2>{dataText[lang].Photographers.title}</h2>
-        <input type="search" className="form-control" placeholder="type of photographer name" />
-        <PhotographerCard data={photographersData[0]} />
+      <div className="photographers_list col-12">
+        <h2 className="title title_bordered">{dataText[lang].Photographers.title}</h2>
+        <input
+          type="search"
+          className="form-control"
+          placeholder="type of photographer name"
+          value={term}
+          onChange={this.searchPhotographer}
+        />
+        {elements}
       </div>
     );
   };

@@ -8,6 +8,7 @@ import dataText from '../../data/dataText.js';
 import PhotographerCard from '../PhotographerCard';
 import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
+import Slider from '../Slider';
 
 export default class Person extends Component {
   constructor(props) {
@@ -45,5 +46,4 @@ export default class Person extends Component {
       </div>
     );
   }
-
 }
