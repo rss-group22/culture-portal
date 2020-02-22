@@ -48,10 +48,10 @@ export default function photographersData() {
         },
       ],
       photoGallery: [
-        '../../data/image/works/work1/work1.jpg',
-        '../../data/image/works/work1/work2.jpg',
-        '../../data/image/works/work1/work3.jpg',
-        '../../data/image/works/work1/work4.jpg'
+        require('./image/works/work1/work1.jpg').default,
+        require('./image/works/work1/work2.jpg').default,
+        require('./image/works/work1/work3.jpg').default,
+        require('./image/works/work1/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/-A-1kSc2IXc',
       placeOnMap: 'Минск, Беларусь'
@@ -111,10 +111,10 @@ export default function photographersData() {
         },
       ],
       photoGallery: [
-        '../../data/image/works/work2/work1.jpg',
-        '../../data/image/works/work2/work2.jpg',
-        '../../data/image/works/work2/work3.jpg',
-        '../../data/image/works/work2/work4.jpg'
+        require('./image/works/work2/work1.jpg').default,
+        require('./image/works/work2/work2.jpg').default,
+        require('./image/works/work2/work3.jpg').default,
+        require('./image/works/work2/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/NMxFbvqTg8U',
       placeOnMap: 'Минск, Беларусь'
@@ -166,10 +166,10 @@ export default function photographersData() {
         }
       ],
       photoGallery: [
-        '../../data/image/works/work3/work1.jpg',
-        '../../data/image/works/work3/work2.jpg',
-        '../../data/image/works/work3/work3.jpg',
-        '../../data/image/works/work3/work4.jpg'
+        require('./image/works/work3/work1.jpg').default,
+        require('./image/works/work3/work2.jpg').default,
+        require('./image/works/work3/work3.jpg').default,
+        require('./image/works/work3/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/OUl9EEOXAeY',
       placeOnMap: 'Варшава'
@@ -209,10 +209,10 @@ export default function photographersData() {
         }
       ],
       photoGallery: [
-        '../../data/image/works/work4/work1.jpg',
-        '../../data/image/works/work4/work2.jpg',
-        '../../data/image/works/work4/work3.jpg',
-        '../../data/image/works/work4/work4.jpg'
+        require('./image/works/work4/work1.jpg').default,
+        require('./image/works/work4/work2.jpg').default,
+        require('./image/works/work4/work3.jpg').default,
+        require('./image/works/work4/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/FE6-Z00bTI8',
       placeOnMap: 'Волковыск, Беларусь'
@@ -268,10 +268,10 @@ export default function photographersData() {
         }
       ],
       photoGallery: [
-        '../../data/image/works/work5/work1.jpg',
-        '../../data/image/works/work5/work2.jpg',
-        '../../data/image/works/work5/work3.jpg',
-        '../../data/image/works/work5/work4.jpg'
+        require('./image/works/work5/work1.jpg').default,
+        require('./image/works/work5/work2.jpg').default,
+        require('./image/works/work5/work3.jpg').default,
+        require('./image/works/work5/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/36xTqllIm2A',
       placeOnMap: 'Минск, Беларусь'
@@ -327,10 +327,10 @@ export default function photographersData() {
         }
       ],
       photoGallery: [
-        '../../data/image/works/work6/work1.jpg',
-        '../../data/image/works/work6/work2.jpg',
-        '../../data/image/works/work6/work3.jpg',
-        '../../data/image/works/work6/work4.jpg'
+        require('./image/works/work6/work1.jpg').default,
+        require('./image/works/work6/work2.jpg').default,
+        require('./image/works/work6/work3.jpg').default,
+        require('./image/works/work6/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/BHGn4Zk49vY',
       placeOnMap: 'Минск, Беларусь'
@@ -390,10 +390,10 @@ export default function photographersData() {
         }
       ],
       photoGallery: [
-        '../../data/image/works/work7/work1.jpg',
-        '../../data/image/works/work7/work2.jpg',
-        '../../data/image/works/work7/work3.jpg',
-        '../../data/image/works/work7/work4.jpg'
+        require('./image/works/work7/work1.jpg').default,
+        require('./image/works/work7/work2.jpg').default,
+        require('./image/works/work7/work3.jpg').default,
+        require('./image/works/work7/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/gCaprRNrx6U',
       placeOnMap: 'Минск, Беларусь'
