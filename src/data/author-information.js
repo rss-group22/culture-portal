@@ -54,7 +54,10 @@ export default function photographersData() {
         require('./image/works/work1/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/-A-1kSc2IXc',
-      placeOnMap: 'Минск, Беларусь'
+      placeOnMap: {
+        lat: 53.9,
+        lng: 27.5666700,
+      }
     },
     {
       id: 2,
@@ -117,7 +120,10 @@ export default function photographersData() {
         require('./image/works/work2/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/NMxFbvqTg8U',
-      placeOnMap: 'Минск, Беларусь'
+      placeOnMap: {
+        lat: 53.9,
+        lng: 27.5666700,
+      }
     },
     {
       id: 3,
@@ -172,7 +178,10 @@ export default function photographersData() {
         require('./image/works/work3/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/OUl9EEOXAeY',
-      placeOnMap: 'Варшава'
+      placeOnMap: {
+        lat: 52.2297700,
+        lng: 21.0117800,
+      }
     },
     {
       id: 4,
@@ -215,7 +224,10 @@ export default function photographersData() {
         require('./image/works/work4/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/FE6-Z00bTI8',
-      placeOnMap: 'Волковыск, Беларусь'
+      placeOnMap: {
+        lat: 53.1561,
+        lng: 24.4513,
+      }
     },
     {
       id: 5,
@@ -274,7 +286,10 @@ export default function photographersData() {
         require('./image/works/work5/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/36xTqllIm2A',
-      placeOnMap: 'Минск, Беларусь'
+      placeOnMap: {
+        lat: 53.9,
+        lng: 27.5666700,
+      }
     },
     {
       id: 6,
@@ -333,7 +348,10 @@ export default function photographersData() {
         require('./image/works/work6/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/BHGn4Zk49vY',
-      placeOnMap: 'Минск, Беларусь'
+      placeOnMap: {
+        lat: 53.9,
+        lng: 27.5666700,
+      }
     },
     {
       id: 7,
@@ -396,7 +414,10 @@ export default function photographersData() {
         require('./image/works/work7/work4.jpg').default
       ],
       youtubeUrl: 'https://youtu.be/gCaprRNrx6U',
-      placeOnMap: 'Минск, Беларусь'
+      placeOnMap: {
+        lat: 53.9,
+        lng: 27.5666700,
+      }
     }
   ];
   return new Promise((resolve) => {
