@@ -8,19 +8,24 @@ export class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lat: 53.9,
-      lng: 27.5666700,
-      zoom: 10
+      lat: 0,
+      lng: 0,
     };
   }
 
   componentDidMount() {
-    const map = new mapboxgl.Map({
+    this.map = new mapboxgl.Map({
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [this.state.lng, this.state.lat],
-      zoom: this.state.zoom
+      zoom: 9
     });
+  }
+
+  componentDidUpdate() {
+    if (this.props.placeOnMap.lat !== undefined) {
+      this.map.setCenter([this.props.placeOnMap.lng, this.props.placeOnMap.lat]);
+    }
   }
 
   render() {

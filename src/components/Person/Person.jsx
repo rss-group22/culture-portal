@@ -29,7 +29,7 @@ export default class Person extends Component {
 
   render() {
     const { lang } = this.props;
-    const { avatar, photographerName, yearsOfLife, biography, biographyTimeline } = this.state.author;
+    const { avatar, photographerName, yearsOfLife, biography, biographyTimeline, placeOnMap } = this.state.author;
     return (
       <div className="container">
         <div className="row">
@@ -43,7 +43,7 @@ export default class Person extends Component {
             />
             <Slider photoGallery={this.state.author.photoGallery} />
             <TimelineComponent biographyTimeline={biographyTimeline} />
-            <Map />
+            <Map placeOnMap={placeOnMap} />
           </div>
         </div>
       </div>
