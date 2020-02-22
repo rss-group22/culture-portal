@@ -53,7 +53,7 @@ export default function photographersData() {
         require('./image/works/work1/work3.jpg').default,
         require('./image/works/work1/work4.jpg').default
       ],
-      youtubeUrl: 'https://youtu.be/-A-1kSc2IXc',
+      youtubeUrl: 'https://www.youtube.com/embed/-A-1kSc2IXc',
       placeOnMap: {
         lat: 53.9,
         lng: 27.5666700,
@@ -119,7 +119,7 @@ export default function photographersData() {
         require('./image/works/work2/work3.jpg').default,
         require('./image/works/work2/work4.jpg').default
       ],
-      youtubeUrl: 'https://youtu.be/NMxFbvqTg8U',
+      youtubeUrl: 'https://www.youtube.com/embed/NMxFbvqTg8U',
       placeOnMap: {
         lat: 53.9,
         lng: 27.5666700,
@@ -177,7 +177,7 @@ export default function photographersData() {
         require('./image/works/work3/work3.jpg').default,
         require('./image/works/work3/work4.jpg').default
       ],
-      youtubeUrl: 'https://youtu.be/OUl9EEOXAeY',
+      youtubeUrl: 'https://www.youtube.com/embed/OUl9EEOXAeY',
       placeOnMap: {
         lat: 52.2297700,
         lng: 21.0117800,
@@ -223,7 +223,7 @@ export default function photographersData() {
         require('./image/works/work4/work3.jpg').default,
         require('./image/works/work4/work4.jpg').default
       ],
-      youtubeUrl: 'https://youtu.be/FE6-Z00bTI8',
+      youtubeUrl: 'https://www.youtube.com/embed/FE6-Z00bTI8',
       placeOnMap: {
         lat: 53.1561,
         lng: 24.4513,
@@ -285,7 +285,7 @@ export default function photographersData() {
         require('./image/works/work5/work3.jpg').default,
         require('./image/works/work5/work4.jpg').default
       ],
-      youtubeUrl: 'https://youtu.be/36xTqllIm2A',
+      youtubeUrl: 'https://www.youtube.com/embed/36xTqllIm2A',
       placeOnMap: {
         lat: 53.9,
         lng: 27.5666700,
@@ -347,7 +347,7 @@ export default function photographersData() {
         require('./image/works/work6/work3.jpg').default,
         require('./image/works/work6/work4.jpg').default
       ],
-      youtubeUrl: 'https://youtu.be/BHGn4Zk49vY',
+      youtubeUrl: 'https://www.youtube.com/embed/BHGn4Zk49vY',
       placeOnMap: {
         lat: 53.9,
         lng: 27.5666700,
@@ -413,7 +413,7 @@ export default function photographersData() {
         require('./image/works/work7/work3.jpg').default,
         require('./image/works/work7/work4.jpg').default
       ],
-      youtubeUrl: 'https://youtu.be/gCaprRNrx6U',
+      youtubeUrl: 'https://www.youtube.com/embed/gCaprRNrx6U',
       placeOnMap: {
         lat: 53.9,
         lng: 27.5666700,

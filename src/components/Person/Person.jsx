@@ -29,7 +29,7 @@ export default class Person extends Component {
 
   render() {
     const { lang } = this.props;
-    const { avatar, photographerName, yearsOfLife, biography, biographyTimeline, placeOnMap } = this.state.author;
+    const { avatar, photographerName, yearsOfLife, biography, biographyTimeline, placeOnMap, youtubeUrl } = this.state.author;
     return (
       <div className="container">
         <div className="row">
@@ -42,6 +42,15 @@ export default class Person extends Component {
               biography={biography}
             />
             <Slider photoGallery={this.state.author.photoGallery} />
+            <iframe
+              title={photographerName}
+              width="560"
+              height="315"
+              src={youtubeUrl}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
             <TimelineComponent biographyTimeline={biographyTimeline} />
             <Map placeOnMap={placeOnMap} />
           </div>
