@@ -16,6 +16,8 @@ export default class Aside extends Component {
 
   render() {
     const { lang } = this.props;
+    let id = new Date().getDay();
+    id = id ? id : 7;
     return (
       <div className="aside">
         <Language
@@ -28,7 +30,7 @@ export default class Aside extends Component {
               <NavLink to="/" exact activeClassName="active" >{ dataText[lang].Aside.nav1 }</NavLink>
             </li>
             <li>
-              <NavLink to="/person/1" activeClassName="active">{ dataText[lang].Aside.nav2 }</NavLink>
+              <NavLink to={`/person/${id}`} activeClassName="active">{ dataText[lang].Aside.nav2 }</NavLink>
               </li>
             <li>
               <NavLink to="/team" activeClassName="active">{ dataText[lang].Aside.nav3 }</NavLink>
