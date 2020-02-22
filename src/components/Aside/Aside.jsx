@@ -28,7 +28,7 @@ export default class Aside extends Component {
               <NavLink to="/" exact activeClassName="active" >{ dataText[lang].Aside.nav1 }</NavLink>
             </li>
             <li>
-              <NavLink to="/person" activeClassName="active">{ dataText[lang].Aside.nav2 }</NavLink>
+              <NavLink to="/person/1" activeClassName="active">{ dataText[lang].Aside.nav2 }</NavLink>
               </li>
             <li>
               <NavLink to="/team" activeClassName="active">{ dataText[lang].Aside.nav3 }</NavLink>
