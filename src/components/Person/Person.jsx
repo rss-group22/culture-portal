@@ -40,12 +40,11 @@ export default class Person extends Component {
               yearsOfLife={yearsOfLife}
               biography={biography}
             />
-            <Slider />
+            <Slider photoGallery={this.state.author.photoGallery} />
             <TimelineComponent biographyTimeline={biographyTimeline} />
           </div>
         </div>
       </div>
     );
   }
-
 }
