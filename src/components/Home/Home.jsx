@@ -3,6 +3,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
 import React, { Component } from 'react';
+import dataText from '../../data/dataText.js';
+
 import './Home.scss';
 import AuthorsList from './AuthorsList.jsx';
 // import { dataText } from '../../data/dataText.js';

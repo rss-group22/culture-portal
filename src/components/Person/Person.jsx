@@ -4,8 +4,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
 import React, { Component } from 'react';
-import './Person.scss';
-import { dataText } from '../../data/dataText.js';
+import dataText from '../../data/dataText.js';
 import PhotographerCard from '../PhotographerCard';
 import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';

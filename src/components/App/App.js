@@ -17,8 +17,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      photographersData: [],
-      lang: 'EN',
+      lang: "EN"
     };
     this.changeLang = this.changeLang.bind(this);
   }
@@ -30,7 +29,6 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <Route path="/styleguide/:tabName?" component={StyleGuide} />
         <Aside
           changeLang={this.changeLang}
           lang={this.state.lang}
@@ -39,6 +37,7 @@ export default class App extends Component {
           <Route path="/" exact component={() => <Home lang={this.state.lang} />} />
           <Route path="/team" component={() => <Team lang={this.state.lang} />} />
           <Route path="/person/:id" component={(props) => <Person lang={this.state.lang} {...props} />} />
+          <Route path="/styleguide/:tabName?" component={StyleGuide} />
         </div>
       </Router>
     );

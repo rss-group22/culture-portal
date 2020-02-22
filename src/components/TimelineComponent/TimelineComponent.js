@@ -14,7 +14,6 @@ const TimelineComponent = ({biographyTimeline = []}) => {
     </TimelineItem>
   ));
 
-
   return (
     <Timeline className="timeline" lineColor="#ddd">
       {timelineItems}
