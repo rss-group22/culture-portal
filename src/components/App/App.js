@@ -4,23 +4,19 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable react/no-unused-state */
-import React, { Component, Fragment } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import GetPhotographersData from "../../data/author-information";
-import Aside from "../Aside/Aside.jsx";
-import Main from "../Partial/Main.jsx";
-import Loader from "../../data/loader/loader";
-
-import StyleGuide from "../StyleGuide";
-import "./App.scss";
-import "../../scss/_body.scss";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import StyleGuide from '../StyleGuide';
+import Aside from '../Aside/Aside.jsx';
+import Home from '../Home';
+import Team from '../Team';
+import Person from '../Person';
+import './App.scss';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      photographersData: [],
-      loading: true,
       lang: "EN"
     };
     this.changeLang = this.changeLang.bind(this);
@@ -30,32 +26,18 @@ export default class App extends Component {
     this.setState({ lang: value });
   }
 
-  componentDidMount() {
-    const service = new GetPhotographersData();
-    service.getData().then(res => {
-      this.setState({
-        loading: false,
-        photographersData: res
-      });
-    });
-  }
-
   render() {
-    const { loading } = this.state;
-
     return (
       <Router>
-        <Route path="/styleguide/:tabName?" component={StyleGuide} />
-        <div className="page">
-          {loading && <Loader size={200} />}
-          {
-            !loading && (
-              <>
-                <Aside changeLang={this.changeLang} lang={this.state.lang} />
-                <Main lang={this.state.lang} />
-              </>
-            )
-          }
+        <Aside
+          changeLang={this.changeLang}
+          lang={this.state.lang}
+        />
+        <div id="content">
+          <Route path="/" exact component={() => <Home lang={this.state.lang} />} />
+          <Route path="/team" component={() => <Team lang={this.state.lang} />} />
+          <Route path="/person/:id" component={(props) => <Person lang={this.state.lang} {...props} />} />
+          <Route path="/styleguide/:tabName?" component={StyleGuide} />
         </div>
       </Router>
     );

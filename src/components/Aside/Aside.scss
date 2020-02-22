@@ -1,13 +1,48 @@
-.home__aside {
-    background-color: crimson;
-    width: 15%;
-    box-sizing: border-box;
-    border-right: 1px solid black;
-
-    span {
-        color: blue;
+@import '../../scss/variables';
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 10px;
+  z-index: 3;
+  width: 300px;
+  background: $blue;
+  &__lang {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 4;
+  }
+  &__title {
+    padding: 64px 0;
+    color: $white;
+    font-size: 40px;
+  }
+  &__nav {
+    ul {
+      li {
+        a {
+          display: block;
+          padding: 5px 15px;
+          color: $white;
+          font-size: 18px;
+          font-weight: 700;
+          background: transparent;
+          transition: all .3s;
+          &:hover {
+            text-decoration: none;
+            padding-left: 20px;
+            background: $white;
+            color: $black;
+          }
+          &.active {
+            color: $black;
+            padding-left: 20px;
+          }
+        }
+      }
     }
-    span:hover {
-        color: green;
-    }
+  }
 }
