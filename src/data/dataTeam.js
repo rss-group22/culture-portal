@@ -37,7 +37,7 @@ const dataTeam = [
   },
   {
     id: 5,
-    name: 'Sakovich',
+    name: 'Siarhei',
     surname: 'Iukou',
     userGitHub: 'BlazarQSO',
     urlGitHub: 'https://api.github.com/users/BlazarQSO',

@@ -30,8 +30,8 @@
 
 .team-list {
   display: flex;
-  // justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 
   margin-top: 50px;
   margin-bottom: 50px;
@@ -39,14 +39,13 @@
 
 .team-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
 
-  width: 380px;
+  width: 410px;
   margin: 10px;
   padding: 1.5rem;
 
-  background-color: rgba(76, 82, 85, 0.1);
-  border-radius: 20px;
+  border: 1px solid $gray-300;
 
   &--avatar {
     width: 100px;
@@ -58,6 +57,10 @@
     flex-direction: column;
 
     margin-right: 2rem;
+
+    @media (max-width: 500px) {
+      margin-top: 30px;
+    }
   }
 
   &__social {
@@ -72,8 +75,8 @@
     }
 
     & a:nth-child(2) img {
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       margin-top: 20px;
     }
   }
@@ -92,7 +95,11 @@
 
   @media (max-width: 500px) {
     width: 320px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 }
