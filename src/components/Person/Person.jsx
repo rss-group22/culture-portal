@@ -8,6 +8,7 @@ import dataText from '../../data/dataText.js';
 import PhotographerCard from '../PhotographerCard';
 import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
+import Slider from '../Slider';
 
 export default class Person extends Component {
   constructor(props) {
@@ -16,13 +17,15 @@ export default class Person extends Component {
       author: {}
     }
   }
+
   componentDidMount() {
-    let id = this.props.match.params.id;
+    const {id} = this.props.match.params;
     getData().then(data => {
-      let author = data.filter(item => item.id === +id)[0];
+      const author = data.filter(item => item.id === +id)[0];
       this.setState({ author });
     });
   }
+
   render() {
     const { lang } = this.props;
     const { avatar, photographerName, yearsOfLife, biography, biographyTimeline } = this.state.author;
@@ -31,13 +34,14 @@ export default class Person extends Component {
         <div className="row">
           <div className="col-12">
             <h2>{ dataText[lang].Person.title }</h2>
-              <PhotographerCard
-                avatar={avatar}
-                photographerName={ photographerName }
-                yearsOfLife={ yearsOfLife }
-                biography={ biography }
-              />
-              <TimelineComponent biographyTimeline={biographyTimeline} />
+            <PhotographerCard
+              avatar={avatar}
+              photographerName={photographerName}
+              yearsOfLife={yearsOfLife}
+              biography={biography}
+            />
+            <Slider />
+            <TimelineComponent biographyTimeline={biographyTimeline} />
           </div>
         </div>
       </div>
