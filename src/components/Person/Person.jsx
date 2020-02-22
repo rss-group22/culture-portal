@@ -10,6 +10,7 @@ import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
 import Slider from '../Slider';
 import Map from '../Map';
+import './Person.scss';
 
 export default class Person extends Component {
   constructor(props) {
@@ -43,9 +44,8 @@ export default class Person extends Component {
             />
             <Slider photoGallery={this.state.author.photoGallery} />
             <iframe
+              className="person-video"
               title={photographerName}
-              width="560"
-              height="315"
               src={youtubeUrl}
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
