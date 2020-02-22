@@ -102,7 +102,7 @@ const dataTeamLang = {
     },
     BlazarQSO: {
       name: 'Сяргей',
-      surname: 'Ивков',
+      surname: 'Іўкоў',
       skill1: 'стварэнне роўтынг',
       skill2: 'файлавая структура праекта'
     },
