@@ -9,6 +9,7 @@ import PhotographerCard from '../PhotographerCard';
 import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
 import Slider from '../Slider';
+import Map from '../Map';
 
 export default class Person extends Component {
   constructor(props) {
@@ -42,6 +43,7 @@ export default class Person extends Component {
             />
             <Slider photoGallery={this.state.author.photoGallery} />
             <TimelineComponent biographyTimeline={biographyTimeline} />
+            <Map />
           </div>
         </div>
       </div>
