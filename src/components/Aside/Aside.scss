@@ -21,6 +21,7 @@
     font-size: 40px;
   }
   &__nav {
+    margin-bottom: 200%;
     ul {
       li {
         a {
@@ -44,5 +45,8 @@
         }
       }
     }
+  }
+  &__footer {
+    color: $white;
   }
 }

@@ -40,6 +40,7 @@ export default class Aside extends Component {
             </li>
           </ul>
         </nav>
+        <span className="aside__footer">RSSchool ©2020 | Created by Group 22</span>
       </div>
     );
   }
