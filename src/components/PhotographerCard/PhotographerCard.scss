@@ -1,11 +1,14 @@
 @import "../../scss/variables";
 
-.author{
+.photographer{
   display: flex;
   margin-bottom: 2rem;
   &__photo{
     img {
       width: 100%;
+    }
+    h5{
+      margin-top: 10px;
     }
   }
   &__name {
@@ -15,4 +18,5 @@
     color: $gray-500;
     margin-bottom: 1rem;
   }
+
 }

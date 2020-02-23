@@ -40,10 +40,19 @@ export default class Photographers extends Component {
       return items;
     }
 
-    return items.filter((item) => {
+    const name = items.filter((item) => {
       return item.photographerName
         .toLowerCase().indexOf(term.toLowerCase()) > -1;
     });
+
+    const town = items.filter((item) => {
+      return item.placeOnMap
+        .toLowerCase().indexOf(term.toLowerCase()) > -1;
+    });
+
+    const result = Array.from(new Set(name.concat(town)));
+
+    return result;
   };
 
   render() {
