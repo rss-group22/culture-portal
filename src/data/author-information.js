@@ -57,7 +57,8 @@ export default function photographersData() {
       placeOnMap: {
         lat: 53.9,
         lng: 27.5666700,
-      }
+      },
+      location: 'Минск, Беларусь'
     },
     {
       id: 2,
@@ -123,7 +124,8 @@ export default function photographersData() {
       placeOnMap: {
         lat: 53.9,
         lng: 27.5666700,
-      }
+      },
+      location: 'Минск, Беларусь'
     },
     {
       id: 3,
@@ -181,7 +183,8 @@ export default function photographersData() {
       placeOnMap: {
         lat: 52.2297700,
         lng: 21.0117800,
-      }
+      },
+      location: 'Варшава'
     },
     {
       id: 4,
@@ -227,7 +230,8 @@ export default function photographersData() {
       placeOnMap: {
         lat: 53.1561,
         lng: 24.4513,
-      }
+      },
+      location: 'Волковыск, Беларусь'
     },
     {
       id: 5,
@@ -289,7 +293,8 @@ export default function photographersData() {
       placeOnMap: {
         lat: 53.9,
         lng: 27.5666700,
-      }
+      },
+      location: 'Минск, Беларусь'
     },
     {
       id: 6,
@@ -351,7 +356,8 @@ export default function photographersData() {
       placeOnMap: {
         lat: 53.9,
         lng: 27.5666700,
-      }
+      },
+      location: 'Минск, Беларусь'
     },
     {
       id: 7,
@@ -417,7 +423,8 @@ export default function photographersData() {
       placeOnMap: {
         lat: 53.9,
         lng: 27.5666700,
-      }
+      },
+      location: 'Минск, Беларусь'
     }
   ];
   return new Promise((resolve) => {

@@ -21,7 +21,7 @@ export default class Person extends Component {
   }
 
   componentDidMount() {
-    const {id} = this.props.match.params;
+    const { id } = this.props.match.params;
     getData().then(data => {
       const author = data.filter(item => item.id === +id)[0];
       this.setState({ author });
@@ -35,7 +35,7 @@ export default class Person extends Component {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="title title_bordered">{ dataText[lang].Person.title }</h2>
+            <h2>{dataText[lang].Person.title}</h2>
             <PhotographerCard
               avatar={avatar}
               photographerName={photographerName}
