@@ -9,6 +9,8 @@ import PhotographerCard from '../PhotographerCard';
 import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
 import Slider from '../Slider';
+import Map from '../Map';
+import './Person.scss';
 
 export default class Person extends Component {
   constructor(props) {
@@ -28,7 +30,7 @@ export default class Person extends Component {
 
   render() {
     const { lang } = this.props;
-    const { avatar, photographerName, yearsOfLife, biography, biographyTimeline } = this.state.author;
+    const { avatar, photographerName, yearsOfLife, biography, biographyTimeline, placeOnMap, youtubeUrl } = this.state.author;
     return (
       <div className="container">
         <div className="row">
@@ -40,7 +42,17 @@ export default class Person extends Component {
               yearsOfLife={yearsOfLife}
               biography={biography}
             />
+            <Slider photoGallery={this.state.author.photoGallery} />
+            <iframe
+              className="person-video"
+              title={photographerName}
+              src={youtubeUrl}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
             <TimelineComponent biographyTimeline={biographyTimeline} />
+            <Map placeOnMap={placeOnMap} />
           </div>
         </div>
       </div>

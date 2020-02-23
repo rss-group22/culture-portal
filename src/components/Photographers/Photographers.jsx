@@ -46,7 +46,7 @@ export default class Photographers extends Component {
     });
 
     const town = items.filter((item) => {
-      return item.placeOnMap
+      return item.location
         .toLowerCase().indexOf(term.toLowerCase()) > -1;
     });
 
