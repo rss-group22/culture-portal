@@ -4,7 +4,7 @@ import dataWorklog, { headersTable } from "../../../data/dataWorklog";
 export default class Worklog extends Component {
   renderTableHandle() {
     return headersTable.map(header => {
-      return <th key={header}>{header.toUpperCase()}</th>;
+      return <th key={header}>{header}</th>;
     });
   }
 
@@ -12,7 +12,7 @@ export default class Worklog extends Component {
     return (
       <>
         <h1 className="worklog__title">Worklog</h1>
-        {dataWorklog.map(row => {
+        {dataWorklog.map((row) => {
           const key = 0;
           const {
             name,
@@ -36,6 +36,7 @@ export default class Worklog extends Component {
             <>
               <table className="worklog__table">
                 <tbody>
+                  <h4>{`${name} ${surname}`}</h4>
                   <tr>{this.renderTableHandle()}</tr>
                   <tr key={key + 1}>
                     <td>{time1}</td>

@@ -3,13 +3,12 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import dataText from "../../data/dataText";
 import dataTeam from "../../data/dataTeam";
 import dataTeamLang from "../../data/dataTeamLang";
 import octocatImg from "../../data/image/team/octocat.png";
 import linkedinImg from "../../data/image/team/linkedin.png";
-
-import Worklog from './Worklog/Worklog';
 
 import "./Team.scss";
 
@@ -17,7 +16,7 @@ export default class Team extends Component {
   render() {
     const { lang } = this.props;
     return (
-      <div>
+      <div className="container">
         <h2 className="title-team">{dataText[lang].Team.title}</h2>
         <span className="subtext-team" />
         {dataText[lang].Team.subtext}
@@ -25,9 +24,27 @@ export default class Team extends Component {
         {dataText[lang].Team.text1}
         <p className="text-team" />
         {dataText[lang].Team.text2}
+        <div className="log-links">
+          <span className="log-links__item">
+            <Link
+              className="log-links__link  log-links__link--styleguide"
+              to="/styleguide/typography"
+            >
+              Styleguide
+            </Link>
+          </span>
+          <span className="log-links__item">
+            <Link
+              className="log-links__link  log-links__link--worklog"
+              to="/worklog"
+            >
+              Worklog
+            </Link>
+          </span>
+        </div>
         <ul className="team-list">
           {dataTeam.map(info => {
-            const item = dataTeamLang[lang][info.userGitHub]
+            const item = dataTeamLang[lang][info.userGitHub];
             return (
               <li className="team-item" key={info.id}>
                 <div className="team-item__icons">
