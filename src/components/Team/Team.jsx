@@ -9,13 +9,15 @@ import dataTeamLang from "../../data/dataTeamLang";
 import octocatImg from "../../data/image/team/octocat.png";
 import linkedinImg from "../../data/image/team/linkedin.png";
 
+import Worklog from './Worklog/Worklog';
+
 import "./Team.scss";
 
 export default class Team extends Component {
   render() {
     const { lang } = this.props;
     return (
-      <div className="container">
+      <div>
         <h2 className="title-team">{dataText[lang].Team.title}</h2>
         <span className="subtext-team" />
         {dataText[lang].Team.subtext}
