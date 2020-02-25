@@ -7,7 +7,7 @@ import "./Worklog.scss";
 export default class Worklog extends Component {
   renderTableHandle() {
     return headersTable.map(header => {
-      return <th>{header}</th>;
+      return <th key={shortid.generate()}>{header}</th>;
     });
   }
 
