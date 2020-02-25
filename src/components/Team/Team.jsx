@@ -27,7 +27,7 @@ export default class Team extends Component {
         <div className="log-links">
           <span className="log-links__item">
             <Link
-              className="log-links__link  log-links__link--styleguide"
+              className="log-links__link  log-links__link--styleguide  btn btn-primary"
               to="/styleguide/typography"
             >
               Styleguide
@@ -35,7 +35,7 @@ export default class Team extends Component {
           </span>
           <span className="log-links__item">
             <Link
-              className="log-links__link  log-links__link--worklog"
+              className="log-links__link  log-links__link--worklog  btn btn-primary"
               to="/worklog"
             >
               Worklog
@@ -57,9 +57,11 @@ export default class Team extends Component {
                     <a href={info.urlGitHub}>
                       <img src={octocatImg} alt="github" />
                     </a>
-                    <a className="team-item__social" href={info.urlLinked}>
-                      <img src={linkedinImg} alt="linkedin" />
-                    </a>
+                    {info.urlLinked === "" ? null : (
+                      <a className="team-item__social" href={info.urlLinked}>
+                        <img src={linkedinImg} alt="linkedin" />
+                      </a>
+                    )}
                   </div>
                 </div>
                 <div className="team-item__skills">

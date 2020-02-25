@@ -26,25 +26,32 @@
     }
   }
 
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    padding: 1.5rem;
+  }
+
   &__header th {
     padding: .5rem;
 
-    border: 1px solid $primary;
+    border: 1px solid #dee2e6;
+    text-align: center;
   }
 
   &__table {
     width: 320px;
-    margin-bottom: 30px;
-
-    & tbody {
-      border: 1px solid $primary;
-    }
+    margin-bottom: 40px;
   }
 
   &__rows td {
     padding: .7rem;
 
-    border: 1px solid $primary;
+    border: 1px solid #dee2e6;
   }
 
   &__rows td:nth-child(1) {

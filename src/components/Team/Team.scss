@@ -106,3 +106,16 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 }
+
+.log-links {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+  margin-bottom: 10px;
+
+  &__link {
+    width: 100px;
+    margin-right: 30px;
+  }
+}
