@@ -184,7 +184,7 @@ export default function photographersData() {
         lat: 52.2297700,
         lng: 21.0117800,
       },
-      location: 'Варшава'
+      location: 'Варшава, Польша'
     },
     {
       id: 4,
@@ -429,7 +429,7 @@ export default function photographersData() {
   ];
   return new Promise((resolve) => {
     setTimeout(() => {
-        resolve(data);
+      resolve(data);
     }, 700);
   });
 }
