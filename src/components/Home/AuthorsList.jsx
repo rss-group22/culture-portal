@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import getData from '../../data/author-information';
@@ -26,7 +27,7 @@ export default class AuthorsList extends Component {
         <h2 className="title title_bordered">List of authors</h2>
         {
           authors.length ? authors.map(({ id, avatar, photographerName, yearsOfLife, biography }) => (
-            <Link to={`/person/${id}`} className="authors-list__author d-flex" key={id}>
+            <Link to={`/person/${id}`} className="authors-list__author d-flex" key={id} onClick={this.props.changeId.bind(this, id)}>
               <div className="col-md-3 col-sm-12 text-center">
                 <img src={avatar} alt="" />
               </div>
@@ -42,4 +43,3 @@ export default class AuthorsList extends Component {
     );
   }
 }
-
