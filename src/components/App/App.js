@@ -1,3 +1,4 @@
+/* eslint-disable react/no-access-state-in-setstate */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable import/extensions */
 /* eslint-disable react/sort-comp */
@@ -8,7 +9,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import StyleGuide from "../StyleGuide";
 import Aside from "../Aside/Aside.jsx";
-import Home from '../Home';
+import Home from "../Home";
 import Team from "../Team";
 import Person from "../Person";
 import Photographers from "../Photographers";
@@ -19,24 +20,41 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lang: "EN"
+      lang: "EN",
+      id: 1
     };
     this.changeLang = this.changeLang.bind(this);
+    this.changeId = this.changeId.bind(this);
+  }
+
+  componentWillMount() {
+    const id = new Date().getDay();
+    this.state.id = id || 7;
   }
 
   changeLang(value) {
     this.setState({ lang: value });
   }
 
+  changeId(value) {
+    this.setState({ id: value });
+  }
+
   render() {
     return (
       <Router>
-        <Aside changeLang={this.changeLang} lang={this.state.lang} />
+        <Aside
+          changeLang={this.changeLang}
+          lang={this.state.lang}
+          id={this.state.id}
+        />
         <div id="content">
           <Route
             path="/"
             exact
-            component={() => <Home lang={this.state.lang} />}
+            component={() => (
+              <Home lang={this.state.lang} changeId={this.changeId} />
+            )}
           />
           <Route
             path="/team"
