@@ -4,9 +4,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import PhotographerCard from '../PhotographerCard';
 import dataText from '../../data/dataText';
-import getData from '../../data/author-information'
+import getData from '../../data/author-information';
 
 import './Photographers.scss';
 
@@ -65,9 +66,9 @@ export default class Photographers extends Component {
       const { id, ...itemProps } = item;
 
       return (
-        <div key={id} className="photographer__item">
+        <Link to={`/person/${id}`} key={id} className="photographer__item">
           <PhotographerCard {...itemProps} />
-        </div>
+        </Link>
       );
     }) : null
 
