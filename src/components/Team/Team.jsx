@@ -20,7 +20,9 @@ export default class Team extends Component {
         <span className="subtext-team" />
         {dataText[lang].Team.subtext}
         <p className="text-team" />
-        {dataText[lang].Team.text}
+        {dataText[lang].Team.text1}
+        <p className="text-team" />
+        {dataText[lang].Team.text2}
         <ul className="team-list">
           {dataTeam.map(info => {
             const item = dataTeamLang[lang][info.userGitHub]
@@ -44,8 +46,11 @@ export default class Team extends Component {
                 <div className="team-item__skills">
                   <h5>{`${item.name} ${item.surname}`}</h5>
                   <ul className="team-item__skills--list">
-                    <li>{`- ${item.skill1}`}</li>
-                    <li>{`- ${item.skill2}`}</li>
+                    <li>{`${item.skill1}`}</li>
+                    <li>{`${item.skill2}`}</li>
+                    <li>{`${item.skill3}`}</li>
+                    <li>{`${item.skill4}`}</li>
+                    <li>{`${item.skill5}`}</li>
                   </ul>
                 </div>
               </li>
