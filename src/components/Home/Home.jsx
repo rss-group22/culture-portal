@@ -16,7 +16,7 @@ export default class Home extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {this.setState({titleVisible: true})}, 0);
+    this.setState({titleVisible: true});
   }
 
   render() {
