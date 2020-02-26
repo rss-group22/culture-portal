@@ -15,17 +15,33 @@ import Person from "../Person";
 import Photographers from "../Photographers";
 import Worklog from "../Team/Worklog/Worklog";
 import "./App.scss";
+import AsideMobile from "../Aside/AsideMobile";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       lang: "EN",
-      id: 1
+      id: 1,
+      showAside: false
     };
     this.changeLang = this.changeLang.bind(this);
     this.changeId = this.changeId.bind(this);
   }
+
+  aside = document.getElementById('aside');
+
+  onOpenAside = () => {
+    this.setState(({
+      showAside: true
+    }));
+  };
+
+  onCloseAside = () => {
+    this.setState(({
+      showAside: false
+    }));
+  };
 
   componentWillMount() {
     const id = new Date().getDay();
@@ -47,6 +63,11 @@ export default class App extends Component {
           changeLang={this.changeLang}
           lang={this.state.lang}
           id={this.state.id}
+          onClose={this.onCloseAside}
+          show={this.state.showAside}
+        />
+        <AsideMobile
+          onOpen={this.onOpenAside}
         />
         <div id="content">
           <Route
