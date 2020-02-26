@@ -12,11 +12,13 @@ const dataText = {
       aboutPortal: {
         title: 'About portal',
         text: [
-          "Photo art originates in 1839, when the first daguerreotype was made in Paris.",
-          "And already in the 21st century on our portal you can choose a photographer to your taste, get acquainted with his work, decide on the format of photography and its location.",
-          "Do you want to find in our catalog the best artist of your dreams about the most beautiful photo shoot, which will correspond not only to your ideas about the style, but also fit into the budget? Then choose it based on the quality of photos, real customer reviews and service prices. To do this, we tried to make the most convenient search, with the ability to sort by price, reviews and cities.",
-          "We also advise you to pay attention to the “photographer of the day” section, it will be useful for beginners of our site and not only  In it, according to the majority of visitors to the site, the best photographer and his work are determined every day.",
-          "Evaluate, enjoy, choose and capture the best moments of your life!"
+          "It is difficult for a modern person to imagine his life without a photograph - a miracle with the help of which it is possible to revive in memory that which in reality no longer exists.",
+          "Photo art originates in 1939, when the French artist Louis Daguerre introduced the process of obtaining a daguerreotype - an image on a photosensitive metal plate.",
+          "Today, photography is available to everyone. In the digital age, taking pictures or selfies is also possible on a simple mobile phone, which will then make people smile, feel sad, or hold their breath.",
+          "Our portal has gathered the best photographers of Belarus from different times and eras. On the pages of the portal you can find a historical summary of the life and work of these people, see their best works. Also, on the “Find a Photographer” page, you can find the photographer you are interested in by using a convenient search.",
+          "On the page «Photographer of the Day» a photographer is presented who enjoys the highest interest among users of the portal (based on the results of views).",
+          "We have created this portal for you with love. You can find out about the development team on the Team page. Also, this page provides information about the style of the portal and the work done by each member of our team.",
+          "Rate, enjoy, keep the best moments of your life!"
         ]
       }
     },
@@ -46,11 +48,13 @@ const dataText = {
       aboutPortal: {
         title: 'О портале',
         text: [
-          "Фотоискусство берет свое начало в 1839 году, когда в Париже был сделан первый дагерротип.",
-          "А уже в 21 веке на нашем портале Вы сможете подобрать фотографа на Ваш вкус, ознакомиться с его работами, определиться с форматом фотосъемки и ее местом проведения.",
-          "Хотите найти в нашем каталоге лучшего исполнителя Вашей мечты о самой прекрасной фотосессии, который будет соответствовать не только Вашим представлениям о стиле, но и впишется в бюджет? Тогда выбирайте его на основе качества фотографий, реальных отзывов от клиентов и цен на услуги. Для этого мы постарались сделать максимально удобный поиск, с возможностью сортировки по ценам, отзывам и городам.",
-          "Также советуем обратить внимание на рубрику «фотограф дня», она будет полезна для новичков нашего сайта и не только J  В ней каждый день по мнению большинства посетителей  сайта определяется лучший фотограф и его работы.",
-          "Оценивайте, наслаждайтесь, выбирайте и запечатлейте лучшие моменты своей жизни!"
+          "Современному человеку трудно представить свою жизнь без фотографии - чуда, с помощью которого можно воскресить в памяти то, чего в реальности уже нет.",
+          "Фотоискусство берет свое начало в 1939 году, когда французский художник Луи Дагер представил процесс получения дагеротипа – изображения на светочувствительной металлической пластинке.",
+          "Сегодня фотография доступна каждому. В век цифровых технологий, делать снимки или селфи можно и на простой мобильный телефон, которые потом заставят людей улыбнуться, взгрустнуть или затаить дыхание.",
+          "Наш портал собрал лучших фотографов Беларуси разных времен и эпох. На страницах портала Вы сможете найти историческую сводку о жизни и творчестве этих людей, посмотреть их лучшие работы. Так же, на странице «Найти фотографа», Вы сможете найти интересующего Вас фотографа, воспользовавшись удобным поиском.",
+          "На странице «Фотограф дня» представлен фотограф, который пользуется наивысшим интересом у пользователей портала (по результатам просмотров).",
+          "Мы создавали этот портал для Вас с любовью. Вы сможете узнать о команде разработчиков на странице «Команда». Так же, на данной странице представлена информация о стиле портала и проделанной работе каждого члена нашей команды.",
+          "Оценивайте, наслаждайтесь, сохраняйте лучшие моменты своей жизни!"
         ]
       }
     },
@@ -80,11 +84,13 @@ const dataText = {
       aboutPortal: {
         title: 'Аб партале',
         text: [
-          "Фотамастацтва бярэ свой пачатак у 1839 годзе, калі ў Парыжы быў зроблены першы дагерротип.",
-          "А ўжо ў 21 стагоддзі на нашым партале вы зможаце падабраць фатографа на Ваш густ, азнаёміцца з яго працамі, вызначыцца з фарматам фотаздымкі і яе месцам правядзення.",
-          "Хочаце знайсці ў нашым каталогу лепшага выканаўцы вашай мары аб самай выдатнай фотасесіі, які будзе адпавядаць не толькі вашым уяўленням аб стылі, але і ўпішацца ў бюджэт? Тады выбірайце яго на аснове якасці фатаграфій, рэальных водгукаў ад кліентаў і цэн на паслугі. Для гэтага мы пастараліся зрабіць максімальна зручны пошук, з магчымасцю сартавання па цэнах, водгуках і гарадах.",
-          "Таксама раім звярнуць увагу на рубрыку \"фатограф дня\", яна будзе карысная для пачаткоўцаў нашага сайта і не толькі ў ёй кожны дзень на думку большасці наведвальнікаў сайта вызначаецца лепшы фатограф і яго працы.",
-          "Ацэньвайце, атрымлівайце асалоду ад, выбірайце і захаваць лепшыя моманты свайго жыцця!"
+          "Сучаснаму чалавеку цяжка ўявіць сваё жыццё без фатаграфіі - цуду, з дапамогай якога можна ўваскрэсіць у памяці тое, чаго ў рэальнасці ўжо няма.",
+          "Фотамастацтва бярэ свой пачатак ў 1939 годзе, калі французскі мастак Луі Дагер прадставіў працэс атрымання дагератыпаў - выявы на святлоадчувальнай металічнай пласцінцы.",
+          "Сёння фотаздымак даступная кожнаму. У стагоддзе лічбавых тэхналогій, рабіць здымкі або сэлф можна і на просты мабільны тэлефон, якія потым прымусяць людзей ўсміхнуцца, взгрустнуть або затаіць дыханне.",
+          "Наш партал сабраў лепшых фатографаў Беларусі розных часоў і эпох. На старонках партала Вы зможаце знайсці гістарычную зводку пра жыццё і творчасць гэтых людзей, паглядзець іх лепшыя працы. Гэтак жа, на старонцы «Знайсці фатографа», Вы зможаце знайсці які цікавіць Вас фатографа, скарыстаўшыся зручным пошукам.",
+          "На старонцы «Фатограф дня» прадстаўлены фатограф, які карыстаецца найвышэйшым цікавасцю ў карыстальнікаў партала (па выніках праглядаў).",
+          "Мы стваралі гэты партал для Вас з любоўю. Вы зможаце даведацца аб камандзе распрацоўшчыкаў на старонцы «Каманда». Гэтак жа, на дадзенай старонцы прадстаўлена інфармацыя аб стылі партала і праведзенай працы кожнага члена нашай каманды.",
+          "Ацэньвайце, атрымлівайце асалоду, захоўвайце лепшыя моманты свайго жыцця!"
         ]
       }
     },
