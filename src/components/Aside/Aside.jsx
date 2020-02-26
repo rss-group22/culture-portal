@@ -16,12 +16,22 @@ export default class Aside extends Component {
   }
 
   render() {
-    const { lang } = this.props;
+    const { lang, onClose, show } = this.props;
+
+    let classNames = 'aside';
+
+    if (show) {
+      classNames += ' openAside';
+    } else {
+      classNames += ' closeAside';
+    }
+
     return (
-      <div className="aside">
+      <div className={classNames}>
         <Language
           changeLang={this.props.changeLang}
         />
+        <input type="button" value="Close menu" className="aside__close_btn btn btn-secondary" onClick={onClose} />
         <h2 className="aside__title">{dataText[lang].Aside.title}</h2>
         <nav className="aside__nav">
           <ul>
@@ -29,7 +39,7 @@ export default class Aside extends Component {
               <NavLink to="/" exact activeClassName="active">{dataText[lang].Aside.nav1}</NavLink>
             </li>
             <li>
-              <NavLink to={`/person/${this.props.id}`} activeClassName="active">{ dataText[lang].Aside.nav2 }</NavLink>
+              <NavLink to={`/person/${this.props.id}`} activeClassName="active">{dataText[lang].Aside.nav2}</NavLink>
             </li>
             <li>
               <NavLink to="/team" activeClassName="active">{dataText[lang].Aside.nav3}</NavLink>
