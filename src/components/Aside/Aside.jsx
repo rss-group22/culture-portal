@@ -18,34 +18,26 @@ export default class Aside extends Component {
   render() {
     const { lang, onClose, show } = this.props;
 
-    let classNames = 'aside';
-
-    if (show) {
-      classNames += ' openAside';
-    } else {
-      classNames += ' closeAside';
-    }
-
     return (
-      <div className={classNames}>
-        <Language
-          changeLang={this.props.changeLang}
-        />
-        <input type="button" value="Close menu" className="aside__close_btn btn btn-secondary" onClick={onClose} />
+      <div className={`aside ${show ? 'openAside' : 'closeAside'}`}>
+        <div className="aside__header d-flex justify-content-between align-items-center">
+          <Language changeLang={this.props.changeLang} />
+          <button className="aside__close-btn close" onClick={onClose}>&times;</button>
+        </div>
         <h2 className="aside__title">{dataText[lang].Aside.title}</h2>
         <nav className="aside__nav">
           <ul>
             <li>
-              <NavLink to="/" exact activeClassName="active">{dataText[lang].Aside.nav1}</NavLink>
+              <NavLink to="/" exact activeClassName="active" onClick={onClose}>{dataText[lang].Aside.nav1}</NavLink>
             </li>
             <li>
-              <NavLink to={`/person/${this.props.id}`} activeClassName="active">{dataText[lang].Aside.nav2}</NavLink>
+              <NavLink to={`/person/${this.props.id}`} activeClassName="active" onClick={onClose}>{dataText[lang].Aside.nav2}</NavLink>
             </li>
             <li>
-              <NavLink to="/team" activeClassName="active">{dataText[lang].Aside.nav3}</NavLink>
+              <NavLink to="/team" activeClassName="active" onClick={onClose}>{dataText[lang].Aside.nav3}</NavLink>
             </li>
             <li>
-              <NavLink to="/photographers" activeClassName="active">{dataText[lang].Aside.nav4}</NavLink>
+              <NavLink to="/photographers" activeClassName="active" onClick={onClose}>{dataText[lang].Aside.nav4}</NavLink>
             </li>
           </ul>
         </nav>

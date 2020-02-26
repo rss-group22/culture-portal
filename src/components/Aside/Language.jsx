@@ -1,7 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
-import './Language.scss';
 
 export default class Language extends Component {
   constructor(props) {
@@ -16,7 +15,7 @@ export default class Language extends Component {
   render() {
     return (
       <div className="aside__lang">
-        <select onChange={this.onChange}>
+        <select onChange={this.onChange} className="custom-select">
           <option>EN</option>
           <option>RU</option>
           <option>BY</option>
