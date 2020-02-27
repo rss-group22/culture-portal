@@ -144,7 +144,7 @@ const authorInformationLang = {
                 },
                 {
                     year: '1902 - 1904',
-                    label: 'He worked as an inspector of parish schools of the Disney county'
+                    label: 'He worked as an inspector of parish schools of the Disnen county'
                 },
                 {
                     year: '1904-1947',
@@ -710,7 +710,7 @@ const authorInformationLang = {
                 },
                 {
                     year: '1910',
-                    label: 'Упершыню ўдзельнічаў у сусветнай фотавыставе Брусэлі'
+                    label: 'Упершыню ўдзельнічаў у сусветнай фотавыставе ў Брусэлі'
                 },
                 {
                     year: '1911',
@@ -744,7 +744,7 @@ const authorInformationLang = {
                 },
                 {
                     year: '1902 - 1904',
-                    label: 'Працаваў інспектарам царкоўна-прыходскіх школ Дзісенскага павета'
+                    label: 'Працаваў інспектарам царкоўна-прыходскіх школ Дзісненскага павета'
                 },
                 {
                     year: '1904-1947',
