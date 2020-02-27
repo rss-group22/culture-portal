@@ -8,7 +8,6 @@ import './PhotographerCard.scss';
 const PhotographerCard = ({
   avatar, photographerName, year, biography, location
 }) => {
-  // TODO add props to necessary blocks
   return (
     <div className="photographer row">
       <div className="col-md-3 photographer__photo">

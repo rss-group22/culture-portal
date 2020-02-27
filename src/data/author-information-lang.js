@@ -5,33 +5,37 @@ const authorInformationLang = {
             biography: 'Mikhail Vladimirovich Anempodistov was born on March 16, 1964 in Minsk in a Russian family. The surname of "Anempodists" is formed on the male name of "Anempodists", which is available in Orthodox Saints. As a child, Michael dreamed of becoming a zoologist or biologist, traveler and treasure seeker. He began to draw well in childhood - Michal posted his first drawings in his encyclopedias about animals that he made: he made pages with actually painted mollusks, various other animals, and personally signed them.',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1965 - 1985',
+                    label: 'He studied at the children\'s folk art studio at the Palace of Culture of Textile Workers in Minsk.'
                 },
                 {
-                    label: ''
+                    year: '1979 - 1983',
+                    label: 'He studied and graduated from the Minsk Art College (now the Minsk State Art College named after A.K. Glebov), where freedom and pluralism reigned, and the school itself became a noticeable smithy of creative personalities.'
                 },
                 {
-                    label: ''
+                    year: '1982',
+                    label: 'Participated in the youth public association "Belarusian Workshop"'
                 },
                 {
-                    label: ''
+                    year: '1983 - 1985',
+                    label: 'He served in the Armed Forces of the USSR'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
             ],
             location: 'Minsk, Belarus'
@@ -41,39 +45,45 @@ const authorInformationLang = {
             biography: 'Mikhail Grigoryevich Barazna (born November 20, 1962, Rakushava village, Kruglyansky district, Mogilev region) is a Belarusian art critic, art critic, and photo artist. Candidate of Art History (1998). Rector of the Belarusian State Academy of Arts. Honorary Member of the Russian Academy of Arts.',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1985',
+                    label: 'Graduated from the Art and Industry Department of the Belarusian State Theater and Art Institute'
                 },
                 {
-                    label: ''
+                    year: '1986 - 1992',
+                    label: 'Artistic editor of the publishing house "Belarus"'
                 },
                 {
-                    label: ''
+                    year: '1992',
+                    label: 'Teaches at the Belarusian State Academy of Arts'
                 },
                 {
-                    label: ''
+                    year: '1996 - 1998',
+                    label: 'Acting Head of the Department of History and Theory of Art'
                 },
                 {
-                    label: ''
+                    year: '1999',
+                    label: 'Vice-rector for scientific and creative work'
                 },
                 {
-                    label: ''
+                    year: '2010',
+                    label: 'Rector of the Belarusian State Academy of Arts'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
             ],
             location: 'Minsk, Belarus'
@@ -83,33 +93,39 @@ const authorInformationLang = {
             biography: 'Jan Bulgak (October 6, 1876, estate near the village of Ostashino, Novogrudok Uyezd - February 4, 1950, Gizycka) - Vilnius master of local history photography, “father of Polish photography”, one of the pioneers of Polish art photography, ethnographer, folklorist. His work is considered part of the common cultural heritage of Belarus, Lithuania and Poland.',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1897',
+                    label: 'He graduated from the classical gymnasium in Vilnius'
                 },
                 {
-                    label: ''
+                    year: '1897-1899',
+                    label: 'He entered the Faculty of Philosophy of the Jagiellonian University in Krakow'
                 },
                 {
-                    label: ''
+                    year: '1905',
+                    label: 'He took his first photos on a camera given to his wife'
                 },
                 {
-                    label: ''
+                    year: '1908',
+                    label: 'Created his own photo laboratory at the estate of Parecica'
                 },
                 {
-                    label: ''
+                    year: '1910',
+                    label: 'First participated in the world photo exhibition in Brussels'
                 },
                 {
-                    label: ''
+                    year: '1911',
+                    label: 'Organized a photo exhibition in Minsk. Started collaborating with Vilensky weekly'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 }
             ],
             location: 'Warsaw, Poland'
@@ -119,24 +135,29 @@ const authorInformationLang = {
             biography: 'Born May 15, 1875 in the town of Bolshaya Berestovitsa, Grodno district, in a poor large family of a deacon of a local church. In 1897 he graduated from the Vilna Theological Seminary, after which he married the daughter of a priest Dmitry Nekrasov, who served in Vera in Vilnius. In the same year, he began his career as a psalm-reader at a church in the village of Mostovlyany in Belostochchina. On April 6, 1899, the vacant priestly place in the village of Kosuta, Vileika County, was ceded to a young psalm-reader. On May 25, he was ordained a priest and was appointed rector of Kasutsky St. Peter and Paul Church',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1897',
+                    label: 'Graduated from Vilna Theological Seminary'
                 },
                 {
-                    label: ''
+                    year: '1897-1899',
+                    label: 'He began his career as a psalm-reader at a church in the village of Mostovlyany in Bialystok'
                 },
                 {
-                    label: ''
+                    year: '1902 - 1904',
+                    label: 'He worked as an inspector of parish schools of the Disnen county'
                 },
                 {
-                    label: ''
+                    year: '1904-1947',
+                    label: 'He led the parish of St. Nicholas Church in the village of Uzmeny (today - Miorsky District), where he served for 43 years'
                 },
                 {
-                    label: ''
+                    year: '1947',
+                    label: 'He served as rector of churches in the town of Krevo, the village of Sobakintsy (now Pervomayskoye) in the Grodno region'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'test'
                 }
             ],
             location: 'Volkovysk, Belarus'
@@ -146,36 +167,41 @@ const authorInformationLang = {
             biography: 'Lev Urbanavich Dashkevich (February 12, 1882, Minsk - December 4, 1957, Minsk) - Belarusian photo artist, scientist, inventor, publicist, teacher. It came from a gentry clan coat of arms “Leliva”.',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1882 - 1886',
+                    label: 'He studied at the Minsk male gymnasium and the Vilnius dormitory-Kankwitz'
                 },
                 {
-                    label: ''
+                    year: '1903-1904',
+                    label: 'He studied at the medical faculty of the University of Warsaw. Arrested and expelled from a university without the right to enter universities of the Russian Empire for participating in a student strike'
                 },
                 {
-                    label: ''
+                    year: '1906 - 1911',
+                    label: 'Studied in France - at the Faculty of Philology (La faculté de lettres) of the University of Burgundy (Dijon)'
                 },
                 {
-                    label: ''
+                    year: '1908-1909',
+                    label: 'He studied at the photographic department of the Higher School of Graphic Arts in Paris'
                 },
                 {
-                    label: ''
+                    year: '1911',
+                    label: 'Start typing in scientific journals.'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'testtest'
                 },
                 {
-                    label: ''
+                    label: 'testtest'
                 },
                 {
-                    label: ''
+                    label: 'testtest'
                 },
                 {
-                    label: ''
+                    label: 'testtest'
                 },
                 {
-                    label: ''
+                    label: 'testtest'
                 },
             ],
             location: 'Minsk, Belarus'
@@ -185,36 +211,41 @@ const authorInformationLang = {
             biography: 'Arthur Aleksandrovich Klinov - Belarusian artist, akcyyanist, designer, photographer, writer, screenwriter, editor-in-chief of pARTisan magazine',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1976 - 1980',
+                    label: 'Studied at children\'s art school No. 1 in Minsk'
                 },
                 {
-                    label: ''
+                    year: '1978 - 1982',
+                    label: 'Studied at art studios and workshops of Vladimir Tkachenko, Richard May and Vitaliy Charnabrysava'
                 },
                 {
-                    label: ''
+                    year: '1982 - 1987',
+                    label: 'He studied at the Faculty of Architecture of the Belarusian Polytechnic Institute and received a specialty "Urban Planning"'
                 },
                 {
-                    label: ''
+                    year: '1982 - 1984',
+                    label: 'Participated in the youth public association "Belarusian Workshop"'
                 },
                 {
-                    label: ''
+                    year: '1984',
+                    label: 'He became a member of the first picket that the Maystrovians organized in protest against the destruction of the old Minsk theater building and were arrested by the police'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
             ],
             location: 'Minsk, Belarus'
@@ -224,39 +255,45 @@ const authorInformationLang = {
             biography: 'Georgy Leonardovich Likhtarovich (December 6, 1947, Minsk) - Belarusian photographer, writer. Member of the Belarusian Union of Designers (2000). Member of the Belarusian Union of Writers (2006).',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1965 - 1966',
+                    label: 'He worked as an assistant cameraman at the Minsk studio of popular science and chronicles-documentaries'
                 },
                 {
-                    label: ''
+                    year: '1966 - 1968',
+                    label: 'He served in the army in the village of Pechi, military unit 43064'
                 },
                 {
-                    label: ''
+                    year: '1969 - 1972',
+                    label: 'He worked as a photographer at the Institute of Art Studies, Ethnography and Folklore of the Academy of Sciences. Illustrated the first volumes of the “Code of Monuments of the History and Culture of Belarus”'
                 },
                 {
-                    label: ''
+                    year: '1970 - 1974',
+                    label: 'Studied at the Faculty of Architecture at BPI'
                 },
                 {
-                    label: ''
+                    year: '1974 - 1992',
+                    label: 'Worked as a photojournalist in state publishing houses'
                 },
                 {
-                    label: ''
+                    year: '1992',
+                    label: 'At creative work'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'test'
                 },
                 {
-                    label: ''
+                    label: 'testtest'
                 },
                 {
-                    label: ''
+                    label: 'testtest'
                 },
                 {
-                    label: ''
+                    label: 'testtest'
                 },
             ],
             location: 'Minsk, Belarus'
@@ -268,33 +305,37 @@ const authorInformationLang = {
             biography: 'Михаил Владимирович Анемподистов родился 16 марта 1964 г. в Минске в русской семье. Фамилия «Анемподистов» образовано от мужского имени «Анемподистов», которое имеется в православных святцах. В детстве Михаил мечтал стать зоологом или биологом, путешественником и искателем сокровищ. Хорошо рисовать начал в детстве - свои первые рисунки Михал размещал в своих энциклопедиях о животных, которые делал сам: делал страницы с собственно нарисованными моллюсками, другими различными животными и лично подписывал.',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1965 - 1985',
+                    label: 'Учился в детской народной изостудии при Дворце культуры текстильщиков в Минске.'
                 },
                 {
-                    label: ''
+                    year: '1979 - 1983',
+                    label: 'Учился и окончил Минское художественное училище (ныне - Минский государственный художественный колледж имени А. К. Глебова) , где царила свобода и плюрализм, а само училище стала заметным кузницей творческих личностей.'
                 },
                 {
-                    label: ''
+                    year: '1982',
+                    label: 'Участвовал в молодежном общественном объединении «Белорусский Мастеровой»'
                 },
                 {
-                    label: ''
+                    year: '1983 - 1985',
+                    label: 'Прошел срочную службу в Вооруженных силах СССР'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'Выставка объединения «Галина» на Республиканской выставке плаката (г. Минск, Беларусь)'
                 },
                 {
-                    label: ''
+                    label: 'Выставка «Мы» (г. Минск, Беларусь)'
                 },
                 {
-                    label: ''
+                    label: 'Выставка в «Pilango Gallery» (г. Берлин , Германия )'
                 },
                 {
-                    label: ''
+                    label: 'Выставка в галерее «Dzyga» (г. Львов , Украина )'
                 },
                 {
-                    label: ''
+                    label: 'Фотовыставка «Under Ground» (г. Торунь , Польша )'
                 },
             ],
             location: 'Минск, Беларусь'
@@ -304,39 +345,45 @@ const authorInformationLang = {
             biography: 'Михаил Григорьевич Баразна (род. 20 ноября 1962 , д. Ракушава Круглянского района Могилевской области) - белорусский искусствовед, художественный критик, фотохудожник. Кандидат искусствоведения (1998). Ректор Белорусского государственной академии искусств. Почетный член Российской академии художеств.',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1985',
+                    label: 'Окончил художественно-промышленный факультет Белорусского государственного театрально-художественного института'
                 },
                 {
-                    label: ''
+                    year: '1986 - 1992',
+                    label: 'Художественный редактор издательства «Беларусь»'
                 },
                 {
-                    label: ''
+                    year: '1992',
+                    label: 'Преподает в Белорусском государственной академии искусств'
                 },
                 {
-                    label: ''
+                    year: '1996 - 1998',
+                    label: 'И.о. заведующего кафедрой истории и теории искусств'
                 },
                 {
-                    label: ''
+                    year: '1999',
+                    label: 'Проректор по научно-творческой работе'
                 },
                 {
-                    label: ''
+                    year: '2010',
+                    label: 'Ректор Белорусской государственной академии искусств'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: '«Один в городе». Музей Белорусского государственной академии искусств, Минск'
                 },
                 {
-                    label: ''
+                    label: '«Моя Америка». Иностранное общество земли Северный Рейн-Вестфалия, Дортмунд (Германия)'
                 },
                 {
-                    label: ''
+                    label: '«Preview». М-Галерея Института имени Гёте в Минске'
                 },
                 {
-                    label: ''
+                    label: '«Заславский променад». Заславский историко-культурный музей-заповедник, Заславль'
                 },
                 {
-                    label: ''
+                    label: '«Интенции». Республиканская художественная галерея, Минск'
                 },
             ],
             location: 'Минск, Беларусь'
@@ -346,33 +393,39 @@ const authorInformationLang = {
             biography: 'Ян Булгак (6 октября 1876 , имение около д. Осташино Новогрудского уезда - 4 февраля 1950 , Гижыцка) - виленский мастер художественной краеведческой фотографии, «отец польской фотографии», один из пионеров польской художественной фотографии, этнограф, фольклорист. Его творчество считается частью общей культурного наследия Беларуси, Литвы и Польши.',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1897',
+                    label: 'Окончил классическую гимназию в Вильнюсе'
                 },
                 {
-                    label: ''
+                    year: '1897-1899',
+                    label: 'Поступил на факультет философии Ягеллонского университета в Кракове'
                 },
                 {
-                    label: ''
+                    year: '1905',
+                    label: 'Сделал первые свои фотографии на подаренный его жене фотоаппарат'
                 },
                 {
-                    label: ''
+                    year: '1908',
+                    label: 'Создал свою фотолабораторию в усадьбе Пярэсицы'
                 },
                 {
-                    label: ''
+                    year: '1910',
+                    label: 'Впервые участвовал в мировой фотовыставке Брюсселе'
                 },
                 {
-                    label: ''
+                    year: '1911',
+                    label: 'Организовал фотовыставку в Минске. Начал сотрудничать с «Виленским еженедельником»'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: '«Вестник фотографий». Журнал в котором Ян Булгак помещал свои фотографии'
                 },
                 {
-                    label: ''
+                    label: '«Литва в съемках Яна Булгака». Альбом состоящий из 6 томов в котором содержалось более 270 снимков'
                 },
                 {
-                    label: ''
+                    label: '«Варшава. 1945 г. в образах Яна Булгака». В Варшаве, при помощи директора Народного музея Станислава Лоренца , произошла и первая послевоенная выставка Я. Булгака'
                 }
             ],
             location: 'Варшава, Польша'
@@ -382,24 +435,29 @@ const authorInformationLang = {
             biography: 'Родился 15 моя 1875 года в местечке Большая Берестовица Гродненского уезда, в бедной многодетной семье диакона местной церкви. В 1897 году окончил Виленскую духовную семинарию, после чего женился на дочери священника Дмитрия Некрасова, который служил в г. Вильнюс, Верой. В тот же год начал свой служебный путь псаломщиком при церкви в деревне Мостовляны на Белосточчине. 6 апреля 1899 года, вакантное место священника в селе Косута Вилейского уезда было уступлена молодому псаломщик. 25 мая он был рукоположен в сан иерея и назначен настоятелем Касуцкай Свято-Петропавловской церкви',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1897',
+                    label: 'Окончил Виленскую духовную семинарию'
                 },
                 {
-                    label: ''
+                    year: '1897-1899',
+                    label: 'Начал свой служебный путь псаломщиком при церкви в деревне Мостовляны на Белосточчине'
                 },
                 {
-                    label: ''
+                    year: '1902 - 1904',
+                    label: 'Работал инспектором церковно-приходских школ Дисненского уезда'
                 },
                 {
-                    label: ''
+                    year: '1904-1947',
+                    label: 'Возглавил приход Свято-Николаевской церкви в деревне Узмёны (сегодня - Миорский район), где прослужил 43 года'
                 },
                 {
-                    label: ''
+                    year: '1947',
+                    label: 'Служил настоятелем церквей в городке Крево, д. Собакинцы (ныне Первомайское) Гродненской области'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'Снимал все, что было вокруг, все события, которые наблюдал: храмы, гостей, уборку урожая, строительство дома, природные явления'
                 }
             ],
             location: 'Волковыск, Беларусь'
@@ -409,36 +467,41 @@ const authorInformationLang = {
             biography: 'Лев Урбанавич Дашкевич (12 февраля 1882 , Минск  - 4 декабря 1957 , Минск) - белорусский фотохудожник, ученый, изобретатель, публицист, педагог. Происходил из шляхетского рода герба «Лелива».',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1882 - 1886',
+                    label: 'Учился в Минской мужской гимназии и Виленском общежитии-канквице'
                 },
                 {
-                    label: ''
+                    year: '1903-1904',
+                    label: 'Учился на медицинском факультете Варшавского университета. За участие в студенческой забастовке арестован и исключен из университета без права поступления в вузы Российской империи'
                 },
                 {
-                    label: ''
+                    year: '1906 - 1911',
+                    label: 'Учился в Франции  - на факультете филологии (La faculté de lettres) Университета Бургундии (Дижон)'
                 },
                 {
-                    label: ''
+                    year: '1908-1909',
+                    label: 'Занимался на фотографическом отделении Высшей школы графических искусств в Париже'
                 },
                 {
-                    label: ''
+                    year: '1911',
+                    label: 'Начал печататься в научных изданиях (La Nature. Paris)'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: '«Географ Европы». Издание в котором печатались фотографические работы Дашкевича'
                 },
                 {
-                    label: ''
+                    label: '«Начальная География». Издание в котором печатались фотографические работы Дашкевича'
                 },
                 {
-                    label: ''
+                    label: '«Произведения». Издание в котором печатались фотографические работы Дашкевича'
                 },
                 {
-                    label: ''
+                    label: '«Советская Беларусь: Фотоальбом». Издание в котором печатались фотографические работы Дашкевича'
                 },
                 {
-                    label: ''
+                    label: '«Всебелорусской выставке краеведческих фотографий и зарисовок». Работы Дашкевича участвовали в этой выставке в Миске'
                 },
             ],
             location: 'Минск, Беларусь'
@@ -448,36 +511,41 @@ const authorInformationLang = {
             biography: 'Артур Александрович Клинов - белорусский художник, акцыянист, дизайнер, фотограф, литератор, сценарист, главный редактор журнала «pARTisan»',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1976 - 1980',
+                    label: 'Учился в детской художественной школе № 1 в Минске'
                 },
                 {
-                    label: ''
+                    year: '1978 - 1982',
+                    label: 'Учился в художественных студиях и мастерских Владимира Ткаченко, Ричарда Мая и Виталия Чарнабрысава'
                 },
                 {
-                    label: ''
+                    year: '1982 - 1987',
+                    label: 'Учился на архитектурном факультете Белорусского политехнического института и получил специальность «градостроительство»'
                 },
                 {
-                    label: ''
+                    year: '1982 - 1984',
+                    label: 'Участвовал в молодежном общественном объединении «Белорусский Мастеровой»'
                 },
                 {
-                    label: ''
+                    year: '1984',
+                    label: 'Стал участиком первого пикета, который «майстровцы» устраивали в знак протеста против разрушения здания старого минского театра , и были арестованы милицией'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: '«Весенние песни сверхчеловека». Квартирная выставка (г. Минск, Буларусь)'
                 },
                 {
-                    label: ''
+                    label: '«Смерть Пионера» - галерея независимого искусства «Шестая линия» (г. Минск, Беларусь)'
                 },
                 {
-                    label: ''
+                    label: '«Дворце для птиц». Центр современного искусства «Уяздовски дворец» (г. Варшава, Польша)'
                 },
                 {
-                    label: ''
+                    label: '«Сладкая соломенное жизнь». Галерея «RLBQ» (г. Марсель , Франция)'
                 },
                 {
-                    label: ''
+                    label: '«Алиса в стране безумного чаепития» и «Город Солнца». Галерея «Giedre Bartelt Galerie» ( г. Берлин , Германия )'
                 },
             ],
             location: 'Минск, Беларусь'
@@ -487,39 +555,45 @@ const authorInformationLang = {
             biography: 'Георгий Леонардович Лихтарович (6 декабря 1947, Минск) - белорусский фотохудожник, литератор. Член Белорусского союза дизайнеров (2000). Член Белорусского союза писателей (2006).',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1965 - 1966',
+                    label: 'Работал ассистентом кинооператора на Минской студии научно-популярных и хроникально-документальных фильмов'
                 },
                 {
-                    label: ''
+                    year: '1966 - 1968',
+                    label: 'Служил в армии в п. Печи , в / ч 43064'
                 },
                 {
-                    label: ''
+                    year: '1969 - 1972',
+                    label: 'Работал фотографом в Институте искусствоведения, этнографии и фольклора Академии наук. Иллюстрировал первые тома «Свода памятников истории и культуры Беларуси»'
                 },
                 {
-                    label: ''
+                    year: '1970 - 1974',
+                    label: 'Учился на архитектурном факультете БПИ'
                 },
                 {
-                    label: ''
+                    year: '1974 - 1992',
+                    label: 'Работал фотокорреспондентом в государственных издательствах'
                 },
                 {
-                    label: ''
+                    year: '1992',
+                    label: 'На творческой работе'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: '«Деревянное зодчество Белорусского Полесья». Издание в котором печатались фотографические работы'
                 },
                 {
-                    label: ''
+                    label: '«Искусство, созданное народом». Издание в котором печатались фотографические работы'
                 },
                 {
-                    label: ''
+                    label: '«Деревянное зодчество Полесья». Издание в котором печатались фотографические работы'
                 },
                 {
-                    label: ''
+                    label: '«Иконопись Беларуси XII-ХVIII веков». Издание в котором печатались фотографические работы'
                 },
                 {
-                    label: ''
+                    label: '«Декоративно-прикладное искусство Беларуси XII-ХVIII веков». Работы Дашкевича участвовали в этой выставке в Миске'
                 },
             ],
             location: 'Минск, Беларусь'
@@ -531,33 +605,37 @@ const authorInformationLang = {
             biography: 'Міхаіл Уладзіміравіч Анемпадыстаў нарадзіўся 16 сакавіка 1964 г. у Мінску ў рускай сямі. Прозвішча «Анемпадыстаў» ўтворана ад мужчынскага імя «Анемпадыстаў», якое ёсць у праваслаўных святцах. У дзяцінстве Міхаіл марыў стаць заолагам або біёлагам, падарожнікам і шукальнікам скарбаў. Добра маляваць пачаў у дзяцінстве - свае першыя малюнкі Міхал размяшчаў у сваіх энцыклапедыях пра жывёл, якія рабіў сам: рабіў старонкі з уласна намаляванымі малюскамі, іншымі рознымі жывёламі і асабіста падпісваў.',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1965 - 1985',
+                    label: 'Вучыўся ў дзіцячай народнай студыі выяўленчага мастацтва пры Палацы культуры тэкстыльшчыкаў у Менску.'
                 },
                 {
-                    label: ''
+                    year: '1979 - 1983',
+                    label: 'Вучыўся і скончыў Мінскае мастацкае вучылішча (цяпер - Мінскі дзяржаўны мастацкі каледж імя А. К. Глебава), дзе панавала свабода і плюралізм, а само вучылішча стала прыкметным кузняй творчых асоб.'
                 },
                 {
-                    label: ''
+                    year: '1982',
+                    label: 'Удзельнічаў у моладзевым грамадскім аб\'яднанні «Беларускі Майстроўны»'
                 },
                 {
-                    label: ''
+                    year: '1983 - 1985',
+                    label: 'Прайшоў тэрміновую службу ва Узброеных сілах СССР'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
             ],
             location: 'Мінск, Беларусь'
@@ -567,39 +645,45 @@ const authorInformationLang = {
             biography: 'Міхаіл Рыгоравіч Баразна (род. 20 лістапада 1962, в. Ракушава Круглянскага раёна Магілёўскай вобласці) - беларускі мастацтвазнаўца, мастацкі крытык, фотамастак. Кандыдат мастацтвазнаўства (1998). Рэктар Беларускай дзяржаўнай акадэміі мастацтваў. Ганаровы член Расійскай акадэміі мастацтваў.',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1985',
+                    label: 'Скончыў мастацка-прамысловы факультэт Беларускага дзяржаўнага тэатральна-мастацкага інстытута'
                 },
                 {
-                    label: ''
+                    year: '1986 - 1992',
+                    label: 'Мастацкі рэдактар выдавецтва «Беларусь»'
                 },
                 {
-                    label: ''
+                    year: '1992',
+                    label: 'Выкладае ў Беларускай дзяржаўнай акадэміі мастацтваў'
                 },
                 {
-                    label: ''
+                    year: '1996 - 1998',
+                    label: 'В.а. загадчыка кафедры гісторыі і тэорыі мастацтваў'
                 },
                 {
-                    label: ''
+                    year: '1999',
+                    label: 'Прарэктар па навукова-творчай рабоце'
                 },
                 {
-                    label: ''
+                    year: '2010',
+                    label: 'Рэктар Беларускай дзяржаўнай акадэміі мастацтваў'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
             ],
             location: 'Мінск, Беларусь'
@@ -609,33 +693,39 @@ const authorInformationLang = {
             biography: 'Ян Булгак (6 кастрычніка 1876, маёнтак каля в. Асташына Навагрудскага павета - 4 лютага, 1950, Гижыцка) - віленскі майстар мастацкай краязнаўчай фатаграфіі, «бацька польскай фатаграфіі», адзін з піянераў польскай мастацкай фатаграфіі, этнограф, фалькларыст. Яго творчасць лічыцца часткай агульнай культурнай спадчыны Беларусі, Літвы і Польшчы.',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1897',
+                    label: 'Скончыў класічную гімназію ў Вільні'
                 },
                 {
-                    label: ''
+                    year: '1897-1899',
+                    label: 'Паступіў на факультэт філасофіі Ягелонскага універсітэта ў Кракаве'
                 },
                 {
-                    label: ''
+                    year: '1905',
+                    label: 'Зрабіў першыя свае фатаграфіі на падораны яго жонцы фотаапарат'
                 },
                 {
-                    label: ''
+                    year: '1908',
+                    label: 'Стварыў сваю фоталабараторыю ў сядзібе Пярэсицы'
                 },
                 {
-                    label: ''
+                    year: '1910',
+                    label: 'Упершыню ўдзельнічаў у сусветнай фотавыставе ў Брусэлі'
                 },
                 {
-                    label: ''
+                    year: '1911',
+                    label: 'Арганізаваў фотавыставу ў Мінску. Пачаў супрацоўнічаць з «Віленскім штотыднёвікам»'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 }
             ],
             location: 'Варшава, Польшча'
@@ -645,24 +735,29 @@ const authorInformationLang = {
             biography: 'Нарадзіўся 15 мая 1875 года ў мястэчку Вялікая Бераставіца Гродзенскага павета, у беднай шматдзетнай сямі дыякана мясцовай царквы. У 1897 годзе скончыў Віленскую духоўную семінарыю, пасля чаго ажаніўся з дачкой святара Дзмітрыя Някрасава, які служыў у г. Вільнюс, Верай. У той жа год пачаў свой службовы шлях псаломшчыкам пры царкве ў вёсцы Мастаўляны на Беласточчыне. 6 красавіка 1899 года, вакантнае месца святара ў вёсцы Касута Вілейскага павета было саступлена маладому псаломнік. 25 траўня ён быў пасвечаны ў сан іерэя і прызначаны настаяцелем Касуцкай Свята-Петрапаўлаўскай царквы',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1897',
+                    label: 'Скончыў Віленскую духоўную семінарыю'
                 },
                 {
-                    label: ''
+                    year: '1897-1899',
+                    label: 'Пачаў свой службовы шлях псаломшчыкам пры царкве ў вёсцы Мастаўляны на Беласточчыне'
                 },
                 {
-                    label: ''
+                    year: '1902 - 1904',
+                    label: 'Працаваў інспектарам царкоўна-прыходскіх школ Дзісненскага павета'
                 },
                 {
-                    label: ''
+                    year: '1904-1947',
+                    label: 'Узначаліў прыход Свята-Мікалаеўскай царквы ў вёсцы Узмёны (сёння - Мёрскі раён), дзе праслужыў 43 гады'
                 },
                 {
-                    label: ''
+                    year: '1947',
+                    label: 'Служыў настаяцелем цэркваў у мястэчку Крэва, в. Сабакінцы (цяпер Першамайскае) Гродзенскай вобласці'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'тэст'
                 }
             ],
             location: 'Ваўкавыск, Беларусь'
@@ -672,36 +767,41 @@ const authorInformationLang = {
             biography: 'Леў Урбанавич Дашкевіч (12 лютага 1882, Мінск - 4 снежня 1957, Мінск) - беларускі фотамастак, вучоны, вынаходнік, публіцыст, педагог. Паходзіў з шляхецкага роду герба «Ляліва».',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1882 - 1886',
+                    label: 'Вучыўся ў Мінскай мужчынскай гімназіі і Віленскім інтэрнаце-канквице'
                 },
                 {
-                    label: ''
+                    year: '1903-1904',
+                    label: 'Вучыўся на медыцынскім факультэце Варшаўскага універсітэта. За ўдзел у студэнцкай забастоўцы арыштаваны і выключаны з універсітэта без права паступлення ў ВНУ Расійскай імперыі'
                 },
                 {
-                    label: ''
+                    year: '1906 - 1911',
+                    label: 'Вучыўся ў Францыі - на факультэце філалогіі (La faculté de lettres) Універсітэта Бургундыі (Дыжон)'
                 },
                 {
-                    label: ''
+                    year: '1908-1909',
+                    label: 'Займаўся на фатаграфічным аддзяленні Вышэйшай школы графічных мастацтваў у Парыжы'
                 },
                 {
-                    label: ''
+                    year: '1911',
+                    label: 'Пачаў друкавацца ў навуковых выданнях (La Nature. Paris)'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
             ],
             location: 'Мінск, Беларусь'
@@ -711,36 +811,41 @@ const authorInformationLang = {
             biography: 'Артур Аляксандравіч Клінаў - беларускі мастак, акцыянист, дызайнер, фатограф, літаратар, сцэнарыст, галоўны рэдактар ​​часопіса «pARTisan»',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1976 - 1980',
+                    label: 'Вучыўся ў дзіцячай мастацкай школе № 1 у Мінску'
                 },
                 {
-                    label: ''
+                    year: '1978 - 1982',
+                    label: 'Вучыўся ў мастацкіх студыях і майстэрняў Уладзіміра Ткачэнкі, Рычарда Мая і Віталя Чарнабрысава'
                 },
                 {
-                    label: ''
+                    year: '1982 - 1987',
+                    label: 'Вучыўся на архітэктурным факультэце Беларускага політэхнічнага інстытута і атрымаў спецыяльнасць «горадабудаўніцтва»'
                 },
                 {
-                    label: ''
+                    year: '1982 - 1984',
+                    label: 'Удзельнічаў у моладзевым грамадскім аб\'яднанні «Беларускі Майстроўны»'
                 },
                 {
-                    label: ''
+                    year: '1984',
+                    label: 'Стаў участиком першага пікету, які «майстровцы» ладзілі ў знак пратэсту супраць разбурэння будынка старога менскага тэатру, і былі арыштаваныя міліцыяй'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
             ],
             location: 'Мінск, Беларусь'
@@ -750,39 +855,45 @@ const authorInformationLang = {
             biography: 'Георгій Леанардавіч Ліхтаровіч (6 снежня 1947, Мінск) - беларускі фотамастак, літаратар. Член Беларускага саюза дызайнераў (2000). Член Беларускага саюза пісьменнікаў (2006).',
             biographyTimeline: [
                 {
-                    label: ''
+                    year: '1965 - 1966',
+                    label: 'Працаваў асістэнтам кінааператара на Мінскай студыі навукова-папулярных і хранікальна-дакументальных фільмаў'
                 },
                 {
-                    label: ''
+                    year: '1966 - 1968',
+                    label: 'Служыў у арміі ў п. Печы, в / ч 43064'
                 },
                 {
-                    label: ''
+                    year: '1969 - 1972',
+                    label: 'Працаваў фатографам у Інстытуце мастацтвазнаўства, этнаграфіі і фальклору Акадэміі навук. Ілюстраваў першыя тамы «Збору помнікаў гісторыі і культуры Беларусі»'
                 },
                 {
-                    label: ''
+                    year: '1970 - 1974',
+                    label: 'Вучыўся на архітэктурным факультэце БПІ'
                 },
                 {
-                    label: ''
+                    year: '1974 - 1992',
+                    label: 'Працаваў фотакарэспандэнтам у дзяржаўных выдавецтвах'
                 },
                 {
-                    label: ''
+                    year: '1992',
+                    label: 'На творчай працы'
                 }
             ],
             listOfPhotographerWorks: [
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
                 {
-                    label: ''
+                    label: 'тэст'
                 },
             ],
             location: 'Мінск, Беларусь'

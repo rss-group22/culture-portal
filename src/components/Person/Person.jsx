@@ -1,3 +1,4 @@
+/* eslint-disable react/no-did-update-set-state */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable no-useless-constructor */
@@ -11,6 +12,7 @@ import TimelineComponent from '../TimelineComponent';
 import Slider from '../Slider';
 import Map from '../Map';
 import Loader from '../Loader';
+import authorInformationLang from "../../data/author-information-lang";
 import './Person.scss';
 
 export default class Person extends Component {
@@ -19,25 +21,39 @@ export default class Person extends Component {
     this.state = {
       author: {},
       isLoaded: false,
-      isLeadOfDay: false
+      isLeadOfDay: false,
+      lang: ''
     }
   }
 
-  componentDidMount() {
-    const { id } = this.props.match.params;
-    const params = new URLSearchParams(this.props.location.search);
-    params.get('leadofday') && this.setState({isLeadOfDay: true});
+  setNextAuthor = props => {
+    const { id } = props.match.params;
+    const params = new URLSearchParams(props.location.search);
+    this.setState({ isLeadOfDay: params.get('leadofday'), isLoaded: false });
     getData()
       .then(data => {
         const author = data.filter(item => item.id === +id)[0];
-        this.setState(({isLoaded}) => {
+        const authorLang = authorInformationLang[props.lang][id];
+        this.setState(({ isLoaded }) => {
           return {
-            author,
-            isLoaded: !isLoaded
+            author: { ...author, ...authorLang },
+            isLoaded: !isLoaded,
+            lang: props.lang
           }
         });
       });
   }
+
+  componentDidMount() {
+    this.setNextAuthor(this.props);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(this.props.lang !== nextProps.lang || this.state.author.id !== nextProps.match.params.id) {
+      this.setNextAuthor(nextProps);
+    }
+  }
+
   render() {
     const { lang } = this.props;
     const { isLoaded, isLeadOfDay } = this.state;

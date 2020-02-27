@@ -32,10 +32,7 @@ export default class Photographers extends Component {
       }))
   }
 
-  searchPhotographer = event => {
-    const term = event.target.value;
-    this.setState({ term });
-  };
+  searchPhotographer = e => this.setState({ term: e.target.value });
 
   search(items, term) {
     if (term.length === 0) return items;

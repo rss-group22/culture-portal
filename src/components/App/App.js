@@ -5,7 +5,7 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable react/no-unused-state */
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import StyleGuide from "../StyleGuide";
 import Aside from "../Aside/Aside.jsx";
@@ -16,45 +16,32 @@ import Photographers from "../Photographers";
 import Worklog from "../Team/Worklog/Worklog";
 import "./App.scss";
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      lang: "EN",
-      showAside: false
-    };
-  }
-
-  changeLang = value => this.setState({ lang: value });
-
-  render() {
-    return (
-      <Router>
-        <Aside changeLang={this.changeLang} lang={this.state.lang} />
-        <div id="content">
-          <Route
-            path="/"
-            exact
-            component={() => (
-              <Home lang={this.state.lang} />
-            )}
-          />
-          <Route
-            path="/team"
-            component={() => <Team lang={this.state.lang} />}
-          />
-          <Route
-            path="/person/:id"
-            component={props => <Person lang={this.state.lang} {...props} />}
-          />
-          <Route
-            path="/photographers"
-            component={() => <Photographers lang={this.state.lang} />}
-          />
-          <Route path="/worklog" component={Worklog} />
-          <Route path="/styleguide/:tabName?" component={StyleGuide} />
-        </div>
-      </Router>
-    );
-  }
+export default function App () {
+  const [lang, setLang] = useState('EN');
+  return (
+    <Router>
+      <Aside changeLang={ setLang } lang={ lang } />
+      <div id="content">
+        <Route
+          path="/"
+          exact
+          component={ () => <Home lang={ lang } /> }
+        />
+        <Route
+          path="/team"
+          component={ () => <Team lang={ lang } /> }
+        />
+        <Route
+          path="/person/:id"
+          component={props => <Person lang={ lang } {...props} />}
+        />
+        <Route
+          path="/photographers"
+          component={() => <Photographers lang={ lang } />}
+        />
+        <Route path="/worklog" component={Worklog} />
+        <Route path="/styleguide/:tabName?" component={StyleGuide} />
+      </div>
+    </Router>
+  );
 }
