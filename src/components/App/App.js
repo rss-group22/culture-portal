@@ -29,21 +29,20 @@ export default class App extends Component {
     this.changeId = this.changeId.bind(this);
   }
 
-  aside = document.getElementById('aside');
-
   onOpenAside = () => {
-    this.setState(({
+    this.setState({
       showAside: true
-    }));
+    });
   };
 
   onCloseAside = () => {
-    this.setState(({
+    this.setState({
       showAside: false
-    }));
+    });
   };
 
-  componentWillMount() {
+  // eslint-disable-next-line camelcase
+  UNSAFE_componentWillMount() {
     const id = new Date().getDay();
     this.state.id = id || 7;
   }
