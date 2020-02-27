@@ -33,3 +33,11 @@
     }
   }
 }
+@media screen and (max-width: 960px){
+  .image-wrapper{
+    height: 320px;
+    .work-image{
+      height: auto;
+    }
+  }
+}
