@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import PhotographerCard from "../PhotographerCard";
 import dataText from "../../data/dataText";
 import getData from "../../data/author-information";
-import Loader from '../../data/loader/loader';
+import Loader from '../Loader';
 import authorInformationLang from "../../data/author-information-lang";
 
 import "./Photographers.scss";
@@ -23,18 +23,14 @@ export default class Photographers extends Component {
     };
   }
 
-  getNewData() {
+  componentDidMount() {
+    this.inputRef.focus();
     getData()
-      .then(res => {
-        this.setState(({ isLoaded }) => {
-          return {
-            photographersData: res,
-            isLoaded: !isLoaded
-          }
-        });
-        this.inputRef.focus();
-      });
-  };
+      .then(res => this.setState({
+        photographersData: res,
+        isLoaded: !this.state.isLoaded
+      }))
+  }
 
   searchPhotographer = event => {
     const term = event.target.value;
@@ -51,11 +47,6 @@ export default class Photographers extends Component {
   render() {
     const { lang } = this.props;
     const { photographersData, term, isLoaded } = this.state;
-
-    if (!isLoaded) {
-      return <Loader />
-    }
-
     const photographersFound = this.search(photographersData, term);
 
     const elements = photographersFound.length

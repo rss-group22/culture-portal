@@ -33,13 +33,8 @@ const dataText = {
       text2: "We tried to collect all the most interesting information about Belarusian photographers and their work. Described all the most important dates of their biography."
     },
     Photographers: {
-<<<<<<< HEAD
       title: 'List photographers',
       search: 'write the name or city of the photographer'
-=======
-      title: 'Photographers list',
-      placeholder: 'Enter photographer name'
->>>>>>> a28035219b3513843047bb5cf939adaf2900edd3
     },
   },
   RU: {
@@ -77,11 +72,7 @@ const dataText = {
     },
     Photographers: {
       title: 'Список фотографов',
-<<<<<<< HEAD
       search: 'напишите имя или город фотографа'
-=======
-      placeholder: 'Введите имя фотографа'
->>>>>>> a28035219b3513843047bb5cf939adaf2900edd3
     },
   },
   BY: {
@@ -119,11 +110,7 @@ const dataText = {
     },
     Photographers: {
       title: 'Спіс фатографаў',
-<<<<<<< HEAD
       search: 'напішыце імя або населенага пункта фатографа'
-=======
-      placeholder: 'Увядзіце імя фатографа'
->>>>>>> a28035219b3513843047bb5cf939adaf2900edd3
     },
   },
 };
