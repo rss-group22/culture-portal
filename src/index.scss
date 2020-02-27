@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: calc(22px + 12*(100vw - 1920px)/1920);
 }
 
 body{

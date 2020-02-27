@@ -18,11 +18,11 @@ const dataWorklog = [
     name: "Petr",
     surname: "Penner",
     done: [
-      { time: 0, feature: "page search photographers" },
-      { time: 0, feature: "files of the data" },
-      { time: 0, feature: "search implementation" },
-      { time: 0, feature: "images of project" },
-      { time: 0, feature: "" },
+      { time: 4, feature: "page search photographers" },
+      { time: 5, feature: "files of the data" },
+      { time: 1, feature: "search implementation" },
+      { time: 2, feature: "images of project" },
+      { time: 3, feature: "translate implementation on page search photographers" },
       { time: 0, feature: "" },
       { time: 0, feature: "" }
     ]
