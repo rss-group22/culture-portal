@@ -16,16 +16,11 @@ export class Map extends Component {
   componentDidMount() {
     this.map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/mapbox/navigation-preview-day-v4',
       center: [this.state.lng, this.state.lat],
       zoom: 9
     });
-  }
-
-  componentDidUpdate() {
-    if (this.props.placeOnMap.lat !== undefined) {
-      this.map.setCenter([this.props.placeOnMap.lng, this.props.placeOnMap.lat]);
-    }
+    this.map.setCenter([this.props.placeOnMap.lng, this.props.placeOnMap.lat]);
   }
 
   render() {

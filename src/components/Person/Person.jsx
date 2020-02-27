@@ -10,27 +10,39 @@ import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
 import Slider from '../Slider';
 import Map from '../Map';
+import Loader from '../../data/loader/loader';
 import './Person.scss';
 
 export default class Person extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      author: {}
+      author: {},
+      isLoaded: false
     }
   }
 
   componentDidMount() {
     const { id } = this.props.match.params;
-    getData().then(data => {
-      const author = data.filter(item => item.id === +id)[0];
-      this.setState({ author });
+    getData()
+      .then(data => {
+        const author = data.filter(item => item.id === +id)[0];
+        this.setState(({isLoaded}) => {
+          return { 
+            author,
+            isLoaded: !isLoaded
+          }
+        });
     });
   }
 
   render() {
     const { lang } = this.props;
+    const { isLoaded } = this.state;
     const { avatar, photographerName, yearsOfLife, biography, biographyTimeline, placeOnMap, youtubeUrl } = this.state.author;
+    if (!isLoaded) {
+      return <Loader />
+    }
     return (
       <div className="container">
         <div className="row">
