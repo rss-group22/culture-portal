@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 export default function photographersData() {
   // ../../data/image/photographer-photo/photo1.jpg
   const data = [

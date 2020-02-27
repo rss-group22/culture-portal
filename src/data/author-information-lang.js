@@ -6,19 +6,19 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1965 - 1985',
-                    label: 'test'
+                    label: 'He studied at the children\'s folk art studio at the Palace of Culture of Textile Workers in Minsk.'
                 },
                 {
                     year: '1979 - 1983',
-                    label: 'test'
+                    label: 'He studied and graduated from the Minsk Art College (now the Minsk State Art College named after A.K. Glebov), where freedom and pluralism reigned, and the school itself became a noticeable smithy of creative personalities.'
                 },
                 {
                     year: '1982',
-                    label: 'test'
+                    label: 'Participated in the youth public association "Belarusian Workshop"'
                 },
                 {
                     year: '1983 - 1985',
-                    label: 'test'
+                    label: 'He served in the Armed Forces of the USSR'
                 }
             ],
             listOfPhotographerWorks: [
@@ -46,27 +46,27 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1985',
-                    label: 'test'
+                    label: 'Graduated from the Art and Industry Department of the Belarusian State Theater and Art Institute'
                 },
                 {
                     year: '1986 - 1992',
-                    label: 'test'
+                    label: 'Artistic editor of the publishing house "Belarus"'
                 },
                 {
                     year: '1992',
-                    label: 'test'
+                    label: 'Teaches at the Belarusian State Academy of Arts'
                 },
                 {
                     year: '1996 - 1998',
-                    label: 'test'
+                    label: 'Acting Head of the Department of History and Theory of Art'
                 },
                 {
                     year: '1999',
-                    label: 'test'
+                    label: 'Vice-rector for scientific and creative work'
                 },
                 {
                     year: '2010',
-                    label: 'test'
+                    label: 'Rector of the Belarusian State Academy of Arts'
                 }
             ],
             listOfPhotographerWorks: [
@@ -94,27 +94,27 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1897',
-                    label: 'test'
+                    label: 'He graduated from the classical gymnasium in Vilnius'
                 },
                 {
                     year: '1897-1899',
-                    label: 'test'
+                    label: 'He entered the Faculty of Philosophy of the Jagiellonian University in Krakow'
                 },
                 {
                     year: '1905',
-                    label: 'test'
+                    label: 'He took his first photos on a camera given to his wife'
                 },
                 {
                     year: '1908',
-                    label: 'test'
+                    label: 'Created his own photo laboratory at the estate of Parecica'
                 },
                 {
                     year: '1910',
-                    label: 'test'
+                    label: 'First participated in the world photo exhibition in Brussels'
                 },
                 {
                     year: '1911',
-                    label: 'test'
+                    label: 'Organized a photo exhibition in Minsk. Started collaborating with Vilensky weekly'
                 }
             ],
             listOfPhotographerWorks: [
@@ -136,23 +136,23 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1897',
-                    label: 'test'
+                    label: 'Graduated from Vilna Theological Seminary'
                 },
                 {
                     year: '1897-1899',
-                    label: 'test'
+                    label: 'He began his career as a psalm-reader at a church in the village of Mostovlyany in Bialystok'
                 },
                 {
                     year: '1902 - 1904',
-                    label: 'test'
+                    label: 'He worked as an inspector of parish schools of the Disney county'
                 },
                 {
                     year: '1904-1947',
-                    label: 'test'
+                    label: 'He led the parish of St. Nicholas Church in the village of Uzmeny (today - Miorsky District), where he served for 43 years'
                 },
                 {
                     year: '1947',
-                    label: 'test'
+                    label: 'He served as rector of churches in the town of Krevo, the village of Sobakintsy (now Pervomayskoye) in the Grodno region'
                 }
             ],
             listOfPhotographerWorks: [
@@ -168,23 +168,23 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1882 - 1886',
-                    label: 'test'
+                    label: 'He studied at the Minsk male gymnasium and the Vilnius dormitory-Kankwitz'
                 },
                 {
                     year: '1903-1904',
-                    label: 'test'
+                    label: 'He studied at the medical faculty of the University of Warsaw. Arrested and expelled from a university without the right to enter universities of the Russian Empire for participating in a student strike'
                 },
                 {
                     year: '1906 - 1911',
-                    label: 'test'
+                    label: 'Studied in France - at the Faculty of Philology (La faculté de lettres) of the University of Burgundy (Dijon)'
                 },
                 {
                     year: '1908-1909',
-                    label: 'test'
+                    label: 'He studied at the photographic department of the Higher School of Graphic Arts in Paris'
                 },
                 {
                     year: '1911',
-                    label: 'test'
+                    label: 'Start typing in scientific journals.'
                 }
             ],
             listOfPhotographerWorks: [
@@ -212,23 +212,23 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1976 - 1980',
-                    label: 'test'
+                    label: 'Studied at children\'s art school No. 1 in Minsk'
                 },
                 {
                     year: '1978 - 1982',
-                    label: 'test'
+                    label: 'Studied at art studios and workshops of Vladimir Tkachenko, Richard May and Vitaliy Charnabrysava'
                 },
                 {
                     year: '1982 - 1987',
-                    label: 'test'
+                    label: 'He studied at the Faculty of Architecture of the Belarusian Polytechnic Institute and received a specialty "Urban Planning"'
                 },
                 {
                     year: '1982 - 1984',
-                    label: 'test'
+                    label: 'Participated in the youth public association "Belarusian Workshop"'
                 },
                 {
                     year: '1984',
-                    label: 'test'
+                    label: 'He became a member of the first picket that the Maystrovians organized in protest against the destruction of the old Minsk theater building and were arrested by the police'
                 }
             ],
             listOfPhotographerWorks: [
@@ -256,27 +256,27 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1965 - 1966',
-                    label: 'test'
+                    label: 'He worked as an assistant cameraman at the Minsk studio of popular science and chronicles-documentaries'
                 },
                 {
                     year: '1966 - 1968',
-                    label: 'test'
+                    label: 'He served in the army in the village of Pechi, military unit 43064'
                 },
                 {
                     year: '1969 - 1972',
-                    label: 'test'
+                    label: 'He worked as a photographer at the Institute of Art Studies, Ethnography and Folklore of the Academy of Sciences. Illustrated the first volumes of the “Code of Monuments of the History and Culture of Belarus”'
                 },
                 {
                     year: '1970 - 1974',
-                    label: 'test'
+                    label: 'Studied at the Faculty of Architecture at BPI'
                 },
                 {
                     year: '1974 - 1992',
-                    label: 'test'
+                    label: 'Worked as a photojournalist in state publishing houses'
                 },
                 {
                     year: '1992',
-                    label: 'test'
+                    label: 'At creative work'
                 }
             ],
             listOfPhotographerWorks: [
@@ -606,19 +606,19 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1965 - 1985',
-                    label: 'тэст'
+                    label: 'Вучыўся ў дзіцячай народнай студыі выяўленчага мастацтва пры Палацы культуры тэкстыльшчыкаў у Менску.'
                 },
                 {
                     year: '1979 - 1983',
-                    label: 'тэст'
+                    label: 'Вучыўся і скончыў Мінскае мастацкае вучылішча (цяпер - Мінскі дзяржаўны мастацкі каледж імя А. К. Глебава), дзе панавала свабода і плюралізм, а само вучылішча стала прыкметным кузняй творчых асоб.'
                 },
                 {
                     year: '1982',
-                    label: 'тэст'
+                    label: 'Удзельнічаў у моладзевым грамадскім аб\'яднанні «Беларускі Майстроўны»'
                 },
                 {
                     year: '1983 - 1985',
-                    label: 'тэст'
+                    label: 'Прайшоў тэрміновую службу ва Узброеных сілах СССР'
                 }
             ],
             listOfPhotographerWorks: [
@@ -646,27 +646,27 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1985',
-                    label: 'тэст'
+                    label: 'Скончыў мастацка-прамысловы факультэт Беларускага дзяржаўнага тэатральна-мастацкага інстытута'
                 },
                 {
                     year: '1986 - 1992',
-                    label: 'тэст'
+                    label: 'Мастацкі рэдактар выдавецтва «Беларусь»'
                 },
                 {
                     year: '1992',
-                    label: 'тэст'
+                    label: 'Выкладае ў Беларускай дзяржаўнай акадэміі мастацтваў'
                 },
                 {
                     year: '1996 - 1998',
-                    label: 'тэст'
+                    label: 'В.а. загадчыка кафедры гісторыі і тэорыі мастацтваў'
                 },
                 {
                     year: '1999',
-                    label: 'тэст'
+                    label: 'Прарэктар па навукова-творчай рабоце'
                 },
                 {
                     year: '2010',
-                    label: 'тэст'
+                    label: 'Рэктар Беларускай дзяржаўнай акадэміі мастацтваў'
                 }
             ],
             listOfPhotographerWorks: [
@@ -694,27 +694,27 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1897',
-                    label: 'тэст'
+                    label: 'Скончыў класічную гімназію ў Вільні'
                 },
                 {
                     year: '1897-1899',
-                    label: 'тэст'
+                    label: 'Паступіў на факультэт філасофіі Ягелонскага універсітэта ў Кракаве'
                 },
                 {
                     year: '1905',
-                    label: 'тэст'
+                    label: 'Зрабіў першыя свае фатаграфіі на падораны яго жонцы фотаапарат'
                 },
                 {
                     year: '1908',
-                    label: 'тэст'
+                    label: 'Стварыў сваю фоталабараторыю ў сядзібе Пярэсицы'
                 },
                 {
                     year: '1910',
-                    label: 'тэст'
+                    label: 'Упершыню ўдзельнічаў у сусветнай фотавыставе Брусэлі'
                 },
                 {
                     year: '1911',
-                    label: 'тэст'
+                    label: 'Арганізаваў фотавыставу ў Мінску. Пачаў супрацоўнічаць з «Віленскім штотыднёвікам»'
                 }
             ],
             listOfPhotographerWorks: [
@@ -736,23 +736,23 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1897',
-                    label: 'тэст'
+                    label: 'Скончыў Віленскую духоўную семінарыю'
                 },
                 {
                     year: '1897-1899',
-                    label: 'тэст'
+                    label: 'Пачаў свой службовы шлях псаломшчыкам пры царкве ў вёсцы Мастаўляны на Беласточчыне'
                 },
                 {
                     year: '1902 - 1904',
-                    label: 'тэст'
+                    label: 'Працаваў інспектарам царкоўна-прыходскіх школ Дзісенскага павета'
                 },
                 {
                     year: '1904-1947',
-                    label: 'тэст'
+                    label: 'Узначаліў прыход Свята-Мікалаеўскай царквы ў вёсцы Узмёны (сёння - Мёрскі раён), дзе праслужыў 43 гады'
                 },
                 {
                     year: '1947',
-                    label: 'тэст'
+                    label: 'Служыў настаяцелем цэркваў у мястэчку Крэва, в. Сабакінцы (цяпер Першамайскае) Гродзенскай вобласці'
                 }
             ],
             listOfPhotographerWorks: [
@@ -768,23 +768,23 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1882 - 1886',
-                    label: 'тэст'
+                    label: 'Вучыўся ў Мінскай мужчынскай гімназіі і Віленскім інтэрнаце-канквице'
                 },
                 {
                     year: '1903-1904',
-                    label: 'тэст'
+                    label: 'Вучыўся на медыцынскім факультэце Варшаўскага універсітэта. За ўдзел у студэнцкай забастоўцы арыштаваны і выключаны з універсітэта без права паступлення ў ВНУ Расійскай імперыі'
                 },
                 {
                     year: '1906 - 1911',
-                    label: 'тэст'
+                    label: 'Вучыўся ў Францыі - на факультэце філалогіі (La faculté de lettres) Універсітэта Бургундыі (Дыжон)'
                 },
                 {
                     year: '1908-1909',
-                    label: 'тэст'
+                    label: 'Займаўся на фатаграфічным аддзяленні Вышэйшай школы графічных мастацтваў у Парыжы'
                 },
                 {
                     year: '1911',
-                    label: 'тэст'
+                    label: 'Пачаў друкавацца ў навуковых выданнях (La Nature. Paris)'
                 }
             ],
             listOfPhotographerWorks: [
@@ -812,23 +812,23 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1976 - 1980',
-                    label: 'тэст'
+                    label: 'Вучыўся ў дзіцячай мастацкай школе № 1 у Мінску'
                 },
                 {
                     year: '1978 - 1982',
-                    label: 'тэст'
+                    label: 'Вучыўся ў мастацкіх студыях і майстэрняў Уладзіміра Ткачэнкі, Рычарда Мая і Віталя Чарнабрысава'
                 },
                 {
                     year: '1982 - 1987',
-                    label: 'тэст'
+                    label: 'Вучыўся на архітэктурным факультэце Беларускага політэхнічнага інстытута і атрымаў спецыяльнасць «горадабудаўніцтва»'
                 },
                 {
                     year: '1982 - 1984',
-                    label: 'тэст'
+                    label: 'Удзельнічаў у моладзевым грамадскім аб\'яднанні «Беларускі Майстроўны»'
                 },
                 {
                     year: '1984',
-                    label: 'тэст'
+                    label: 'Стаў участиком першага пікету, які «майстровцы» ладзілі ў знак пратэсту супраць разбурэння будынка старога менскага тэатру, і былі арыштаваныя міліцыяй'
                 }
             ],
             listOfPhotographerWorks: [
@@ -856,27 +856,27 @@ const authorInformationLang = {
             biographyTimeline: [
                 {
                     year: '1965 - 1966',
-                    label: 'тэст'
+                    label: 'Працаваў асістэнтам кінааператара на Мінскай студыі навукова-папулярных і хранікальна-дакументальных фільмаў'
                 },
                 {
                     year: '1966 - 1968',
-                    label: 'тэст'
+                    label: 'Служыў у арміі ў п. Печы, в / ч 43064'
                 },
                 {
                     year: '1969 - 1972',
-                    label: 'тэст'
+                    label: 'Працаваў фатографам у Інстытуце мастацтвазнаўства, этнаграфіі і фальклору Акадэміі навук. Ілюстраваў першыя тамы «Збору помнікаў гісторыі і культуры Беларусі»'
                 },
                 {
                     year: '1970 - 1974',
-                    label: 'тэст'
+                    label: 'Вучыўся на архітэктурным факультэце БПІ'
                 },
                 {
                     year: '1974 - 1992',
-                    label: 'тэст'
+                    label: 'Працаваў фотакарэспандэнтам у дзяржаўных выдавецтвах'
                 },
                 {
                     year: '1992',
-                    label: 'тэст'
+                    label: 'На творчай працы'
                 }
             ],
             listOfPhotographerWorks: [
