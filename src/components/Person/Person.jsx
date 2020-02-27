@@ -1,3 +1,4 @@
+/* eslint-disable react/no-did-update-set-state */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable no-useless-constructor */
@@ -11,6 +12,7 @@ import TimelineComponent from '../TimelineComponent';
 import Slider from '../Slider';
 import Map from '../Map';
 import Loader from '../../data/loader/loader';
+import authorInformationLang from "../../data/author-information-lang";
 import './Person.scss';
 
 export default class Person extends Component {
@@ -18,7 +20,8 @@ export default class Person extends Component {
     super(props);
     this.state = {
       author: {},
-      isLoaded: false
+      isLoaded: false,
+      lang: ''
     }
   }
 
@@ -34,6 +37,19 @@ export default class Person extends Component {
           }
         });
       });
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.lang !== this.state.lang) {
+      const { id } = this.props.match.params;
+      const authorLang = authorInformationLang[this.props.lang][id];
+      this.setState(({author}) => {
+        return {
+          lang: this.props.lang,
+          author: {...author, ...authorLang}
+        }
+      })
+    }
   }
 
   render() {
