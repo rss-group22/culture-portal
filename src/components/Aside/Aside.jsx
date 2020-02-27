@@ -11,13 +11,9 @@ import Language from './Language.jsx';
 import dataText from '../../data/dataText.js';
 
 export default class Aside extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { lang, onClose, show } = this.props;
-
+    const leaderId = new Date().getDay() || 7;
     return (
       <div className={`aside ${show ? 'openAside' : 'closeAside'}`}>
         <div className="aside__header d-flex justify-content-between align-items-center">
@@ -31,7 +27,7 @@ export default class Aside extends Component {
               <NavLink to="/" exact activeClassName="active" onClick={onClose}>{dataText[lang].Aside.nav1}</NavLink>
             </li>
             <li>
-              <NavLink to={`/person/${this.props.id}`} activeClassName="active" onClick={onClose}>{dataText[lang].Aside.nav2}</NavLink>
+              <NavLink to={`/person/${leaderId}/?leadofday=1`} activeClassName="active" onClick={onClose}>{dataText[lang].Aside.nav2}</NavLink>
             </li>
             <li>
               <NavLink to="/team" activeClassName="active" onClick={onClose}>{dataText[lang].Aside.nav3}</NavLink>
@@ -41,7 +37,7 @@ export default class Aside extends Component {
             </li>
           </ul>
         </nav>
-        <span className="aside__footer">RSSchool ©2020 | Created by Group 22</span>
+        <span className="aside__footer">RSSchool &copy; { new Date().getFullYear() } | Created by Group 22</span>
       </div>
     );
   }

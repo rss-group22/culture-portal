@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import PhotographerCard from "../PhotographerCard";
 import dataText from "../../data/dataText";
 import getData from "../../data/author-information";
-
+import Loader from '../Loader';
 import "./Photographers.scss";
 
 export default class Photographers extends Component {
@@ -16,52 +16,28 @@ export default class Photographers extends Component {
     super(props);
     this.state = {
       photographersData: [],
-      term: ""
+      term: "",
+      isLoaded: false
     };
-    this.getNewData();
   }
 
   componentDidMount() {
     this.inputRef.focus();
+    getData().then(res => this.setState({ photographersData: res, isLoaded: true }));
   }
 
-  getNewData() {
-    getData().then(res =>
-      this.setState({
-        photographersData: res
-      })
-    );
-  }
-
-  searchPhotographer = event => {
-    const term = event.target.value;
-    this.setState({ term });
-  };
+  searchPhotographer = e => this.setState({ term: e.target.value });
 
   search(items, term) {
-    if (term.length === 0) {
-      return items;
-    }
-
-    const name = items.filter(item => {
-      return (
-        item.photographerName.toLowerCase().indexOf(term.toLowerCase()) > -1
-      );
-    });
-
-    const town = items.filter(item => {
-      return item.location.toLowerCase().indexOf(term.toLowerCase()) > -1;
-    });
-
-    const result = Array.from(new Set(name.concat(town)));
-
-    return result;
+    if (term.length === 0) return items;
+    const name = items.filter(item => item.photographerName.toLowerCase().indexOf(term.toLowerCase()) > -1);
+    const town = items.filter(item => item.location.toLowerCase().indexOf(term.toLowerCase()) > -1);
+    return Array.from(new Set(name.concat(town)));
   }
 
   render() {
     const { lang } = this.props;
-    const { photographersData, term } = this.state;
-
+    const { photographersData, term, isLoaded } = this.state;
     const photographersFound = this.search(photographersData, term);
 
     const elements = photographersFound.length
@@ -85,11 +61,11 @@ export default class Photographers extends Component {
           ref={inputRef => (this.inputRef = inputRef)}
           type="search"
           className="form-control"
-          placeholder="type of photographer name"
+          placeholder={dataText[lang].Photographers.placeholder}
           value={term}
           onChange={this.searchPhotographer}
         />
-        {elements}
+        {!isLoaded ? <Loader /> : elements}
       </div>
     );
   }

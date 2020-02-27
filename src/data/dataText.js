@@ -1,7 +1,7 @@
 const dataText = {
   EN: {
     Aside: {
-      title: 'Photographers of Belarus',
+      title: 'RS-22',
       nav1: 'Home',
       nav2: 'Photographer of the day',
       nav3: 'Team members',
@@ -32,12 +32,13 @@ const dataText = {
       text2: "We tried to collect all the most interesting information about Belarusian photographers and their work. Described all the most important dates of their biography."
     },
     Photographers: {
-      title: 'List photographers',
+      title: 'Photographers list',
+      placeholder: 'Enter photographer name'
     },
   },
   RU: {
     Aside: {
-      title: 'Фотографы Беларуси',
+      title: 'RS-22',
       nav1: 'Домашняя страница',
       nav2: 'Фотограф дня',
       nav3: 'Команда',
@@ -69,11 +70,12 @@ const dataText = {
     },
     Photographers: {
       title: 'Список фотографов',
+      placeholder: 'Введите имя фотографа'
     },
   },
   BY: {
     Aside: {
-      title: 'Фатографы Беларусі',
+      title: 'RS-22',
       nav1: 'Хатняя старонка',
       nav2: 'Фатограф дня',
       nav3: 'Каманда',
@@ -105,6 +107,7 @@ const dataText = {
     },
     Photographers: {
       title: 'Спіс фатографаў',
+      placeholder: 'Увядзіце імя фатографа'
     },
   },
 };

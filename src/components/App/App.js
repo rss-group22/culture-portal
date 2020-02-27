@@ -22,38 +22,16 @@ export default class App extends Component {
     super(props);
     this.state = {
       lang: "EN",
-      id: 1,
       showAside: false
     };
     this.changeLang = this.changeLang.bind(this);
-    this.changeId = this.changeId.bind(this);
   }
 
-  aside = document.getElementById('aside');
-
-  onOpenAside = () => {
-    this.setState(({
-      showAside: true
-    }));
-  };
-
-  onCloseAside = () => {
-    this.setState(({
-      showAside: false
-    }));
-  };
-
-  componentWillMount() {
-    const id = new Date().getDay();
-    this.state.id = id || 7;
-  }
+  onOpenAside = () => this.setState({ showAside: true });
+  onCloseAside = () => this.setState({ showAside: false });
 
   changeLang(value) {
     this.setState({ lang: value });
-  }
-
-  changeId(value) {
-    this.setState({ id: value });
   }
 
   render() {
@@ -62,19 +40,16 @@ export default class App extends Component {
         <Aside
           changeLang={this.changeLang}
           lang={this.state.lang}
-          id={this.state.id}
           onClose={this.onCloseAside}
           show={this.state.showAside}
         />
-        <AsideMobile
-          onOpen={this.onOpenAside}
-        />
+        <AsideMobile onOpen={ this.onOpenAside } />
         <div id="content">
           <Route
             path="/"
             exact
             component={() => (
-              <Home lang={this.state.lang} changeId={this.changeId} />
+              <Home lang={this.state.lang} />
             )}
           />
           <Route

@@ -10,7 +10,7 @@ import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
 import Slider from '../Slider';
 import Map from '../Map';
-import Loader from '../../data/loader/loader';
+import Loader from '../Loader';
 import './Person.scss';
 
 export default class Person extends Component {
@@ -18,17 +18,20 @@ export default class Person extends Component {
     super(props);
     this.state = {
       author: {},
-      isLoaded: false
+      isLoaded: false,
+      isLeadOfDay: false
     }
   }
 
   componentDidMount() {
     const { id } = this.props.match.params;
+    const params = new URLSearchParams(this.props.location.search);
+    params.get('leadofday') && this.setState({isLeadOfDay: true});
     getData()
       .then(data => {
         const author = data.filter(item => item.id === +id)[0];
         this.setState(({isLoaded}) => {
-          return { 
+          return {
             author,
             isLoaded: !isLoaded
           }
@@ -38,16 +41,16 @@ export default class Person extends Component {
 
   render() {
     const { lang } = this.props;
-    const { isLoaded } = this.state;
+    const { isLoaded, isLeadOfDay } = this.state;
     const { avatar, photographerName, yearsOfLife, biography, biographyTimeline, placeOnMap, youtubeUrl } = this.state.author;
-    if (!isLoaded) {
-      return <Loader />
-    }
-    return (
+
+    return !isLoaded ? <Loader /> : (
       <div className="container">
         <div className="row">
-          <div className="col-12">
-            <h2 className="title title_bordered">{dataText[lang].Person.title}</h2>
+          <div className={`col-12 ${!isLeadOfDay ? 'without-title' : ''}`}>
+            {
+              isLeadOfDay ? <h2 className="title title_bordered">{dataText[lang].Person.title}</h2> : null
+            }
             <PhotographerCard
               avatar={avatar}
               photographerName={photographerName}
