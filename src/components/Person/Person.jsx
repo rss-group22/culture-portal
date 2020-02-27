@@ -35,7 +35,7 @@ export default class Person extends Component {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2>{dataText[lang].Person.title}</h2>
+            <h2 className="title title_bordered">{dataText[lang].Person.title}</h2>
             <PhotographerCard
               avatar={avatar}
               photographerName={photographerName}
