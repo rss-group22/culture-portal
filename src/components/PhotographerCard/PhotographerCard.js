@@ -11,11 +11,11 @@ const PhotographerCard = ({
   // TODO add props to necessary blocks
   return (
     <div className="photographer row">
-      <div className="col-sm-4 photographer__photo">
+      <div className="col-md-3 photographer__photo">
         <img src={avatar} alt="photographer" />
         <h5 className="text-center">{location}</h5>
       </div>
-      <div className="col-sm-8">
+      <div className="col-md-9">
         <h3 className="photographer__name text-center">{photographerName}</h3>
         <h5 className="photographer__years text-center">{year}</h5>
         <p className="photographer__info">{biography}</p>

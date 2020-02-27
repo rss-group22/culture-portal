@@ -21,7 +21,6 @@ export default class Photographers extends Component {
       term: "",
       isLoaded: false
     };
-    this.getNewData();
   }
 
   getNewData() {
@@ -43,23 +42,10 @@ export default class Photographers extends Component {
   };
 
   search(items, term) {
-    if (term.length === 0) {
-      return items;
-    }
-
-    const name = items.filter(item => {
-      return (
-        item.photographerName.toLowerCase().indexOf(term.toLowerCase()) > -1
-      );
-    });
-
-    const town = items.filter(item => {
-      return item.location.toLowerCase().indexOf(term.toLowerCase()) > -1;
-    });
-
-    const result = Array.from(new Set(name.concat(town)));
-
-    return result;
+    if (term.length === 0) return items;
+    const name = items.filter(item => item.photographerName.toLowerCase().indexOf(term.toLowerCase()) > -1);
+    const town = items.filter(item => item.location.toLowerCase().indexOf(term.toLowerCase()) > -1);
+    return Array.from(new Set(name.concat(town)));
   }
 
   render() {
@@ -104,7 +90,7 @@ export default class Photographers extends Component {
           value={term}
           onChange={this.searchPhotographer}
         />
-        {elements}
+        {!isLoaded ? <Loader /> : elements}
       </div>
     );
   }

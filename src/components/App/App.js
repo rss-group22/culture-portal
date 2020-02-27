@@ -15,65 +15,28 @@ import Person from "../Person";
 import Photographers from "../Photographers";
 import Worklog from "../Team/Worklog/Worklog";
 import "./App.scss";
-import AsideMobile from "../Aside/AsideMobile";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       lang: "EN",
-      id: 1,
       showAside: false
     };
-    this.changeLang = this.changeLang.bind(this);
-    this.changeId = this.changeId.bind(this);
   }
 
-  onOpenAside = () => {
-    this.setState({
-      showAside: true
-    });
-  };
-
-  onCloseAside = () => {
-    this.setState({
-      showAside: false
-    });
-  };
-
-  // eslint-disable-next-line camelcase
-  UNSAFE_componentWillMount() {
-    const id = new Date().getDay();
-    this.state.id = id || 7;
-  }
-
-  changeLang(value) {
-    this.setState({ lang: value });
-  }
-
-  changeId(value) {
-    this.setState({ id: value });
-  }
+  changeLang = value => this.setState({ lang: value });
 
   render() {
     return (
       <Router>
-        <Aside
-          changeLang={this.changeLang}
-          lang={this.state.lang}
-          id={this.state.id}
-          onClose={this.onCloseAside}
-          show={this.state.showAside}
-        />
-        <AsideMobile
-          onOpen={this.onOpenAside}
-        />
+        <Aside changeLang={this.changeLang} lang={this.state.lang} />
         <div id="content">
           <Route
             path="/"
             exact
             component={() => (
-              <Home lang={this.state.lang} changeId={this.changeId} />
+              <Home lang={this.state.lang} />
             )}
           />
           <Route
