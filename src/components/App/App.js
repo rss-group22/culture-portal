@@ -15,7 +15,6 @@ import Person from "../Person";
 import Photographers from "../Photographers";
 import Worklog from "../Team/Worklog/Worklog";
 import "./App.scss";
-import AsideMobile from "../Aside/AsideMobile";
 
 export default class App extends Component {
   constructor(props) {
@@ -24,26 +23,14 @@ export default class App extends Component {
       lang: "EN",
       showAside: false
     };
-    this.changeLang = this.changeLang.bind(this);
   }
 
-  onOpenAside = () => this.setState({ showAside: true });
-  onCloseAside = () => this.setState({ showAside: false });
-
-  changeLang(value) {
-    this.setState({ lang: value });
-  }
+  changeLang = value => this.setState({ lang: value });
 
   render() {
     return (
       <Router>
-        <Aside
-          changeLang={this.changeLang}
-          lang={this.state.lang}
-          onClose={this.onCloseAside}
-          show={this.state.showAside}
-        />
-        <AsideMobile onOpen={ this.onOpenAside } />
+        <Aside changeLang={this.changeLang} lang={this.state.lang} />
         <div id="content">
           <Route
             path="/"

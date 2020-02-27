@@ -38,7 +38,6 @@ export default class Person extends Component {
         });
     });
   }
-
   render() {
     const { lang } = this.props;
     const { isLoaded, isLeadOfDay } = this.state;
@@ -57,15 +56,23 @@ export default class Person extends Component {
               yearsOfLife={yearsOfLife}
               biography={biography}
             />
+            <h2 className="title title_bordered">{dataText[lang].Person.worksTitle}</h2>
             <Slider photoGallery={this.state.author.photoGallery} />
-            <iframe
-              className="person-video"
-              title={photographerName}
-              src={youtubeUrl}
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            <div className="container video-block">
+              <div className="row justify-content-center">
+                <div className="col-md-6 col-sm-12">
+                  <iframe
+                    className="person-video"
+                    title={photographerName}
+                    src={youtubeUrl}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+
             <TimelineComponent biographyTimeline={biographyTimeline} />
             <Map placeOnMap={placeOnMap} />
           </div>

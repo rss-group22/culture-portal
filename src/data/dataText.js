@@ -24,6 +24,7 @@ const dataText = {
     },
     Person: {
       title: 'Photographer of the day',
+      worksTitle: 'The best works of the author'
     },
     Team: {
       title: 'Team members',
@@ -61,6 +62,7 @@ const dataText = {
     },
     Person: {
       title: 'Фотограф дня',
+      worksTitle: 'Лучшие работы автора'
     },
     Team: {
       title: 'Команда',
@@ -98,6 +100,7 @@ const dataText = {
     },
     Person: {
       title: 'Фатограф дня',
+      worksTitle: 'Лепшыя працы аўтара'
     },
     Team: {
       title: 'Каманда',

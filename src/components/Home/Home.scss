@@ -3,30 +3,38 @@
   .with-bg {
     min-height: 500px;
     background: url('./main_bg.jpeg') center center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    @media screen and (max-width: 480px) {
+      min-height: 380px;
+      background-attachment: initial;
+    }
     h1 {
       color: $white;
-      font-size: 50px;
+      font-size: 60px;
       text-transform: uppercase;
       text-align: center;
       opacity: 0;
       transition: all .7s;
+      @media screen and (max-width: 480px) {
+        font-size: 35px;
+      }
     }
     .title-enter {
       opacity: 0;
-      transform: translateY(700px);
+      transform: translateY(-100px);
     }
     .title-enter-done {
       opacity: 1;
-      transform: translateY(300px);
+      transform: translateY(80px);
     }
     .title-exit {
       opacity: 1;
-      transform: translateY(300px);
+      transform: translateY(80px);
     }
     .title-exit-done {
       opacity: 0;
-      transform: translateY(700px);
+      transform: translateY(-100px);
     }
   }
   .text-block {
