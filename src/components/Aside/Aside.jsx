@@ -22,7 +22,7 @@ export default class Aside extends Component {
       <div className={`aside ${show ? 'openAside' : 'closeAside'}`}>
         <div className="aside__header d-flex justify-content-between align-items-center">
           <Language changeLang={this.props.changeLang} />
-          <button className="aside__close-btn close" onClick={onClose}>&times;</button>
+          <input type="button" className="aside__close-btn btn close" value="&times;" onClick={onClose} />
         </div>
         <h2 className="aside__title">{dataText[lang].Aside.title}</h2>
         <nav className="aside__nav">

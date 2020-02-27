@@ -27,13 +27,13 @@ export default class Person extends Component {
     getData()
       .then(data => {
         const author = data.filter(item => item.id === +id)[0];
-        this.setState(({isLoaded}) => {
-          return { 
+        this.setState(({ isLoaded }) => {
+          return {
             author,
             isLoaded: !isLoaded
           }
         });
-    });
+      });
   }
 
   render() {

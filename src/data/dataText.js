@@ -33,6 +33,7 @@ const dataText = {
     },
     Photographers: {
       title: 'List photographers',
+      search: 'write the name or city of the photographer'
     },
   },
   RU: {
@@ -69,6 +70,7 @@ const dataText = {
     },
     Photographers: {
       title: 'Список фотографов',
+      search: 'напишите имя или город фотографа'
     },
   },
   BY: {
@@ -105,6 +107,7 @@ const dataText = {
     },
     Photographers: {
       title: 'Спіс фатографаў',
+      search: 'напішыце імя або населенага пункта фатографа'
     },
   },
 };

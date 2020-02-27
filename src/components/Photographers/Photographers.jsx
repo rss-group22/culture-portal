@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import PhotographerCard from "../PhotographerCard";
 import dataText from "../../data/dataText";
 import getData from "../../data/author-information";
+import Loader from '../../data/loader/loader';
+import authorInformationLang from "../../data/author-information-lang";
 
 import "./Photographers.scss";
 
@@ -16,22 +18,24 @@ export default class Photographers extends Component {
     super(props);
     this.state = {
       photographersData: [],
-      term: ""
+      term: "",
+      isLoaded: false
     };
     this.getNewData();
   }
 
-  componentDidMount() {
-    this.inputRef.focus();
-  }
-
   getNewData() {
-    getData().then(res =>
-      this.setState({
-        photographersData: res
-      })
-    );
-  }
+    getData()
+      .then(res => {
+        this.setState(({ isLoaded }) => {
+          return {
+            photographersData: res,
+            isLoaded: !isLoaded
+          }
+        });
+        this.inputRef.focus();
+      });
+  };
 
   searchPhotographer = event => {
     const term = event.target.value;
@@ -60,20 +64,31 @@ export default class Photographers extends Component {
 
   render() {
     const { lang } = this.props;
-    const { photographersData, term } = this.state;
+    const { photographersData, term, isLoaded } = this.state;
+
+    if (!isLoaded) {
+      return <Loader />
+    }
 
     const photographersFound = this.search(photographersData, term);
 
     const elements = photographersFound.length
-      ? photographersFound.map(item => {
-          const { id, ...itemProps } = item;
+      ? photographersFound.map(photographer => {
+        const { id, avatar, yearsOfLife } = photographer;
+        const photographerLang = authorInformationLang[lang][photographer.id];
 
-          return (
-            <Link to={`/person/${id}`} key={id} className="photographer__item">
-              <PhotographerCard {...itemProps} />
-            </Link>
-          );
-        })
+        return (
+          <Link to={`/person/${id}`} key={id} className="photographer__item">
+            <PhotographerCard
+              avatar={avatar}
+              year={yearsOfLife}
+              photographerName={photographerLang.photographerName}
+              biography={photographerLang.biography}
+              location={photographerLang.location}
+            />
+          </Link>
+        );
+      })
       : null;
 
     return (
@@ -85,7 +100,7 @@ export default class Photographers extends Component {
           ref={inputRef => (this.inputRef = inputRef)}
           type="search"
           className="form-control"
-          placeholder="type of photographer name"
+          placeholder={dataText[lang].Photographers.search}
           value={term}
           onChange={this.searchPhotographer}
         />
