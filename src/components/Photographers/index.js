@@ -1,3 +1,1 @@
-import Photographers from './Photographers.jsx';
-
-export default Photographers;
+export { default } from './Photographers';

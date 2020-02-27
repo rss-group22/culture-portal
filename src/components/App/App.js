@@ -20,24 +20,24 @@ export default function App () {
   const [lang, setLang] = useState('EN');
   return (
     <Router>
-      <Aside changeLang={ setLang } lang={ lang } />
+      <Aside changeLang={setLang} lang={lang} />
       <div id="content">
         <Route
           path="/"
           exact
-          component={ () => <Home lang={ lang } /> }
+          component={() => <Home lang={lang} />}
         />
         <Route
           path="/team"
-          component={ () => <Team lang={ lang } /> }
+          component={() => <Team lang={lang} />}
         />
         <Route
           path="/person/:id"
-          component={props => <Person lang={ lang } {...props} />}
+          component={props => <Person lang={lang} {...props} />}
         />
         <Route
           path="/photographers"
-          component={() => <Photographers lang={ lang } />}
+          component={() => <Photographers lang={lang} />}
         />
         <Route path="/worklog" component={Worklog} />
         <Route path="/styleguide/:tabName?" component={StyleGuide} />
