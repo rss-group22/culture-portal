@@ -4,12 +4,12 @@ const dataWorklog = [
     name: "Dmitry",
     surname: "Nikonchuk",
     done: [
-      { time: 0, feature: "styleguide of a project" },
-      { time: 0, feature: "a home page" },
-      { time: 0, feature: "files of the data" },
-      { time: 0, feature: "stylization of a project" },
-      { time: 0, feature: "" },
-      { time: 0, feature: "" },
+      { time: 5, feature: "styleguide of a project" },
+      { time: 3, feature: "a home page" },
+      { time: 2, feature: "files of the data" },
+      { time: 5, feature: "stylization of a project" },
+      { time: 2, feature: "refactoring code" },
+      { time: 2, feature: "bug fixing" },
       { time: 0, feature: "" }
     ]
   },

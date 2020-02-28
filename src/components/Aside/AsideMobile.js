@@ -5,8 +5,8 @@ import './Aside.scss';
 const AsideMobile = ({ onOpen }) => {
   return (
     <header className="header-mobile" id="header">
-      <input type="button" className="header-mobile__humburger" value="&#9776;" onClick={onOpen} />
-      <h2>Photographer of Belarus</h2>
+      <button type="button" className="header-mobile__humburger" onClick={onOpen}>&#9776;</button>
+      <h2>RS-22</h2>
     </header>
   );
 }

@@ -1,7 +1,7 @@
 const dataText = {
   EN: {
     Aside: {
-      title: 'Photographers of Belarus',
+      title: 'RS-22',
       nav1: 'Home',
       nav2: 'Photographer of the day',
       nav3: 'Team members',
@@ -24,6 +24,7 @@ const dataText = {
     },
     Person: {
       title: 'Photographer of the day',
+      worksTitle: 'The best works of the author'
     },
     Team: {
       title: 'Team members',
@@ -38,7 +39,7 @@ const dataText = {
   },
   RU: {
     Aside: {
-      title: 'Фотографы Беларуси',
+      title: 'RS-22',
       nav1: 'Домашняя страница',
       nav2: 'Фотограф дня',
       nav3: 'Команда',
@@ -61,6 +62,7 @@ const dataText = {
     },
     Person: {
       title: 'Фотограф дня',
+      worksTitle: 'Лучшие работы автора'
     },
     Team: {
       title: 'Команда',
@@ -75,7 +77,7 @@ const dataText = {
   },
   BY: {
     Aside: {
-      title: 'Фатографы Беларусі',
+      title: 'RS-22',
       nav1: 'Хатняя старонка',
       nav2: 'Фатограф дня',
       nav3: 'Каманда',
@@ -98,6 +100,7 @@ const dataText = {
     },
     Person: {
       title: 'Фатограф дня',
+      worksTitle: 'Лепшыя працы аўтара'
     },
     Team: {
       title: 'Каманда',

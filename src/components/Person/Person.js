@@ -11,7 +11,7 @@ import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
 import Slider from '../Slider';
 import Map from '../Map';
-import Loader from '../../data/loader/loader';
+import Loader from '../Loader';
 import authorInformationLang from "../../data/author-information-lang";
 import './Person.scss';
 
@@ -21,64 +21,74 @@ export default class Person extends Component {
     this.state = {
       author: {},
       isLoaded: false,
+      isLeadOfDay: false,
       lang: ''
     }
   }
 
-  componentDidMount() {
-    const { id } = this.props.match.params;
+  setNextAuthor = props => {
+    const { id } = props.match.params;
+    const params = new URLSearchParams(props.location.search);
+    this.setState({ isLeadOfDay: params.get('leadofday'), isLoaded: false });
     getData()
       .then(data => {
         const author = data.filter(item => item.id === +id)[0];
+        const authorLang = authorInformationLang[props.lang][id];
         this.setState(({ isLoaded }) => {
           return {
-            author,
-            isLoaded: !isLoaded
+            author: { ...author, ...authorLang },
+            isLoaded: !isLoaded,
+            lang: props.lang
           }
         });
       });
   }
 
-  componentDidUpdate(prevProps) {
-    if (prevProps.lang !== this.state.lang) {
-      const { id } = this.props.match.params;
-      const authorLang = authorInformationLang[this.props.lang][id];
-      this.setState(({author}) => {
-        return {
-          lang: this.props.lang,
-          author: {...author, ...authorLang}
-        }
-      })
+  componentDidMount() {
+    this.setNextAuthor(this.props);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(this.props.lang !== nextProps.lang || this.state.author.id !== nextProps.match.params.id) {
+      this.setNextAuthor(nextProps);
     }
   }
 
   render() {
     const { lang } = this.props;
-    const { isLoaded } = this.state;
+    const { isLoaded, isLeadOfDay } = this.state;
     const { avatar, photographerName, yearsOfLife, biography, biographyTimeline, placeOnMap, youtubeUrl } = this.state.author;
-    if (!isLoaded) {
-      return <Loader />
-    }
-    return (
+
+    return !isLoaded ? <Loader /> : (
       <div className="container">
         <div className="row">
-          <div className="col-12">
-            <h2 className="title title_bordered">{dataText[lang].Person.title}</h2>
+          <div className={`col-12 ${!isLeadOfDay ? 'without-title' : ''}`}>
+            {
+              isLeadOfDay ? <h2 className="title title_bordered">{dataText[lang].Person.title}</h2> : null
+            }
             <PhotographerCard
               avatar={avatar}
               photographerName={photographerName}
               yearsOfLife={yearsOfLife}
               biography={biography}
             />
+            <h2 className="title title_bordered">{dataText[lang].Person.worksTitle}</h2>
             <Slider photoGallery={this.state.author.photoGallery} />
-            <iframe
-              className="person-video"
-              title={photographerName}
-              src={youtubeUrl}
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            <div className="container video-block">
+              <div className="row justify-content-center">
+                <div className="col-md-6 col-sm-12">
+                  <iframe
+                    className="person-video"
+                    title={photographerName}
+                    src={youtubeUrl}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+
             <TimelineComponent biographyTimeline={biographyTimeline} />
             <Map placeOnMap={placeOnMap} />
           </div>

@@ -7,14 +7,15 @@
   bottom: 0;
   margin: auto;
   padding: .5rem;
-  z-index: 3;
+  z-index: 6;
   width: 300px;
   background: $blue;
   overflow: hidden;
   transition: .7s;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
   @media screen and (max-width: 960px){
     left: -360px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
   }
   &__header {
     padding-top: 20px;
@@ -49,7 +50,6 @@
     }
   }
   &__nav {
-    margin-bottom: 200%;
     ul {
       li {
         a {
@@ -75,9 +75,17 @@
     }
   }
   &__footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    bottom: 15px;
     color: $white;
     position: absolute;
     bottom: 5px;
+    font-size: 14px;
   }
 }
 
@@ -95,7 +103,7 @@
 
 .header-mobile{
   display: none;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 60px;
   padding: .5rem;
@@ -103,8 +111,12 @@
   color: $white;
   top: 0;
   left: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+  z-index: 5;
   @media screen and (max-width: 960px){
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &__humburger{
     background-color: $blue;
@@ -113,5 +125,8 @@
     width: 60px;
     border: none;
     font-size: 25px;
+  }
+  h2 {
+    margin-bottom: 0;
   }
 }

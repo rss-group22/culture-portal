@@ -5,93 +5,43 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable react/no-unused-state */
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import StyleGuide from "../StyleGuide";
-import Aside from "../Aside/Aside.jsx";
+import Aside from "../Aside/Aside";
 import Home from "../Home";
 import Team from "../Team";
 import Person from "../Person";
 import Photographers from "../Photographers";
 import Worklog from "../Team/Worklog/Worklog";
 import "./App.scss";
-import AsideMobile from "../Aside/AsideMobile";
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      lang: "EN",
-      id: 1,
-      showAside: false
-    };
-    this.changeLang = this.changeLang.bind(this);
-    this.changeId = this.changeId.bind(this);
-  }
-
-  onOpenAside = () => {
-    this.setState({
-      showAside: true
-    });
-  };
-
-  onCloseAside = () => {
-    this.setState({
-      showAside: false
-    });
-  };
-
-  // eslint-disable-next-line camelcase
-  UNSAFE_componentWillMount() {
-    const id = new Date().getDay();
-    this.state.id = id || 7;
-  }
-
-  changeLang(value) {
-    this.setState({ lang: value });
-  }
-
-  changeId(value) {
-    this.setState({ id: value });
-  }
-
-  render() {
-    return (
-      <Router>
-        <Aside
-          changeLang={this.changeLang}
-          lang={this.state.lang}
-          id={this.state.id}
-          onClose={this.onCloseAside}
-          show={this.state.showAside}
+export default function App () {
+  const [lang, setLang] = useState('EN');
+  return (
+    <Router>
+      <Aside changeLang={setLang} lang={lang} />
+      <div id="content">
+        <Route
+          path="/"
+          exact
+          component={() => <Home lang={lang} />}
         />
-        <AsideMobile
-          onOpen={this.onOpenAside}
+        <Route
+          path="/team"
+          component={() => <Team lang={lang} />}
         />
-        <div id="content">
-          <Route
-            path="/"
-            exact
-            component={() => (
-              <Home lang={this.state.lang} changeId={this.changeId} />
-            )}
-          />
-          <Route
-            path="/team"
-            component={() => <Team lang={this.state.lang} />}
-          />
-          <Route
-            path="/person/:id"
-            component={props => <Person lang={this.state.lang} {...props} />}
-          />
-          <Route
-            path="/photographers"
-            component={() => <Photographers lang={this.state.lang} />}
-          />
-          <Route path="/worklog" component={Worklog} />
-          <Route path="/styleguide/:tabName?" component={StyleGuide} />
-        </div>
-      </Router>
-    );
-  }
+        <Route
+          path="/person/:id"
+          component={props => <Person lang={lang} {...props} />}
+        />
+        <Route
+          path="/photographers"
+          component={() => <Photographers lang={lang} />}
+        />
+        <Route path="/worklog" component={Worklog} />
+        <Route path="/styleguide/:tabName?" component={StyleGuide} />
+      </div>
+    </Router>
+  );
 }
