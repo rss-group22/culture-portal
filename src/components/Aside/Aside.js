@@ -4,25 +4,25 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable import/extensions */
-import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import Language from "./Language";
-import dataText from "../../data/dataText.js";
-import AsideMobile from "./AsideMobile";
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import Language from './Language';
+import dataText from '../../data/dataText.js';
+import AsideMobile from './AsideMobile';
 
-import "./Aside.scss";
+import './Aside.scss';
 
 export default class Aside extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isShowAside: false
+      isShowAside: false,
     };
   }
 
   toggleAside = () =>
     this.setState(({ isShowAside }) => ({
-      isShowAside: !isShowAside
+      isShowAside: !isShowAside,
     }));
 
   render() {
@@ -32,7 +32,7 @@ export default class Aside extends Component {
     return (
       <>
         <AsideMobile onOpen={this.toggleAside} />
-        <div className={`aside ${isShowAside ? "openAside" : "closeAside"}`}>
+        <div className={`aside ${isShowAside ? 'openAside' : 'closeAside'}`}>
           <div className="aside__header d-flex justify-content-between align-items-center">
             <Language changeLang={changeLang} />
             <button

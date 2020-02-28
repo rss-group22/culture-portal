@@ -2,16 +2,16 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable global-require */
 /* eslint-disable max-len */
-import React from "react";
+import React from 'react';
 
-import "./PhotographerCard.scss";
+import './PhotographerCard.scss';
 
 const PhotographerCard = ({
   avatar,
   photographerName,
   year,
   biography,
-  location
+  location,
 }) => {
   return (
     <div className="photographer row">

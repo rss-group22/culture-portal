@@ -28,13 +28,17 @@ export default function Tabs() {
   return (
     <nav>
       <ul className="nav nav-tabs justify-content-center">
-        {
-          tabs.map((tab) => (
-            <li className="nav-item" key={tab.id}>
-              <NavLink to={tab.to} activeClassName="active" className="nav-link">{tab.name}</NavLink>
-            </li>
-          ))
-        }
+        {tabs.map(tab => (
+          <li className="nav-item" key={tab.id}>
+            <NavLink
+              to={tab.to}
+              activeClassName="active"
+              className="nav-link"
+            >
+              {tab.name}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );

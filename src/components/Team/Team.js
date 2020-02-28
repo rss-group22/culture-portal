@@ -2,15 +2,15 @@
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import dataText from "../../data/dataText";
-import dataTeam from "../../data/dataTeam";
-import dataTeamLang from "../../data/dataTeamLang";
-import octocatImg from "../../data/image/team/octocat.png";
-import linkedinImg from "../../data/image/team/linkedin.png";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import dataText from '../../data/dataText';
+import dataTeam from '../../data/dataTeam';
+import dataTeamLang from '../../data/dataTeamLang';
+import octocatImg from '../../data/image/team/octocat.png';
+import linkedinImg from '../../data/image/team/linkedin.png';
 
-import "./Team.scss";
+import './Team.scss';
 
 export default class Team extends Component {
   render() {
@@ -57,7 +57,7 @@ export default class Team extends Component {
                     <a href={info.urlGitHub}>
                       <img src={octocatImg} alt="github" />
                     </a>
-                    {info.urlLinked === "" ? null : (
+                    {info.urlLinked === '' ? null : (
                       <a className="team-item__social" href={info.urlLinked}>
                         <img src={linkedinImg} alt="linkedin" />
                       </a>

@@ -49,6 +49,7 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "mapbox-gl": "^1.8.0",
+    "prettier": "^1.19.1",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

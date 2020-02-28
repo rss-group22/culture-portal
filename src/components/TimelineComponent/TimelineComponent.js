@@ -1,8 +1,8 @@
 /* eslint-disable react/no-array-index-key */
-import React from "react";
-import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
+import React from 'react';
+import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 
-import "./TimelineComponent.scss";
+import './TimelineComponent.scss';
 
 const TimelineComponent = ({ biographyTimeline = [] }) => {
   const timelineItems = biographyTimeline.map(({ year, label }, idx) => (

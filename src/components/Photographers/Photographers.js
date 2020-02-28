@@ -3,33 +3,33 @@
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import PhotographerCard from "../PhotographerCard";
-import dataText from "../../data/dataText";
-import getData from "../../data/author-information";
-import Loader from "../Loader";
-import authorInformationLang from "../../data/author-information-lang";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import PhotographerCard from '../PhotographerCard';
+import dataText from '../../data/dataText';
+import getData from '../../data/author-information';
+import Loader from '../Loader';
+import authorInformationLang from '../../data/author-information-lang';
 
-import "./Photographers.scss";
+import './Photographers.scss';
 
 export default class Photographers extends Component {
   constructor(props) {
     super(props);
     this.state = {
       photographersData: [],
-      term: "",
-      isLoaded: false
+      term: '',
+      isLoaded: false,
     };
   }
 
   componentDidMount() {
     this.inputRef.focus();
-    getData().then((res, { isLoaded }) =>
-      this.setState({
+    getData().then(res =>
+      this.setState(({ isLoaded }) => ({
         photographersData: res,
-        isLoaded: !isLoaded
-      })
+        isLoaded: !isLoaded,
+      })),
     );
   }
 
@@ -39,10 +39,10 @@ export default class Photographers extends Component {
     if (term.length === 0) return items;
     const name = items.filter(
       item =>
-        item.photographerName.toLowerCase().indexOf(term.toLowerCase()) > -1
+        item.photographerName.toLowerCase().indexOf(term.toLowerCase()) > -1,
     );
     const town = items.filter(
-      item => item.location.toLowerCase().indexOf(term.toLowerCase()) > -1
+      item => item.location.toLowerCase().indexOf(term.toLowerCase()) > -1,
     );
     return Array.from(new Set(name.concat(town)));
   }

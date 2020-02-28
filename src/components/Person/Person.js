@@ -4,17 +4,17 @@
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
-import React, { Component } from "react";
-import dataText from "../../data/dataText.js";
-import PhotographerCard from "../PhotographerCard";
-import getData from "../../data/author-information";
-import TimelineComponent from "../TimelineComponent";
-import Slider from "../Slider";
-import Map from "../Map";
-import Loader from "../Loader";
-import authorInformationLang from "../../data/author-information-lang";
+import React, { Component } from 'react';
+import dataText from '../../data/dataText.js';
+import PhotographerCard from '../PhotographerCard';
+import getData from '../../data/author-information';
+import TimelineComponent from '../TimelineComponent';
+import Slider from '../Slider';
+import Map from '../Map';
+import Loader from '../Loader';
+import authorInformationLang from '../../data/author-information-lang';
 
-import "./Person.scss";
+import './Person.scss';
 
 export default class Person extends Component {
   constructor(props) {
@@ -23,7 +23,7 @@ export default class Person extends Component {
       author: {},
       isLoaded: false,
       isLeadOfDay: false,
-      lang: ""
+      lang: '',
     };
   }
 
@@ -43,7 +43,7 @@ export default class Person extends Component {
   setNextAuthor = props => {
     const { id } = props.match.params;
     const params = new URLSearchParams(props.location.search);
-    this.setState({ isLeadOfDay: params.get("leadofday"), isLoaded: false });
+    this.setState({ isLeadOfDay: params.get('leadofday'), isLoaded: false });
     getData().then(data => {
       const author = data.filter(item => item.id === +id)[0];
       const authorLang = authorInformationLang[props.lang][id];
@@ -51,7 +51,7 @@ export default class Person extends Component {
         return {
           author: { ...author, ...authorLang },
           isLoaded: !isLoaded,
-          lang: props.lang
+          lang: props.lang,
         };
       });
     });
@@ -67,7 +67,7 @@ export default class Person extends Component {
       biography,
       biographyTimeline,
       placeOnMap,
-      youtubeUrl
+      youtubeUrl,
     } = this.state.author;
 
     return !isLoaded ? (
@@ -75,7 +75,7 @@ export default class Person extends Component {
     ) : (
       <div className="container">
         <div className="row">
-          <div className={`col-12 ${!isLeadOfDay ? "without-title" : ""}`}>
+          <div className={`col-12 ${!isLeadOfDay ? 'without-title' : ''}`}>
             {isLeadOfDay ? (
               <h2 className="title title_bordered">
                 {dataText[lang].Person.title}

@@ -15,7 +15,10 @@ export default class Language extends Component {
   render() {
     return (
       <div className="aside__lang">
-        <select onChange={this.onChange} className="custom-select">
+        <select
+          onChange={this.onChange}
+          className="custom-select"
+        >
           <option>EN</option>
           <option>RU</option>
           <option>BY</option>

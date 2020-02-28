@@ -6,7 +6,8 @@ const dataTeam = [
     userGitHub: 'Minihilator',
     urlGitHub: 'https://github.com/Minihilator',
     avatarGit: 'https://avatars3.githubusercontent.com/u/13268337?v=4',
-    urlLinked: 'https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%BD%D0%B8%D0%BA%D0%BE%D0%BD%D1%87%D1%83%D0%BA-b9b966115/',
+    urlLinked:
+      'https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%BD%D0%B8%D0%BA%D0%BE%D0%BD%D1%87%D1%83%D0%BA-b9b966115/',
   },
   {
     id: 2,

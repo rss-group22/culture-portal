@@ -34,5 +34,6 @@ module.exports = {
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
     "no-return-assign": "off",
+    // "quotes": ["error", "single"]
   }
 };

@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import shortid from "shortid";
-import dataWorklog, { headersTable } from "../../../data/dataWorklog";
+import React, { Component } from 'react';
+import shortid from 'shortid';
+import dataWorklog, { headersTable } from '../../../data/dataWorklog';
 
-import "./Worklog.scss";
+import './Worklog.scss';
 
 export default class Worklog extends Component {
   renderTableHandle() {
@@ -32,7 +32,10 @@ export default class Worklog extends Component {
                     </tr>
                     {row.done.map(elem => {
                       return (
-                        <tr key={shortid.generate()} className="worklog__rows">
+                        <tr
+                          key={shortid.generate()}
+                          className="worklog__rows"
+                        >
                           <td>{`${elem.time} h`}</td>
                           <td>{elem.feature}</td>
                         </tr>
