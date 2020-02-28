@@ -42,7 +42,7 @@ const dataTeam = [
     userGitHub: 'BlazarQSO',
     urlGitHub: 'https://github.com/BlazarQSO',
     avatarGit: 'https://avatars3.githubusercontent.com/u/45054016?v=4',
-    urlLinked: '',
+    urlLinked: 'https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D0%B5%D0%B9-%D0%B8%D0%B2%D0%BA%D0%BE%D0%B2-1441881a3/',
   },
 ];
 

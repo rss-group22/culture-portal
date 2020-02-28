@@ -60,10 +60,10 @@ const dataWorklog = [
     name: "Siarhei",
     surname: "Iukou",
     done: [
-      { time: 0, feature: "create a router" },
-      { time: 0, feature: "file structure of project" },
-      { time: 0, feature: "language component" },
-      { time: 0, feature: "stylization of a project" },
+      { time: 4, feature: "create a router" },
+      { time: 4, feature: "file structure of project" },
+      { time: 2, feature: "language component" },
+      { time: 1, feature: "stylization of a project" },
       { time: 0, feature: "" },
       { time: 0, feature: "" },
       { time: 0, feature: "" }
