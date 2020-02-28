@@ -4,16 +4,17 @@
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
-import React, { Component } from 'react';
-import dataText from '../../data/dataText.js';
-import PhotographerCard from '../PhotographerCard';
-import getData from '../../data/author-information';
-import TimelineComponent from '../TimelineComponent';
-import Slider from '../Slider';
-import Map from '../Map';
-import Loader from '../Loader';
+import React, { Component } from "react";
+import dataText from "../../data/dataText.js";
+import PhotographerCard from "../PhotographerCard";
+import getData from "../../data/author-information";
+import TimelineComponent from "../TimelineComponent";
+import Slider from "../Slider";
+import Map from "../Map";
+import Loader from "../Loader";
 import authorInformationLang from "../../data/author-information-lang";
-import './Person.scss';
+
+import "./Person.scss";
 
 export default class Person extends Component {
   constructor(props) {
@@ -22,26 +23,8 @@ export default class Person extends Component {
       author: {},
       isLoaded: false,
       isLeadOfDay: false,
-      lang: ''
-    }
-  }
-
-  setNextAuthor = props => {
-    const { id } = props.match.params;
-    const params = new URLSearchParams(props.location.search);
-    this.setState({ isLeadOfDay: params.get('leadofday'), isLoaded: false });
-    getData()
-      .then(data => {
-        const author = data.filter(item => item.id === +id)[0];
-        const authorLang = authorInformationLang[props.lang][id];
-        this.setState(({ isLoaded }) => {
-          return {
-            author: { ...author, ...authorLang },
-            isLoaded: !isLoaded,
-            lang: props.lang
-          }
-        });
-      });
+      lang: ""
+    };
   }
 
   componentDidMount() {
@@ -49,30 +32,64 @@ export default class Person extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if(this.props.lang !== nextProps.lang || this.state.author.id !== nextProps.match.params.id) {
+    if (
+      this.props.lang !== nextProps.lang ||
+      this.state.author.id !== nextProps.match.params.id
+    ) {
       this.setNextAuthor(nextProps);
     }
   }
 
+  setNextAuthor = props => {
+    const { id } = props.match.params;
+    const params = new URLSearchParams(props.location.search);
+    this.setState({ isLeadOfDay: params.get("leadofday"), isLoaded: false });
+    getData().then(data => {
+      const author = data.filter(item => item.id === +id)[0];
+      const authorLang = authorInformationLang[props.lang][id];
+      this.setState(({ isLoaded }) => {
+        return {
+          author: { ...author, ...authorLang },
+          isLoaded: !isLoaded,
+          lang: props.lang
+        };
+      });
+    });
+  };
+
   render() {
     const { lang } = this.props;
     const { isLoaded, isLeadOfDay } = this.state;
-    const { avatar, photographerName, yearsOfLife, biography, biographyTimeline, placeOnMap, youtubeUrl } = this.state.author;
+    const {
+      avatar,
+      photographerName,
+      yearsOfLife,
+      biography,
+      biographyTimeline,
+      placeOnMap,
+      youtubeUrl
+    } = this.state.author;
 
-    return !isLoaded ? <Loader /> : (
+    return !isLoaded ? (
+      <Loader />
+    ) : (
       <div className="container">
         <div className="row">
-          <div className={`col-12 ${!isLeadOfDay ? 'without-title' : ''}`}>
-            {
-              isLeadOfDay ? <h2 className="title title_bordered">{dataText[lang].Person.title}</h2> : null
-            }
+          <div className={`col-12 ${!isLeadOfDay ? "without-title" : ""}`}>
+            {isLeadOfDay ? (
+              <h2 className="title title_bordered">
+                {dataText[lang].Person.title}
+              </h2>
+            ) : null}
             <PhotographerCard
               avatar={avatar}
               photographerName={photographerName}
               yearsOfLife={yearsOfLife}
               biography={biography}
             />
-            <h2 className="title title_bordered">{dataText[lang].Person.worksTitle}</h2>
+            <h2 className="title title_bordered">
+              {dataText[lang].Person.worksTitle}
+            </h2>
             <Slider photoGallery={this.state.author.photoGallery} />
             <div className="container video-block">
               <div className="row justify-content-center">

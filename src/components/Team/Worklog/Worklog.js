@@ -32,10 +32,7 @@ export default class Worklog extends Component {
                     </tr>
                     {row.done.map(elem => {
                       return (
-                        <tr
-                          key={shortid.generate()}
-                          className="worklog__rows"
-                        >
+                        <tr key={shortid.generate()} className="worklog__rows">
                           <td>{`${elem.time} h`}</td>
                           <td>{elem.feature}</td>
                         </tr>

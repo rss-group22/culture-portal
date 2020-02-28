@@ -32,10 +32,6 @@
     justify-content: space-evenly;
   }
 
-  &__item {
-    padding: 1.5rem;
-  }
-
   &__header th {
     padding: .5rem;
 
@@ -44,8 +40,12 @@
   }
 
   &__table {
-    width: 320px;
+    width: 400px;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 480px) {
+      width: 300px;
+    }
   }
 
   &__rows td {

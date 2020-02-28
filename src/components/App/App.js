@@ -14,10 +14,11 @@ import Team from "../Team";
 import Person from "../Person";
 import Photographers from "../Photographers";
 import Worklog from "../Team/Worklog/Worklog";
+
 import "./App.scss";
 
-export default function App () {
-  const [lang, setLang] = useState('EN');
+export default function App() {
+  const [lang, setLang] = useState("EN");
   return (
     <Router>
       <Aside changeLang={setLang} lang={lang} />
@@ -39,8 +40,14 @@ export default function App () {
           path="/photographers"
           component={() => <Photographers lang={lang} />}
         />
-        <Route path="/worklog" component={Worklog} />
-        <Route path="/styleguide/:tabName?" component={StyleGuide} />
+        <Route
+          path="/worklog"
+          component={Worklog}
+        />
+        <Route
+          path="/styleguide/:tabName?"
+          component={StyleGuide}
+        />
       </div>
     </Router>
   );

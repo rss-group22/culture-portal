@@ -1,9 +1,10 @@
 /* eslint-disable react/no-array-index-key */
-import React from 'react';
-import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
-import './TimelineComponent.scss';
+import React from "react";
+import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
 
-const TimelineComponent = ({biographyTimeline = []}) => {
+import "./TimelineComponent.scss";
+
+const TimelineComponent = ({ biographyTimeline = [] }) => {
   const timelineItems = biographyTimeline.map(({ year, label }, idx) => (
     <TimelineItem
       key={idx + 1}
@@ -15,7 +16,10 @@ const TimelineComponent = ({biographyTimeline = []}) => {
   ));
 
   return (
-    <Timeline className="timeline" lineColor="#ddd">
+    <Timeline
+      className="timeline"
+      lineColor="#ddd"
+    >
       {timelineItems}
     </Timeline>
   );

@@ -4,21 +4,26 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable import/extensions */
-import React, { Component } from 'react';
-import './Aside.scss';
-import { NavLink } from 'react-router-dom';
-import Language from './Language.jsx';
-import dataText from '../../data/dataText.js';
-import AsideMobile from './AsideMobile';
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import Language from "./Language";
+import dataText from "../../data/dataText.js";
+import AsideMobile from "./AsideMobile";
+
+import "./Aside.scss";
 
 export default class Aside extends Component {
   constructor(props) {
     super(props);
     this.state = {
       isShowAside: false
-    }
+    };
   }
-  toggleAside = () => this.setState({isShowAside: !this.state.isShowAside});
+
+  toggleAside = () =>
+    this.setState(({ isShowAside }) => ({
+      isShowAside: !isShowAside
+    }));
 
   render() {
     const { lang, changeLang } = this.props;
@@ -26,11 +31,17 @@ export default class Aside extends Component {
     const leaderId = new Date().getDay() || 7;
     return (
       <>
-        <AsideMobile onOpen={ this.toggleAside } />
-        <div className={`aside ${isShowAside ? 'openAside' : 'closeAside'}`}>
+        <AsideMobile onOpen={this.toggleAside} />
+        <div className={`aside ${isShowAside ? "openAside" : "closeAside"}`}>
           <div className="aside__header d-flex justify-content-between align-items-center">
-            <Language changeLang={ changeLang } />
-            <button className="aside__close-btn close" onClick={this.toggleAside}>&times;</button>
+            <Language changeLang={changeLang} />
+            <button
+              type="button"
+              className="aside__close-btn close"
+              onClick={this.toggleAside}
+            >
+              &times;
+            </button>
           </div>
           <h2 className="aside__title">{dataText[lang].Aside.title}</h2>
           <nav className="aside__nav">
@@ -74,7 +85,11 @@ export default class Aside extends Component {
               </li>
             </ul>
           </nav>
-          <span className="aside__footer">RSSchool &copy; { new Date().getFullYear() } | Created by Group 22</span>
+          <span className="aside__footer">
+            RSSchool &copy;
+            {new Date().getFullYear()}
+            | Created by Group 22
+          </span>
         </div>
       </>
     );

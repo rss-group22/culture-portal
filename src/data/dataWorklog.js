@@ -10,7 +10,6 @@ const dataWorklog = [
       { time: 5, feature: "stylization of a project" },
       { time: 2, feature: "refactoring code" },
       { time: 2, feature: "bug fixing" },
-      { time: 0, feature: "" }
     ]
   },
   {
@@ -23,8 +22,6 @@ const dataWorklog = [
       { time: 1, feature: "search implementation" },
       { time: 2, feature: "images of project" },
       { time: 3, feature: "translate implementation on page search photographers" },
-      { time: 0, feature: "" },
-      { time: 0, feature: "" }
     ]
   },
   {
@@ -33,7 +30,7 @@ const dataWorklog = [
     surname: "Danilau",
     done: [
       { time: 0, feature: "init a project" },
-      { time: 0, feature: "timeine, slider" },
+      { time: 0, feature: "timeline, slider" },
       { time: 0, feature: "map, video" },
       { time: 0, feature: "dependencies of a project" },
       { time: 0, feature: "" },
@@ -46,13 +43,12 @@ const dataWorklog = [
     name: "Liudmila",
     surname: "Arzamasova",
     done: [
-      { time: 0, feature: "create a design of project" },
-      { time: 0, feature: "implement page of a team" },
-      { time: 0, feature: "loader" },
-      { time: 0, feature: "files of the data" },
-      { time: 0, feature: "" },
-      { time: 0, feature: "" },
-      { time: 0, feature: "" }
+      { time: 3, feature: "create a design of project" },
+      { time: 5, feature: "implement page of a team" },
+      { time: 1, feature: "formatting" },
+      { time: 2, feature: "files of the data" },
+      { time: 3, feature: "implement page of a worklog" },
+      { time: 1, feature: "translate of a team page" }
     ]
   },
   {
