@@ -1,11 +1,6 @@
-/* eslint-disable react/no-did-update-set-state */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable no-useless-constructor */
-/* eslint-disable react/prop-types */
-/* eslint-disable import/extensions */
 import React, { Component } from 'react';
-import dataText from '../../data/dataText.js';
+import PropTypes from 'prop-types';
+import dataText from '../../data/dataText';
 import PhotographerCard from '../PhotographerCard';
 import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
@@ -19,10 +14,21 @@ export default class Person extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      authorId: null,
       author: {},
       isLoaded: false,
       isLeadOfDay: false,
       lang: ''
+    }
+  }
+
+  componentDidMount() {
+    this.setNextAuthor(this.props);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(this.props.lang !== nextProps.lang || this.state.author.id !== nextProps.match.params.id) {
+      this.setNextAuthor(nextProps);
     }
   }
 
@@ -42,16 +48,6 @@ export default class Person extends Component {
           }
         });
       });
-  }
-
-  componentDidMount() {
-    this.setNextAuthor(this.props);
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if(this.props.lang !== nextProps.lang || this.state.author.id !== nextProps.match.params.id) {
-      this.setNextAuthor(nextProps);
-    }
   }
 
   render() {
@@ -96,4 +92,12 @@ export default class Person extends Component {
       </div>
     );
   }
+}
+
+Person.defaultProps = {
+  lang: 'EN'
+}
+
+Person.propTypes = {
+  lang: PropTypes.string
 }

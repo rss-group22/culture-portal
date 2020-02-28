@@ -15,26 +15,15 @@
       text-transform: uppercase;
       text-align: center;
       opacity: 0;
+      transform: translateY(-100px);
       transition: all .7s;
+      &.visible {
+        opacity: 1;
+        transform: translateY(80px);
+      }
       @media screen and (max-width: 480px) {
         font-size: 35px;
       }
-    }
-    .title-enter {
-      opacity: 0;
-      transform: translateY(-100px);
-    }
-    .title-enter-done {
-      opacity: 1;
-      transform: translateY(80px);
-    }
-    .title-exit {
-      opacity: 1;
-      transform: translateY(80px);
-    }
-    .title-exit-done {
-      opacity: 0;
-      transform: translateY(-100px);
     }
   }
   .text-block {

@@ -1,14 +1,9 @@
-/* eslint-disable react/jsx-no-bind */
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable no-useless-constructor */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable import/extensions */
 import React, { Component } from 'react';
 import './Aside.scss';
 import { NavLink } from 'react-router-dom';
-import Language from './Language.jsx';
-import dataText from '../../data/dataText.js';
+import PropTypes from 'prop-types';
+import Language from './Language';
+import dataText from '../../data/dataText';
 import AsideMobile from './AsideMobile';
 
 export default class Aside extends Component {
@@ -18,7 +13,8 @@ export default class Aside extends Component {
       isShowAside: false
     }
   }
-  toggleAside = () => this.setState({isShowAside: !this.state.isShowAside});
+
+  toggleAside = () => this.setState(prevState => ({isShowAside: !prevState.isShowAside}));
 
   render() {
     const { lang, changeLang } = this.props;
@@ -26,11 +22,11 @@ export default class Aside extends Component {
     const leaderId = new Date().getDay() || 7;
     return (
       <>
-        <AsideMobile onOpen={ this.toggleAside } />
+        <AsideMobile onOpen={this.toggleAside} />
         <div className={`aside ${isShowAside ? 'openAside' : 'closeAside'}`}>
           <div className="aside__header d-flex justify-content-between align-items-center">
-            <Language changeLang={ changeLang } />
-            <button className="aside__close-btn close" onClick={this.toggleAside}>&times;</button>
+            <Language changeLang={changeLang} />
+            <button type="button" className="aside__close-btn close" onClick={this.toggleAside}>&times;</button>
           </div>
           <h2 className="aside__title">{dataText[lang].Aside.title}</h2>
           <nav className="aside__nav">
@@ -74,9 +70,22 @@ export default class Aside extends Component {
               </li>
             </ul>
           </nav>
-          <span className="aside__footer">RSSchool &copy; { new Date().getFullYear() } | Created by Group 22</span>
+          <span className="aside__footer">
+            RSSchool &copy;
+            { new Date().getFullYear() }
+             | Created by Group 22
+          </span>
         </div>
       </>
     );
   }
+}
+
+Aside.defaultProps = {
+  changeLang: (val) => (val)
+}
+
+Aside.propTypes = {
+  lang: PropTypes.string.isRequired,
+  changeLang: PropTypes.func
 }

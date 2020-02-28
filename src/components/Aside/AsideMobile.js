@@ -1,8 +1,8 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import './Aside.scss';
 
-const AsideMobile = ({ onOpen }) => {
+export default function AsideMobile({ onOpen }) {
   return (
     <header className="header-mobile" id="header">
       <button type="button" className="header-mobile__humburger" onClick={onOpen}>&#9776;</button>
@@ -11,4 +11,10 @@ const AsideMobile = ({ onOpen }) => {
   );
 }
 
-export default AsideMobile;
+AsideMobile.defaultProps = {
+  onOpen: () => (true)
+}
+
+AsideMobile.propTypes = {
+  onOpen: PropTypes.func
+}

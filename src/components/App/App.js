@@ -3,8 +3,6 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/sort-comp */
 /* eslint-disable import/no-named-as-default */
-/* eslint-disable import/no-named-as-default-member */
-/* eslint-disable react/no-unused-state */
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import StyleGuide from "../StyleGuide";
