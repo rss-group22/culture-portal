@@ -8,7 +8,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import StyleGuide from "../StyleGuide";
-import Aside from "../Aside/Aside.jsx";
+import Aside from "../Aside/Aside";
 import Home from "../Home";
 import Team from "../Team";
 import Person from "../Person";
