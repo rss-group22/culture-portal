@@ -7,6 +7,7 @@ import TimelineComponent from '../TimelineComponent';
 import Slider from '../Slider';
 import Map from '../Map';
 import Loader from '../Loader';
+import BestWorks from '../BestWorks';
 import authorInformationLang from '../../data/author-information-lang';
 
 import './Person.scss';
@@ -62,8 +63,8 @@ export default class Person extends Component {
       biographyTimeline,
       placeOnMap,
       youtubeUrl,
+      listOfPhotographerWorks
     } = this.state.author;
-
     return !isLoaded ? (
       <Loader />
     ) : (
@@ -99,7 +100,7 @@ export default class Person extends Component {
                 </div>
               </div>
             </div>
-
+            <BestWorks lang={lang} listOfPhotographerWorks={listOfPhotographerWorks} />
             <TimelineComponent biographyTimeline={biographyTimeline} />
             <Map placeOnMap={placeOnMap} />
           </div>
