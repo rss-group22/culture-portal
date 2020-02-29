@@ -32,13 +32,11 @@ const dataWorklog = [
     name: 'Max',
     surname: 'Danilau',
     done: [
-      { time: 0, feature: 'init a project' },
-      { time: 0, feature: 'timeline, slider' },
-      { time: 0, feature: 'map, video' },
-      { time: 0, feature: 'dependencies of a project' },
-      { time: 0, feature: '' },
-      { time: 0, feature: '' },
-      { time: 0, feature: '' },
+      { time: 3, feature: 'init of a project' },
+      { time: 1, feature: 'dependencies of a project' },
+      { time: 5, feature: 'elements for author\'s page' },
+      { time: 2, feature: 'fixing of authors\' info in different languages' },
+      { time: 2, feature: 'styles for author\'s page' },
     ],
   },
   {
