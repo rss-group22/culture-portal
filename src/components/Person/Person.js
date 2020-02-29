@@ -1,11 +1,6 @@
-/* eslint-disable react/no-did-update-set-state */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable no-useless-constructor */
-/* eslint-disable react/prop-types */
-/* eslint-disable import/extensions */
 import React, { Component } from 'react';
-import dataText from '../../data/dataText.js';
+import PropTypes from 'prop-types';
+import dataText from '../../data/dataText';
 import PhotographerCard from '../PhotographerCard';
 import getData from '../../data/author-information';
 import TimelineComponent from '../TimelineComponent';
@@ -20,11 +15,12 @@ export default class Person extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      authorId: null,
       author: {},
       isLoaded: false,
       isLeadOfDay: false,
-      lang: '',
-    };
+      lang: ''
+    }
   }
 
   componentDidMount() {
@@ -32,10 +28,7 @@ export default class Person extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (
-      this.props.lang !== nextProps.lang ||
-      this.state.author.id !== nextProps.match.params.id
-    ) {
+    if(this.props.lang !== nextProps.lang || this.state.author.id !== nextProps.match.params.id) {
       this.setNextAuthor(nextProps);
     }
   }
@@ -44,18 +37,19 @@ export default class Person extends Component {
     const { id } = props.match.params;
     const params = new URLSearchParams(props.location.search);
     this.setState({ isLeadOfDay: params.get('leadofday'), isLoaded: false });
-    getData().then(data => {
-      const author = data.filter(item => item.id === +id)[0];
-      const authorLang = authorInformationLang[props.lang][id];
-      this.setState(({ isLoaded }) => {
-        return {
-          author: { ...author, ...authorLang },
-          isLoaded: !isLoaded,
-          lang: props.lang,
-        };
+    getData()
+      .then(data => {
+        const author = data.filter(item => item.id === +id)[0];
+        const authorLang = authorInformationLang[props.lang][id];
+        this.setState(({ isLoaded }) => {
+          return {
+            author: { ...author, ...authorLang },
+            isLoaded: !isLoaded,
+            lang: props.lang
+          }
+        });
       });
-    });
-  };
+  }
 
   render() {
     const { lang } = this.props;
@@ -113,4 +107,12 @@ export default class Person extends Component {
       </div>
     );
   }
+}
+
+Person.defaultProps = {
+  lang: 'EN'
+}
+
+Person.propTypes = {
+  lang: PropTypes.string
 }

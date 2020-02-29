@@ -1,17 +1,12 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable no-useless-constructor */
-/* eslint-disable react/prop-types */
-/* eslint-disable import/extensions */
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import PhotographerCard from '../PhotographerCard';
-import dataText from '../../data/dataText';
-import getData from '../../data/author-information';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
+import PhotographerCard from "../PhotographerCard";
+import dataText from "../../data/dataText";
+import getData from "../../data/author-information";
 import Loader from '../Loader';
-import authorInformationLang from '../../data/author-information-lang';
-
-import './Photographers.scss';
+import authorInformationLang from "../../data/author-information-lang";
+import "./Photographers.scss";
 
 export default class Photographers extends Component {
   constructor(props) {
@@ -25,15 +20,14 @@ export default class Photographers extends Component {
 
   componentDidMount() {
     this.inputRef.focus();
-    getData().then(res =>
-      this.setState(({ isLoaded }) => ({
+    getData()
+      .then(res => this.setState(prevState => ({
         photographersData: res,
-        isLoaded: !isLoaded,
-      })),
-    );
+        isLoaded: !prevState.isLoaded
+      })))
   }
 
-  searchPhotographer = e => this.setState({ term: e.target.value });
+  searchPhotographer = ({target: { value }}) => this.setState({ term: value });
 
   search(items, term) {
     if (term.length === 0) return items;
@@ -88,4 +82,12 @@ export default class Photographers extends Component {
       </div>
     );
   }
+}
+
+Photographers.defaultProps = {
+  lang: 'EN'
+}
+
+Photographers.propTypes = {
+  lang: PropTypes.string
 }

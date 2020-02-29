@@ -1,10 +1,11 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 
 import './TimelineComponent.scss';
 
-const TimelineComponent = ({ biographyTimeline = [] }) => {
+export default function TimelineComponent({biographyTimeline}) {
   const timelineItems = biographyTimeline.map(({ year, label }, idx) => (
     <TimelineItem
       key={idx + 1}
@@ -25,4 +26,10 @@ const TimelineComponent = ({ biographyTimeline = [] }) => {
   );
 };
 
-export default TimelineComponent;
+TimelineComponent.defaultProps = {
+  biographyTimeline: []
+}
+
+TimelineComponent.propTypes = {
+  biographyTimeline: PropTypes.arrayOf(PropTypes.object)
+}

@@ -3,17 +3,16 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/sort-comp */
 /* eslint-disable import/no-named-as-default */
-/* eslint-disable import/no-named-as-default-member */
-/* eslint-disable react/no-unused-state */
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import StyleGuide from '../StyleGuide';
-import Aside from '../Aside/Aside';
-import Home from '../Home';
-import Team from '../Team';
-import Person from '../Person';
-import Photographers from '../Photographers';
-import Worklog from '../Team/Worklog/Worklog';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import StyleGuide from "../StyleGuide";
+import Aside from "../Aside/Aside";
+import Home from "../Home";
+import Team from "../Team";
+import Person from "../Person";
+import Photographers from "../Photographers";
+import Worklog from "../Team/Worklog/Worklog";
+import "./App.scss";
 
 import './App.scss';
 
