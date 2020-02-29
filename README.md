@@ -19,33 +19,28 @@ There is possible to get more information about a chosen photographer.
 * Run http-server `http-server dist`
 * Open url `localhost:8080` in your browser
 
-## How to run test
-* Command `npm test`
-
 
 ## Files structure:
 ```
 /src
 ├── components
-│   ├── Component             # for component and it's styles
+│   ├── Component                   # for component and it's styles
 |       ├── Component.js
 |       ├── Component.scss
-│   ├── pages                 # for pages (also can contain styles)
-|       ├── page1.js
-|       ├── page2.js
-|       ├── page3.js
-├── services                  # for all XHR and Promises
-│   ├── getPhotographers.js
-│   ├── getDeveloperInfo.js
-├── styles                  # for variables and global styles
-│   ├── _variables.scss
-├── App.js                   # main entry point.
-├── App.scss
+|       ├── index.js
+├── data
+|     ├── image                      # for all XHR and Promises
+│     ├── getPhotographers.js
+│     ├── getDeveloperInfo.js
+├── scss                             # for variables and global styles
+│     ├── _variables.scss
+├── index.js                         # main entry point.
+├── index.scss
 ```
 
 ## Evaluation
 
-Total of points - **-**
+Total of points - **220**
 
 ### Min scope - **50**
 - [ ] **10** Main page + page with a list of authors + author's page (only pages with content without widgets);
@@ -62,14 +57,10 @@ Total of points - **-**
 - [ ] **10** Author's page contains video overlay;
 - [ ] **20** Author's page contains photo gallery;
 - [ ] **10** Author's page contains map (geowidget);
-- [ ] **from 0 to 20** Design (typography, icons, colors, links + buttons + input are styled)
+- [ ] **20** Design (typography, icons, colors, links + buttons + input are styled)
 - [ ] **20** Material-ui / bootstrap is used
 - [ ] **10** Portal has third language;
 
-### Extra scope - **70**
+### Extra scope - **30**
 - [ ] **10** Confidence of the project presentation;
-- [ ] **10** Project is made using gatsbyjs;
-- [ ] **10** Contentful / netlify cms is used for content management
-- [ ] **20** Animations / special effects like paralax
-- [ ] **up to 20** Outstanding design;
-- [ ] **20** Storybook/styleguidist/other react styleguide tool usage for the page with styles
+- [ ] **20** Outstanding design;
