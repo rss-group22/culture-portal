@@ -1,8 +1,3 @@
-/* eslint-disable react/no-access-state-in-setstate */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable import/extensions */
-/* eslint-disable react/sort-comp */
-/* eslint-disable import/no-named-as-default */
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import StyleGuide from "../StyleGuide";
@@ -13,8 +8,6 @@ import Person from "../Person";
 import Photographers from "../Photographers";
 import Worklog from "../Team/Worklog/Worklog";
 import "./App.scss";
-
-import './App.scss';
 
 export default function App() {
   const [lang, setLang] = useState('EN');
