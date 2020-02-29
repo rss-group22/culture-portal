@@ -29,40 +29,43 @@ export default class Photographers extends Component {
 
   searchPhotographer = ({target: { value }}) => this.setState({ term: value });
 
-  search(items, term) {
-    if (term.length === 0) return items;
-    const name = items.filter(
+  search(data, term, langData) {
+    if (term.length === 0) return data;
+
+    const name = data.filter(
       item =>
-        item.photographerName.toLowerCase().indexOf(term.toLowerCase()) > -1,
+        langData[item.id].photographerName.toLowerCase().indexOf(term.toLowerCase()) > -1,
     );
-    const town = items.filter(
-      item => item.location.toLowerCase().indexOf(term.toLowerCase()) > -1,
+
+    const town = data.filter(
+      item =>
+        langData[item.id].location.toLowerCase().indexOf(term.toLowerCase()) > -1,
     );
     return Array.from(new Set(name.concat(town)));
   }
 
   render() {
     const { lang } = this.props;
-    const { photographersData, term, isLoaded } = this.state;
-    const photographersFound = this.search(photographersData, term);
+    const { term, isLoaded, photographersData } = this.state;
+    const photographersFound = this.search(photographersData, term, authorInformationLang[lang]);
 
     const elements = photographersFound.length
       ? photographersFound.map(photographer => {
-          const { id, avatar, yearsOfLife } = photographer;
-          const photographerLang = authorInformationLang[lang][photographer.id];
+        const { id, avatar, yearsOfLife } = photographer;
+        const photographerLang = authorInformationLang[lang][photographer.id];
 
-          return (
-            <Link to={`/person/${id}`} key={id} className="photographer__item">
-              <PhotographerCard
-                avatar={avatar}
-                year={yearsOfLife}
-                photographerName={photographerLang.photographerName}
-                biography={photographerLang.biography}
-                location={photographerLang.location}
-              />
-            </Link>
-          );
-        })
+        return (
+          <Link to={`/person/${id}`} key={id} className="photographer__item">
+            <PhotographerCard
+              avatar={avatar}
+              year={yearsOfLife}
+              photographerName={photographerLang.photographerName}
+              biography={photographerLang.biography}
+              location={photographerLang.location}
+            />
+          </Link>
+        );
+      })
       : null;
 
     return (
