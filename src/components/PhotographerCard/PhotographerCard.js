@@ -1,18 +1,10 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable global-require */
-/* eslint-disable max-len */
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import './PhotographerCard.scss';
 
-const PhotographerCard = ({
-  avatar,
-  photographerName,
-  year,
-  biography,
-  location,
-}) => {
+export default function PhotographerCard({
+  avatar, photographerName, year, biography, location
+}) {
   return (
     <div className="photographer row">
       <div className="col-md-3 photographer__photo">
@@ -28,4 +20,18 @@ const PhotographerCard = ({
   );
 };
 
-export default PhotographerCard;
+PhotographerCard.defaultProps = {
+  avatar: '',
+  photographerName: '',
+  year: '',
+  biography: '',
+  location: ''
+}
+
+PhotographerCard.propTypes = {
+  avatar: PropTypes.string,
+  photographerName: PropTypes.string,
+  year: PropTypes.string,
+  biography: PropTypes.string,
+  location: PropTypes.string
+}

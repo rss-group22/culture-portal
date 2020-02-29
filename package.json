@@ -54,12 +54,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-icons": "^3.9.0",
     "react-id-swiper": "^2.4.0",
-    "react-intl": "^3.12.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.0",
-    "react-transition-group": "^4.3.0",
     "shortid": "^2.2.15",
     "swiper": "^5.3.1",
     "vertical-timeline-component-for-react": "^1.0.6"

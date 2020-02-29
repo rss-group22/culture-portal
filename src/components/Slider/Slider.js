@@ -1,24 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Swiper from 'react-id-swiper';
 
 import 'swiper/css/swiper.css';
 import './Slider.scss';
 
-const Slider = ({ photoGallery = [] }) => {
-  const params = {
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
-    },
-    shouldSwiperUpdate: true,
-  };
+const params = {
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+  shouldSwiperUpdate: true,
+}
+
+export default function Slider({photoGallery}) {
   return (
     <div className="slider-wrapper">
       <Swiper {...params}>
@@ -42,4 +44,10 @@ const Slider = ({ photoGallery = [] }) => {
   );
 };
 
-export default Slider;
+Slider.defaultProps = {
+  photoGallery: []
+}
+
+Slider.propTypes = {
+  photoGallery: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string]))
+}

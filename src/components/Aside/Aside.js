@@ -1,13 +1,8 @@
-/* eslint-disable react/jsx-no-bind */
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable no-useless-constructor */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable import/extensions */
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Language from './Language';
-import dataText from '../../data/dataText.js';
+import dataText from '../../data/dataText';
 import AsideMobile from './AsideMobile';
 
 import './Aside.scss';
@@ -20,10 +15,7 @@ export default class Aside extends Component {
     };
   }
 
-  toggleAside = () =>
-    this.setState(({ isShowAside }) => ({
-      isShowAside: !isShowAside,
-    }));
+  toggleAside = () => this.setState(prevState => ({isShowAside: !prevState.isShowAside}));
 
   render() {
     const { lang, changeLang } = this.props;
@@ -35,13 +27,7 @@ export default class Aside extends Component {
         <div className={`aside ${isShowAside ? 'openAside' : 'closeAside'}`}>
           <div className="aside__header d-flex justify-content-between align-items-center">
             <Language changeLang={changeLang} />
-            <button
-              type="button"
-              className="aside__close-btn close"
-              onClick={this.toggleAside}
-            >
-              &times;
-            </button>
+            <button type="button" className="aside__close-btn close" onClick={this.toggleAside}>&times;</button>
           </div>
           <h2 className="aside__title">{dataText[lang].Aside.title}</h2>
           <nav className="aside__nav">
@@ -87,11 +73,20 @@ export default class Aside extends Component {
           </nav>
           <span className="aside__footer">
             RSSchool &copy;
-            {new Date().getFullYear()}
-            | Created by Group 22
+            { new Date().getFullYear() }
+             | Created by Group 22
           </span>
         </div>
       </>
     );
   }
+}
+
+Aside.defaultProps = {
+  changeLang: (val) => (val)
+}
+
+Aside.propTypes = {
+  lang: PropTypes.string.isRequired,
+  changeLang: PropTypes.func
 }
