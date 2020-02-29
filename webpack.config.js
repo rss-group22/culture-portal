@@ -42,16 +42,16 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader ,
-          'css-loader' ,
+          MiniCssExtractPlugin.loader,
+          'css-loader',
         ]
       },
       {
         test: /\.s[ca]ss$/,
         use: [
-          MiniCssExtractPlugin.loader ,
-          'css-loader' ,
-          'sass-loader' ,
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
         ]
       }
     ]
@@ -68,5 +68,6 @@ module.exports = {
     open: true,
     contentBase: './dist',
     historyApiFallback: true
-  }
+  },
+  devtool: 'inline-source-maps'
 };

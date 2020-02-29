@@ -27,19 +27,24 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'test',
+          year: '1987',
+          label: 'Exhibition of the Galina association at the Republican poster exhibition (Minsk, Belarus)'
         },
         {
-          label: 'test',
+          year: '1988',
+          label: 'Exhibition "We" (Minsk, Belarus)'
         },
         {
-          label: 'test',
+          year: '1993',
+          label: 'Exhibition in the “Pilango Gallery” (Berlin, Germany)'
         },
         {
-          label: 'test',
+          year: '2010',
+          label: 'Exhibition at the Dzyga Gallery (Lviv, Ukraine)'
         },
         {
-          label: 'test',
+          year: '2013',
+          label: 'Photo exhibition “Under Ground” (Torun, Poland)'
         },
       ],
       location: 'Minsk, Belarus',
@@ -77,19 +82,24 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'test',
+          year: '1997',
+          label: '"Alone in the city." Museum of the Belarusian State Academy of Arts, Minsk'
         },
         {
-          label: 'test',
+          year: '1998 - 1999',
+          label: '"My America." Foreign Society of North Rhine-Westphalia, Dortmund (Germany)'
         },
         {
-          label: 'test',
+          year: '2001',
+          label: '"Preview". Goethe Institute M-Gallery in Minsk'
         },
         {
-          label: 'test',
+          year: '2004',
+          label: 'Zaslavsky promenade. Zaslavl Historical and Cultural Museum-Reserve, Zaslavl'
         },
         {
-          label: 'test',
+          year: '2019',
+          label: '"Intentions." Republican Art Gallery, Minsk'
         },
       ],
       location: 'Minsk, Belarus',
@@ -128,14 +138,17 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'test',
+          year: '1913 - 1914',
+          label: '"Herald of photographs." The magazine in which Jan Bulgack posted his photographs'
         },
         {
-          label: 'test',
+          year: '1915',
+          label: '“Lithuania on the set of Jan Bulgak.” The album consists of 6 volumes which contained more than 270 pictures'
         },
         {
-          label: 'test',
-        },
+          year: '1945',
+          label: '"Warsaw. 1945 in the images of Jan Bulgak." In Warsaw, with the help of the Director of the National Museum Stanislav Lorenz, the first post-war exhibition of J. Bulgak took place'
+        }
       ],
       location: 'Warsaw, Poland',
     },
@@ -171,8 +184,9 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'test',
-        },
+          year: '1900 - 1962',
+          label: 'Filmed everything that was around, all the events that I watched: temples, guests, harvesting, building a house, natural phenomena'
+        }
       ],
       location: 'Volkovysk, Belarus',
     },
@@ -208,20 +222,25 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'testtest',
+          year: '1924',
+          label: '"Geographer of Europe." Edition in which photographic works of Dashkevich were printed'
         },
         {
-          label: 'testtest',
+          year: '1926',
+          label: '"Initial Geography." Edition in which photographic works of Dashkevich were printed'
         },
         {
-          label: 'testtest',
+          year: '1927 - 1928',
+          label: '"Artworks." Edition in which photographic works of Dashkevich were printed'
         },
         {
-          label: 'testtest',
+          year: '1931',
+          label: '“Soviet Belarus: Photo Album”. Edition in which photographic works of Dashkevich were printed'
         },
         {
-          label: 'testtest',
-        },
+          year: '1928',
+          label: '"The All-Belarusian Exhibition of Local History Photos and Sketches." Dashkevich’s works participated in this exhibition in the Bowl'
+        }
       ],
       location: 'Minsk, Belarus',
     },
@@ -257,20 +276,25 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'test',
+          year: '1987',
+          label: '"Spring Songs of the Superman." Apartment exhibition (Minsk, Bularus)'
         },
         {
-          label: 'test',
+          year: '1995',
+          label: '“The Death of Pioneer” - The Sixth Line Gallery of Independent Art (Minsk, Belarus)'
         },
         {
-          label: 'test',
+          year: '2001',
+          label: '"Palace for the birds." Center for Contemporary Art "Uyazdovsky Palace" (Warsaw, Poland)'
         },
         {
-          label: 'test',
+          year: '2003',
+          label: 'Sweet Straw Life. Gallery "RLBQ" (Marseille, France)'
         },
         {
-          label: 'test',
-        },
+          year: '2007',
+          label: '"Alice in the Land of Mad Tea Party" and "City of the Sun." Gallery "Giedre Bartelt Galerie" (Berlin, Germany)'
+        }
       ],
       location: 'Minsk, Belarus',
     },
@@ -309,20 +333,25 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'test',
+          year: 'хххх',
+          label: '“Wooden architecture of Belarusian Polesie”. Edition in which photographic works were printed'
         },
         {
-          label: 'test',
+          year: 'хххх',
+          label: '"Art created by the people." Edition in which photographic works were printed'
         },
         {
-          label: 'testtest',
+          year: 'хххх',
+          label: '"Wooden architecture of Polesie". Edition in which photographic works were printed'
         },
         {
-          label: 'testtest',
+          year: 'хххх',
+          label: '“Iconography of Belarus of the 12th-18th centuries”. Edition in which photographic works were printed'
         },
         {
-          label: 'testtest',
-        },
+          year: 'хххх',
+          label: '“Decorative and applied art of Belarus of the 12th-18th centuries”. Dashkevich’s works participated in this exhibition in the Bowl'
+        }
       ],
       location: 'Minsk, Belarus',
     },
@@ -355,20 +384,24 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label:
-            'Выставка объединения «Галина» на Республиканской выставке плаката (г. Минск, Беларусь)',
+          year: '1987',
+          label: 'Выставка объединения «Галина» на Республиканской выставке плаката (г. Минск, Беларусь)'
         },
         {
-          label: 'Выставка «Мы» (г. Минск, Беларусь)',
+          year: '1988',
+          label: 'Выставка «Мы» (г. Минск, Беларусь)'
         },
         {
-          label: 'Выставка в «Pilango Gallery» (г. Берлин , Германия )',
+          year: '1993',
+          label: 'Выставка в «Pilango Gallery» (г. Берлин, Германия)'
         },
         {
-          label: 'Выставка в галерее «Dzyga» (г. Львов , Украина )',
+          year: '2010',
+          label: 'Выставка в галерее «Dzyga» (г. Львов, Украина)'
         },
         {
-          label: 'Фотовыставка «Under Ground» (г. Торунь , Польша )',
+          year: '2013',
+          label: 'Фотовыставка «Under Ground» (г. Торунь, Польша)'
         },
       ],
       location: 'Минск, Беларусь',
@@ -406,22 +439,24 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label:
-            '«Один в городе». Музей Белорусского государственной академии искусств, Минск',
+          year: '1997',
+          label: '«Один в городе». Музей Белорусского государственной академии искусств, Минск'
         },
         {
-          label:
-            '«Моя Америка». Иностранное общество земли Северный Рейн-Вестфалия, Дортмунд (Германия)',
+          year: '1998 - 1999',
+          label: '«Моя Америка». Иностранное общество земли Северный Рейн-Вестфалия, Дортмунд (Германия)'
         },
         {
-          label: '«Preview». М-Галерея Института имени Гёте в Минске',
+          year: '2001',
+          label: '«Preview». М-Галерея Института имени Гёте в Минске'
         },
         {
-          label:
-            '«Заславский променад». Заславский историко-культурный музей-заповедник, Заславль',
+          year: '2004',
+          label: '«Заславский променад». Заславский историко-культурный музей-заповедник, Заславль'
         },
         {
-          label: '«Интенции». Республиканская художественная галерея, Минск',
+          year: '2019',
+          label: '«Интенции». Республиканская художественная галерея, Минск'
         },
       ],
       location: 'Минск, Беларусь',
@@ -429,7 +464,7 @@ const authorInformationLang = {
     3: {
       photographerName: 'Ян Булгак',
       biography:
-        'Ян Булгак (6 октября 1876 , имение около д. Осташино Новогрудского уезда - 4 февраля 1950 , Гижыцка) - виленский мастер художественной краеведческой фотографии, «отец польской фотографии», один из пионеров польской художественной фотографии, этнограф, фольклорист. Его творчество считается частью общей культурного наследия Беларуси, Литвы и Польши.',
+        'Ян Булгак (6 октября 1876, имение около д. Осташино Новогрудского уезда - 4 февраля 1950 , Гижыцка) - виленский мастер художественной краеведческой фотографии, «отец польской фотографии», один из пионеров польской художественной фотографии, этнограф, фольклорист. Его творчество считается частью общей культурного наследия Беларуси, Литвы и Польши.',
       biographyTimeline: [
         {
           year: '1897',
@@ -461,17 +496,17 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label:
-            '«Вестник фотографий». Журнал в котором Ян Булгак помещал свои фотографии',
+          year: '1913 - 1914',
+          label: '«Вестник фотографий». Журнал в котором Ян Булгак помещал свои фотографии'
         },
         {
-          label:
-            '«Литва в съемках Яна Булгака». Альбом состоящий из 6 томов в котором содержалось более 270 снимков',
+          year: '1915',
+          label: '«Литва в съемках Яна Булгака». Альбом состоящий из 6 томов в котором содержалось более 270 снимков'
         },
         {
-          label:
-            '«Варшава. 1945 г. в образах Яна Булгака». В Варшаве, при помощи директора Народного музея Станислава Лоренца , произошла и первая послевоенная выставка Я. Булгака',
-        },
+          year: '1945',
+          label: '«Варшава. 1945 г. в образах Яна Булгака». В Варшаве, при помощи директора Народного музея Станислава Лоренца , произошла и первая послевоенная выставка Я. Булгака'
+        }
       ],
       location: 'Варшава, Польша',
     },
@@ -507,9 +542,9 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label:
-            'Снимал все, что было вокруг, все события, которые наблюдал: храмы, гостей, уборку урожая, строительство дома, природные явления',
-        },
+          year: '1900 - 1962',
+          label: 'Снимал все, что было вокруг, все события, которые наблюдал: храмы, гостей, уборку урожая, строительство дома, природные явления'
+        }
       ],
       location: 'Волковыск, Беларусь',
     },
@@ -545,25 +580,25 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label:
-            '«Географ Европы». Издание в котором печатались фотографические работы Дашкевича',
+          year: '1924',
+          label: '«Географ Европы». Издание в котором печатались фотографические работы Дашкевича'
         },
         {
-          label:
-            '«Начальная География». Издание в котором печатались фотографические работы Дашкевича',
+          year: '1926',
+          label: '«Начальная География». Издание в котором печатались фотографические работы Дашкевича'
         },
         {
-          label:
-            '«Произведения». Издание в котором печатались фотографические работы Дашкевича',
+          year: '1927 - 1928',
+          label: '«Произведения». Издание в котором печатались фотографические работы Дашкевича'
         },
         {
-          label:
-            '«Советская Беларусь: Фотоальбом». Издание в котором печатались фотографические работы Дашкевича',
+          year: '1931',
+          label: '«Советская Беларусь: Фотоальбом». Издание в котором печатались фотографические работы Дашкевича'
         },
         {
-          label:
-            '«Всебелорусской выставке краеведческих фотографий и зарисовок». Работы Дашкевича участвовали в этой выставке в Миске',
-        },
+          year: '1928',
+          label: '«Всебелорусской выставке краеведческих фотографий и зарисовок». Работы Дашкевича участвовали в этой выставке в Миске'
+        }
       ],
       location: 'Минск, Беларусь',
     },
@@ -599,25 +634,25 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label:
-            '«Весенние песни сверхчеловека». Квартирная выставка (г. Минск, Буларусь)',
+          year: '1987',
+          label: '«Весенние песни сверхчеловека». Квартирная выставка (г. Минск, Буларусь)'
         },
         {
-          label:
-            '«Смерть Пионера» - галерея независимого искусства «Шестая линия» (г. Минск, Беларусь)',
+          year: '1995',
+          label: '«Смерть Пионера» - галерея независимого искусства «Шестая линия» (г. Минск, Беларусь)'
         },
         {
-          label:
-            '«Дворце для птиц». Центр современного искусства «Уяздовски дворец» (г. Варшава, Польша)',
+          year: '2001',
+          label: '«Дворце для птиц». Центр современного искусства «Уяздовски дворец» (г. Варшава, Польша)'
         },
         {
-          label:
-            '«Сладкая соломенное жизнь». Галерея «RLBQ» (г. Марсель , Франция)',
+          year: '2003',
+          label: '«Сладкая соломенное жизнь». Галерея «RLBQ» (г. Марсель, Франция)'
         },
         {
-          label:
-            '«Алиса в стране безумного чаепития» и «Город Солнца». Галерея «Giedre Bartelt Galerie» ( г. Берлин , Германия )',
-        },
+          year: '2007',
+          label: '«Алиса в стране безумного чаепития» и «Город Солнца». Галерея «Giedre Bartelt Galerie» (г. Берлин, Германия)'
+        }
       ],
       location: 'Минск, Беларусь',
     },
@@ -655,25 +690,25 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label:
-            '«Деревянное зодчество Белорусского Полесья». Издание в котором печатались фотографические работы',
+          year: 'хххх',
+          label: '«Деревянное зодчество Белорусского Полесья». Издание в котором печатались фотографические работы'
         },
         {
-          label:
-            '«Искусство, созданное народом». Издание в котором печатались фотографические работы',
+          year: 'хххх',
+          label: '«Искусство, созданное народом». Издание в котором печатались фотографические работы'
         },
         {
-          label:
-            '«Деревянное зодчество Полесья». Издание в котором печатались фотографические работы',
+          year: 'хххх',
+          label: '«Деревянное зодчество Полесья». Издание в котором печатались фотографические работы'
         },
         {
-          label:
-            '«Иконопись Беларуси XII-ХVIII веков». Издание в котором печатались фотографические работы',
+          year: 'хххх',
+          label: '«Иконопись Беларуси XII-ХVIII веков». Издание в котором печатались фотографические работы'
         },
         {
-          label:
-            '«Декоративно-прикладное искусство Беларуси XII-ХVIII веков». Работы Дашкевича участвовали в этой выставке в Миске',
-        },
+          year: 'хххх',
+          label: '«Декоративно-прикладное искусство Беларуси XII-ХVIII веков». Работы Дашкевича участвовали в этой выставке в Миске'
+        }
       ],
       location: 'Минск, Беларусь',
     },
@@ -706,19 +741,24 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'тэст',
+          year: '1987',
+          label: 'Выстава абяднання «Галіна» на Рэспубліканскай выставе плаката (г. Мінск, Беларусь)'
         },
         {
-          label: 'тэст',
+          year: '1988',
+          label: 'Выстава «Мы» (г. Мінск, Беларусь)'
         },
         {
-          label: 'тэст',
+          year: '1993',
+          label: 'Выстава ў «Pilango Gallery» (г. Берлін, Германія)'
         },
         {
-          label: 'тэст',
+          year: '2010',
+          label: 'Выстава ў галерэі «Dzyga» (г. Львоў, Украіна)'
         },
         {
-          label: 'тэст',
+          year: '2013',
+          label: 'Фотавыстава «Under Ground» (г. Торунь, Польшча)'
         },
       ],
       location: 'Мінск, Беларусь',
@@ -756,19 +796,24 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'тэст',
+          year: '1997',
+          label: '«Адзін у горадзе». Музей Беларускай дзяржаўнай акадэміі мастацтваў, Мінск'
         },
         {
-          label: 'тэст',
+          year: '1998 - 1999',
+          label: '«Мая Амерыка». Замежнае таварыства зямлі Паўночны Рэйн-Вестфалія, Дортмунд (Германія)'
         },
         {
-          label: 'тэст',
+          year: '2001',
+          label: '«Preview». М-Галерэя Інстытута імя Гётэ ў Мінску'
         },
         {
-          label: 'тэст',
+          year: '2004',
+          label: '«Заслаўскі праменад». Заслаўскі гісторыка-культурны музей-запаведнік, Заслаўе'
         },
         {
-          label: 'тэст',
+          year: '2019',
+          label: '«інтэнцыі». Рэспубліканская мастацкая галерэя, Мінск'
         },
       ],
       location: 'Мінск, Беларусь',
@@ -808,14 +853,17 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'тэст',
+          year: '1913 - 1914',
+          label: '«Веснік фатаграфій». Часопіс у якім Ян Булгак змяшчаў свае фатаграфіі'
         },
         {
-          label: 'тэст',
+          year: '1915',
+          label: '«Літва ў здымках Яна Булгака». Альбом складаецца з 6 тамоў у якім знаходзілася больш за 270 здымкаў'
         },
         {
-          label: 'тэст',
-        },
+          year: '1945',
+          label: '«Варшава. 1945 г. у вобразах Яна Булгака ». У Варшаве, пры дапамозе дырэктара Народнага музея Станіслава Лорэнца, адбылася і першая пасляваенная выстава Я. Булгака'
+        }
       ],
       location: 'Варшава, Польшча',
     },
@@ -851,8 +899,9 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'тэст',
-        },
+          year: '1900 - 1962',
+          label: 'Здымаў усё, што было вакол, усе падзеі, якія назіраў: храмы, гасцей, уборку ўраджаю, будаўніцтва хаты, прыродныя з"явы'
+        }
       ],
       location: 'Ваўкавыск, Беларусь',
     },
@@ -888,20 +937,25 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'тэст',
+          year: '1924',
+          label: '«Географ Еўропы». Выданне ў якім друкаваліся фатаграфічныя працы Дашкевіча'
         },
         {
-          label: 'тэст',
+          year: '1926',
+          label: '«Пачатковая Геаграфія». Выданне ў якім друкаваліся фатаграфічныя працы Дашкевіча'
         },
         {
-          label: 'тэст',
+          year: '1927 - 1928',
+          label: '«Творы». Выданне ў якім друкаваліся фатаграфічныя працы Дашкевіча'
         },
         {
-          label: 'тэст',
+          year: '1931',
+          label: '«Советская Беларусь: Альбом». Выданне ў якім друкаваліся фатаграфічныя працы Дашкевіча'
         },
         {
-          label: 'тэст',
-        },
+          year: '1928',
+          label: '«Усебеларускай выставе краязнаўчых фатаграфій і замалёвак». Працы Дашкевіча ўдзельнічалі ў гэтай выставе ў міскі'
+        }
       ],
       location: 'Мінск, Беларусь',
     },
@@ -937,20 +991,25 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'тэст',
+          year: '1987',
+          label: '«Веснавыя песні Звышчалавека». Кватэрная выстава (г. Мінск, Булара)'
         },
         {
-          label: 'тэст',
+          year: '1995',
+          label: '«Смерць Піянер» - галерэя незалежнага мастацтва «Шостая лінія» (г. Мінск, Беларусь)'
         },
         {
-          label: 'тэст',
+          year: '2001',
+          label: '«Палацы для птушак». Цэнтр сучаснага мастацтва «Уяздовски палац» (г. Варшава, Польшча)'
         },
         {
-          label: 'тэст',
+          year: '2003',
+          label: '«Салодкая саламянае жыццё». Галерэя «RLBQ» (г. Марсэль, Францыя)'
         },
         {
-          label: 'тэст',
-        },
+          year: '2007',
+          label: '«Аліса ў краіне вар"яцкага чаявання» і «Горад Сонца». Галерэя «Giedre Bartelt Galerie» (г. Берлін, Германія)'
+        }
       ],
       location: 'Мінск, Беларусь',
     },
@@ -988,20 +1047,25 @@ const authorInformationLang = {
       ],
       listOfPhotographerWorks: [
         {
-          label: 'тэст',
+          year: 'хххх',
+          label: '«Драўлянае дойлідства Беларускага Палесся». Выданне ў якім друкаваліся фатаграфічныя работы'
         },
         {
-          label: 'тэст',
+          year: 'хххх',
+          label: '«Мастацтва, створанае народам». Выданне ў якім друкаваліся фатаграфічныя работы'
         },
         {
-          label: 'тэст',
+          year: 'хххх',
+          label: '«Драўлянае дойлідства Палесся». Выданне ў якім друкаваліся фатаграфічныя работы'
         },
         {
-          label: 'тэст',
+          year: 'хххх',
+          label: '«Іканапіс Беларусі XII-ХVIII стагоддзяў». Выданне ў якім друкаваліся фатаграфічныя работы'
         },
         {
-          label: 'тэст',
-        },
+          year: 'хххх',
+          label: '«Дэкаратыўна-прыкладное мастацтва Беларусі XII-ХVIII стагоддзяў». Працы Дашкевіча ўдзельнічалі ў гэтай выставе ў міскі'
+        }
       ],
       location: 'Мінск, Беларусь',
     },
