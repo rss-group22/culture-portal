@@ -58,7 +58,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.0",
     "shortid": "^2.2.15",
-    "swiper": "^5.3.1",
+    "swiper": "^6.5.1",
     "vertical-timeline-component-for-react": "^1.0.6"
   }
 }
